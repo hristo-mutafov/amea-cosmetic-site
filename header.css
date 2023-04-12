@@ -20,6 +20,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .ul_wrapper {
@@ -35,7 +38,7 @@ body {
 }
 
 .nav_link:hover {
-    border-top: 1px solid black;
+    border-top: 2px solid black;
     padding-top: 30px;
     color: #000;
 }
