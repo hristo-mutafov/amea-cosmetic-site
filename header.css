@@ -1,0 +1,77 @@
+/* Colors */
+/* purple - #b4347f */
+/* logo - #303e48 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d0d1d1;
+}
+
+.header {
+    position: relative;
+    background-color: #b4347f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.ul_wrapper {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 16px;
+}
+
+.nav_link:hover {
+    border-top: 1px solid black;
+    padding-top: 30px;
+    color: #000;
+}
+
+/* Sub Text with line cover */
+
+.logo_wrapper .sub_text_wrapper {
+    position: relative;
+}
+
+.logo_wrapper .line {
+    border: 1px solid rgba(0, 0, 0, 0.55);
+    position: absolute;
+    width: 350px;
+    z-index: 0;
+    top: 7px;
+    right: -70px;
+}
+
+
+
+.logo_wrapper .hide_line {
+    z-index: 1;
+    width: 225px;
+    height: 15px;
+    position: absolute;
+    background-color: #b4347f;
+    top: 0px;
+    right: -5px;
+}
+
+.logo_wrapper .sub_text {
+    z-index: 2;
+    color: #303e48;
+    position: relative;
+    margin-left: 150px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}

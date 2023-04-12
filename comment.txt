@@ -1,0 +1,6 @@
+Comment:
+    The document Title
+    White Color
+    Text below the logo. And madia queries.
+    Hero-section font - current: 400
+    'За мен'- запетая пред 'където'.

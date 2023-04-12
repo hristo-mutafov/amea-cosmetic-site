@@ -1,0 +1,13 @@
+/* Colors */
+/* Light purple - #b94d8a */
+/* purple - #b4347f */
+/* gray - #d0d1d1 */
+
+
+.for_me_section .circle {
+    width: 500px;
+    height: 500px;
+    background-color: #b4347f;
+    border-radius: 100%;
+}
+
