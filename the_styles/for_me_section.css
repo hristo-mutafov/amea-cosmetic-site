@@ -16,14 +16,6 @@
     border: 2px solid #fff;
 }
 
-/* .for_me_section .image_wrapper {
-    height: 68vh;
-    width: 32%;
-    position: absolute;
-    top: 8%;
-    left: 24%;
-} */
-
 .for_me_section .swiper {
     height: 68vh;
     width: 32%;
@@ -50,7 +42,7 @@
 }
 
 .for_me_section .text_wrapper .for_me_section_text {
-    font-size: 38px;
+    font-size: 2.3rem;
     text-align: left;
 }
 

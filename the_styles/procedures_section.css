@@ -30,7 +30,7 @@
 
 .procedures .swiper .background_square .imgae_cover {
     position: absolute;
-    height: 90%;
+    height: 30vh;
     width: 80%;
     top: 50%;
     left: 50%;
@@ -48,6 +48,7 @@
 .procedures .swiper .text_wrapper {
     position: absolute;
     width: 35%;
+    height: 36vh;
     right: 100px;
     background-color: rgba(180, 52, 127, 0.75);
     top: 50%;

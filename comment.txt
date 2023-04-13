@@ -2,3 +2,4 @@ Comment:
     Sub logo text
     Semantic check
     Choose 2 fons only
+    Font size on Procedures section

@@ -1,0 +1,155 @@
+@media screen and (min-width: 3841px) {
+    /* hero */
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 2.7rem;
+    }
+    /* for me */
+    .for_me_section .text_wrapper .for_me_section_text {
+        font-size: 4;
+    }
+}
+
+@media screen and (max-width: 3840px) {
+    /* hero */
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 2.6rem;
+    }
+    /* for me */
+    .for_me_section .text_wrapper .for_me_section_text {
+        font-size: 3.8rem;
+    }
+}
+
+@media screen and (max-width: 3440px) {
+    /* hero */
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 2.3rem;
+    }
+    /* for me */
+    .for_me_section .text_wrapper .for_me_section_text {
+        font-size: 3.6rem;
+    }
+}
+
+@media screen and (max-width: 3240px) {
+    /* hero */
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 2.1rem;
+    }
+    /* for me */
+    .for_me_section .text_wrapper .for_me_section_text {
+        font-size: 3.4rem;
+    }
+}
+
+@media screen and (max-width: 3040px) {
+    /* hero */
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 1.9rem;
+    }
+    /* for me */
+    .for_me_section .text_wrapper .for_me_section_text {
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 2840px) {
+    /* hero */
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 1.8rem;
+    }
+    /* for me */
+    .for_me_section .text_wrapper .for_me_section_text {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 2640px) {
+    /* hero */
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 1.6rem;
+    }
+    /* for me */
+    .for_me_section .text_wrapper .for_me_section_text {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 2440px) {
+    /* hero */
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 1.4rem;
+    }
+    /* for me */
+    .for_me_section .text_wrapper .for_me_section_text {
+        font-size: 2.6rem;
+    }
+}
+
+@media screen and (max-width: 2240px) {
+    /* hero */
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 1.2rem;
+    }
+    /* for me */
+    .for_me_section .text_wrapper .for_me_section_text {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 1840px) {
+    /* hero */
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 1rem;
+    }
+    /* for me */
+    .for_me_section .text_wrapper .for_me_section_text {
+        font-size: 2.2rem;
+    }
+
+    .for_me_section .circle {
+        margin: 100px 100px;
+    }
+}
+
+@media screen and (max-width: 1640px) {
+    /* hero */
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 1rem;
+    }
+    /* for me */
+    .for_me_section .text_wrapper .for_me_section_text {
+        font-size: 2rem;
+    }
+    .for_me_section .circle {
+        margin: 100px 80px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    /* hero */
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 0.8rem;
+    }
+    /* for me */
+    .for_me_section .text_wrapper .for_me_section_text {
+        font-size: 1.7rem;
+    }
+    .for_me_section .circle {
+        margin: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    /* hero */
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 0.4rem;
+    }
+    /* for me */
+    .for_me_section .text_wrapper .for_me_section_text {
+        font-size: 1.6rem;
+    }
+    .for_me_section .circle {
+        margin: 100px 20px;
+    }
+}
