@@ -1,0 +1,78 @@
+/* Colors */
+/* Light purple - #b94d8a */
+/* purple - #b4347f */
+/* gray - #d0d1d1 */
+
+.for_me_section {
+    position: relative;
+}
+
+.for_me_section .circle {
+    margin: 100px 150px;
+    width: 50%;
+    height: 80vh;
+    background-color: #b4347f;
+    border-radius: 100%;
+    border: 2px solid #fff;
+}
+
+/* .for_me_section .image_wrapper {
+    height: 68vh;
+    width: 32%;
+    position: absolute;
+    top: 8%;
+    left: 24%;
+} */
+
+.for_me_section .swiper {
+    height: 68vh;
+    width: 32%;
+    position: absolute;
+    top: 8%;
+    left: 24%;
+}
+
+.for_me_section .swiper-wrapper .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+.for_me_section .text_wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    right: 18%;
+    width: 18vw;
+    height: 28vh;
+}
+
+.for_me_section .text_wrapper .for_me_section_text {
+    font-size: 38px;
+    text-align: left;
+}
+
+.for_me_section .decoration1 {
+    position: absolute;
+    width: 20vw;
+    height: 4px;
+    background-color: black;
+    top: 74%;
+    right: 18%;
+}
+
+.for_me_section .decoration2 {
+    position: absolute;
+    width: 4px;
+    height: 32vh;
+    background-color: black;
+    top: 32%;
+    right: 38%;
+}
+
+.for_me_section #clider_btn {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.75);
+}

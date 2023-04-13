@@ -43,7 +43,7 @@
     color: #fff;
     font-family: 'Marck Script', cursive;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.3rem;
 }
 
 .hero_section .decoration1 {
@@ -62,4 +62,18 @@
     position: absolute;
     top: 80%;
     right: 80px;
+}
+
+@media screen and (min-width: 2100px) {
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (min-width: 2600px) {
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 1.6rem;
+    }
+
 }

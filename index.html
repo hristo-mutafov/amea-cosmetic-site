@@ -4,20 +4,33 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Fonts------------- -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Styles ---------------------- -->
+        <link rel="stylesheet" href="the_styles/reset.css" />
+        <link rel="stylesheet" href="the_styles/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
         <title>Nataliya Nenchova</title>
     </head>
     <body>
         <!------ Header Section -------->
         <header class="header">
             <div class="logo_wrapper">
-                <img class="logo_img" src="images/logo.png" alt="logo" />
+                <h1 class="logo_img">Nataliya Nenchova</h1>
                 <div class="sub_text_wrapper">
                     <p class="sub_text">Permanent Make Up Expert & Trainer</p>
                     <div class="hide_line"></div>
@@ -40,7 +53,7 @@
                 <div class="image_wrapper">
                     <img
                         class="hero_section_img"
-                        src="images/hero-section-img.jpg"
+                        src="images/hero_section/hero-section-img.jpg"
                         alt="studio picture"
                     />
                 </div>
@@ -60,17 +73,257 @@
                 <div class="decoration1"></div>
                 <div class="decoration2"></div>
             </section>
+
             <section class="for_me_section">
                 <div class="circle"></div>
-                <div class="image_wrapper">
-                    <img src="" alt="">
+
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img class="img" src="images/for_me/1.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img" src="images/for_me/2.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img" src="images/for_me/3.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img" src="images/for_me/4.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img" src="images/for_me/5.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img" src="images/for_me/6.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i id="clider_btn" class="fas fa-chevron-left"></i>
+                    </div>
+                    <div id="next_img" class="swiper-button-next">
+                        <i id="clider_btn" class="fas fa-chevron-right"></i>
+                    </div>
                 </div>
                 <div class="text_wrapper">
                     <p class="for_me_section_text">
-                        Вашето самочувствие е в моите ръце! А това е мястото, където аз ще се погрижа!
+                        Вашето самочувствие е в моите ръце! А това е мястото,
+                        където аз ще се погрижа!
                     </p>
+                </div>
+                <div class="decoration1"></div>
+                <div class="decoration2"></div>
+            </section>
+
+            <section class="procedures">
+                <div class="background">
+                    <img class="img" src="images/procedures/7.jpg" alt="" />
+                </div>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="background_square">
+                                <div class="imgae_cover">
+                                    <img
+                                        class="img"
+                                        src="images/procedures/1.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="text_wrapper">
+                                <!-- Implement the SPAN with correct font -->
+                                <p class="text heading_text">
+                                    Микропигментация на устни
+                                    <span>Glossy Lips</span>
+                                </p>
+                                <p class="text">Моята страст!</p>
+                                <p class="text">
+                                    Микропигментация на устни
+                                    <span>Glossy Lips!</span>
+                                </p>
+                                <p class="text main_text">
+                                    Техника с която перманентно оцветяваме
+                                    устните до желаната от вас интензивност! От
+                                    деликатни нюд цветове, до по-плътни,
+                                    оформяйки контура и коригирайки ако има
+                                    нужда формата и несъвършенствата.
+                                    Изключително подходящ метод за дами с
+                                    хиалурон в устните. Поради спецификата на
+                                    работата и процедурата е необходима
+                                    предварителна консултация, която е напълно
+                                    безплатна и аз с удоволствие ще отделя
+                                    необходимото време.
+                                </p>
+                                <p class="text prices_text">
+                                    Цена на процедурата:
+                                </p>
+                                <!-- Implement the SPAN -->
+                                <p class="text price_desc">
+                                    <span>300</span> лв.с включен ретуш, който
+                                    задължително правим след месец.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="background_square">
+                                <div class="imgae_cover">
+                                    <img
+                                        class="img"
+                                        src="images/procedures/2.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="text_wrapper">
+                                <!-- Implement the SPAN with correct font -->
+                                <p class="text heading_text">
+                                    Микропигментация на вежди
+                                </p>
+                                <p class="text">Микропигментация на вежди!</p>
+                                <p class="text">
+                                    Моята крайна цел! Естествено красиви вежди!
+                                </p>
+                                <p class="text main_text">
+                                    Процедура, с която много нежно подчертаваме
+                                    и попълваме липсващите косъмчета! Извършва
+                                    се в два етапа. Първа процедура и
+                                    задължителен ретуш, който правим след
+                                    <span>40</span> дни. Важно! Окончателно
+                                    завършени веждите ще бъдат след ретуша!
+                                    Безболезнен метод и с много лек
+                                    възстановителен период.
+                                </p>
+                                <p class="text prices_text">
+                                    Цена на процедурата:
+                                </p>
+                                <!-- Implement the SPAN -->
+                                <p class="text price_desc">
+                                    <span>500</span> с включен ретуш, който
+                                    правим след <span>40</span> дни.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="background_square">
+                                <div class="imgae_cover">
+                                    <img
+                                        class="img"
+                                        src="images/procedures/3.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="text_wrapper">
+                                <!-- Implement the SPAN with correct font -->
+                                <p class="text heading_text">
+                                    Перманентна очна линия
+                                </p>
+                                <p class="text">Перманентна очна линия!</p>
+                                <p class="text">
+                                    Класическа, с опушен ефект или само между
+                                    миглите !
+                                </p>
+                                <p class="text main_text">
+                                    Техниката преценяваме при консултацията в
+                                    зависимост от физиологията на окото. Имайки
+                                    впредвид зоната, може да се получи оток и
+                                    зачервяване на клепача който отшумява до три
+                                    дни. Трайността във времето е от
+                                    <span>1</span> до <span>5</span> години.
+                                </p>
+                                <p class="text prices_text">
+                                    Цена на процедурата:
+                                </p>
+                                <!-- Implement the SPAN -->
+                                <p class="text price_desc">
+                                    <span>500</span> с включен ретуш, който
+                                    правим след <span>40</span> дни.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="background_square">
+                                <div class="imgae_cover">
+                                    <img
+                                        class="img"
+                                        src="images/procedures/5.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="text_wrapper">
+                                <!-- Implement the SPAN with correct font -->
+                                <p class="text heading_text">Микроблейдинг</p>
+                                <p class="text">
+                                    Микроблейдинг! Ръчен метод, с който
+                                    посредством много финни микро игли създаваме
+                                    изкуствени косъмчета на веждата.
+                                    Предпочитана техника за максимално естествен
+                                    резултат!
+                                </p>
+                                <p class="text main_text">
+                                    Важно! Този метод не е подходящ за дами със
+                                    смесен тип или мазна кожа.
+                                </p>
+                                <p class="text prices_text">
+                                    Цена на процедурата:
+                                </p>
+                                <!-- Implement the SPAN -->
+                                <p class="text price_desc">
+                                    <span>250</span> с включен ретуш, който
+                                    правим след <span>40</span> дни.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="background_square">
+                                <div class="imgae_cover">
+                                    <img
+                                        class="img"
+                                        src="images/procedures/6.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="text_wrapper">
+                                <!-- Implement the SPAN with correct font -->
+                                <p class="text heading_text">Камуфлаж</p>
+                                <p class="text">Ново!Ново!Ново!</p>
+                                <p class="text">КАМУФЛАЖ</p>
+                                <p class="text main_text">
+                                    Този нов и иновативен метод дава възможност
+                                    да оцветим перманентно участъци от кожата на
+                                    тялото и лицето. Успешно се повлияват белези
+                                    от травми, следоперативни белези след
+                                    поставяне на силиконови импланти на гърдите,
+                                    абдоминопластика, стрии и витилиго.
+                                    Необходими са от <span>2</span> до
+                                    <span>4</span> процедури за добър краен
+                                    резултат.
+                                </p>
+                                <p class="text prices_text">
+                                    Цена на процедурата:
+                                </p>
+                                <!-- Implement the SPAN -->
+                                <p class="text price_desc">НЯМА</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div id="next_img" class="swiper-button-next"></div>
                 </div>
             </section>
         </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="the_scripts/for_me_page_slider_config.js"></script>
+        <script src="the_scripts/background_clicking.js"></script>
     </body>
 </html>

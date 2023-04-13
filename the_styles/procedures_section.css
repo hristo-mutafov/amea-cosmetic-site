@@ -1,0 +1,69 @@
+.procedures {
+    position: relative;
+}
+
+.procedures .background {
+    width: 100%;
+    height: 50vh;
+}
+
+.procedures .background .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.procedures .swiper {
+    position: absolute;
+    height: 50vh;
+    width: 90%;
+    top: 0px;
+}
+
+.procedures .swiper .background_square {
+    position: absolute;
+    width: 36%;
+    height: 50vh;
+    left: 100px;
+    background-color: rgba(180, 52, 127, 0.75);
+}
+
+.procedures .swiper .background_square .imgae_cover {
+    position: absolute;
+    height: 90%;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.procedures .swiper .background_square .imgae_cover .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 1px 1px 20px 0px black;
+}
+
+.procedures .swiper .text_wrapper {
+    position: absolute;
+    width: 35%;
+    right: 100px;
+    background-color: rgba(180, 52, 127, 0.75);
+    top: 50%;
+    transform: translate(0%, -50%);
+    padding: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Paragraph styles */
+
+.procedures .text_wrapper .heading_text {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.procedures .text_wrapper .main_text {
+    margin-bottom: 16px;
+}

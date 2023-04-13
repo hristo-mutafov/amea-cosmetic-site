@@ -2,19 +2,14 @@
 /* purple - #b4347f */
 /* logo - #303e48 */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: #d0d1d1;
 }
 
-.header {
-    position: relative;
+
+.header  {
     background-color: #b4347f;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,6 +38,15 @@ body {
     color: #000;
 }
 
+.logo_wrapper {
+    margin-left: 100px;
+}
+
+.logo_img {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+
 /* Sub Text with line cover */
 
 .logo_wrapper .sub_text_wrapper {
@@ -50,7 +54,7 @@ body {
 }
 
 .logo_wrapper .line {
-    border: 1px solid rgba(0, 0, 0, 0.55);
+    border: 1px solid #fff;
     position: absolute;
     width: 350px;
     z-index: 0;
@@ -72,9 +76,11 @@ body {
 
 .logo_wrapper .sub_text {
     z-index: 2;
-    color: #303e48;
+    color: #fff;
     position: relative;
     margin-left: 150px;
     font-size: 14px;
     margin-bottom: 10px;
 }
+
+
