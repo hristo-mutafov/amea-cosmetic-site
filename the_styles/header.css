@@ -2,12 +2,20 @@
 /* purple - #b4347f */
 /* logo - #303e48 */
 
-body {
+/* body {
     background-color: #d0d1d1;
+} */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #b4347f;
 }
 
 
-.header  {
+.header .wrapper  {
+    width: 1920px;
     background-color: #b4347f;
     position: relative;
     display: flex;

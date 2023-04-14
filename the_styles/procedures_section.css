@@ -1,10 +1,11 @@
 .procedures {
     position: relative;
+    width: 1920px;
 }
 
 .procedures .background {
     width: 100%;
-    height: 50vh;
+    height: 470px;
 }
 
 .procedures .background .img {
@@ -15,7 +16,7 @@
 
 .procedures .swiper {
     position: absolute;
-    height: 50vh;
+    height: 470px;
     width: 90%;
     top: 0px;
 }
@@ -23,14 +24,14 @@
 .procedures .swiper .background_square {
     position: absolute;
     width: 36%;
-    height: 50vh;
+    height: 470px;
     left: 100px;
     background-color: rgba(180, 52, 127, 0.75);
 }
 
 .procedures .swiper .background_square .imgae_cover {
     position: absolute;
-    height: 30vh;
+    height: 280px;
     width: 80%;
     top: 50%;
     left: 50%;
@@ -48,7 +49,7 @@
 .procedures .swiper .text_wrapper {
     position: absolute;
     width: 35%;
-    height: 36vh;
+    height: 338px;
     right: 100px;
     background-color: rgba(180, 52, 127, 0.75);
     top: 50%;
@@ -56,6 +57,7 @@
     padding: 20px;
     color: #fff;
     font-size: 18px;
+    overflow: auto;
 }
 
 /* Paragraph styles */

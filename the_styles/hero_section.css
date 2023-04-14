@@ -3,8 +3,17 @@
 /* purple - #b4347f */
 /* gray - #d0d1d1 */
 
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center ;
+}
+
+
 .hero_section {
     position: relative;
+    width: 1920px;
 }
 
 .hero_section .image_wrapper {
@@ -12,7 +21,7 @@
     top: 10px;
     left: 12%;
     width: 62%;
-    height: 88vh;
+    height: 820px;
 }
 
 .hero_section .image_wrapper .hero_section_img {
@@ -25,7 +34,7 @@
 .hero_section .background_square {
     margin-left: 60px;
     width: 50%;
-    height: 90vh;
+    height: 860px;
     background-color: #b94d8a;
 }
 
@@ -34,7 +43,7 @@
     top: 30%;
     right: 120px;
     width: 26%;
-    height: 40vh;
+    height: 400px;
     background-color: rgba(180, 52, 127, 0.75);
     padding: 20px;
 }
@@ -43,11 +52,11 @@
     color: #fff;
     font-family: 'Marck Script', cursive;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 20px;
 }
 
 .hero_section .decoration1 {
-    height:44vh;
+    height: 400px;
     width: 4px;
     background-color: #fff;
     position: absolute;
@@ -57,7 +66,7 @@
 
 .hero_section .decoration2 {
     height:4px;
-    width: 20vw;
+    width: 400px;
     background-color: #fff;
     position: absolute;
     top: 80%;

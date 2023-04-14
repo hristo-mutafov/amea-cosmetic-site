@@ -5,22 +5,23 @@
 
 .for_me_section {
     position: relative;
+    width: 1920px;
 }
 
 .for_me_section .circle {
     margin: 100px 150px;
     width: 50%;
-    height: 80vh;
+    height: 800px;
     background-color: #b4347f;
     border-radius: 100%;
     border: 2px solid #fff;
 }
 
 .for_me_section .swiper {
-    height: 68vh;
+    height: 640px;
     width: 32%;
     position: absolute;
-    top: 8%;
+    top: 16%;
     left: 24%;
 }
 
@@ -36,9 +37,9 @@
     position: absolute;
     top: 50%;
     transform: translate(0%, -50%);
-    right: 18%;
-    width: 18vw;
-    height: 28vh;
+    right: 14%;
+    width: 400px;
+    height: 260px;
 }
 
 .for_me_section .text_wrapper .for_me_section_text {
@@ -48,19 +49,19 @@
 
 .for_me_section .decoration1 {
     position: absolute;
-    width: 20vw;
+    width: 400px;
     height: 4px;
     background-color: black;
-    top: 74%;
-    right: 18%;
+    top: 64%;
+    right: 17%;
 }
 
 .for_me_section .decoration2 {
     position: absolute;
     width: 4px;
-    height: 32vh;
+    height: 260px;
     background-color: black;
-    top: 32%;
+    top: 34%;
     right: 38%;
 }
 
