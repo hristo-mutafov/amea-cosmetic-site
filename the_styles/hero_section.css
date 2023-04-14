@@ -13,7 +13,8 @@
 
 .hero_section {
     position: relative;
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
 }
 
 .hero_section .image_wrapper {
@@ -39,6 +40,8 @@
 }
 
 .hero_section .text_wrapper {
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 30%;
     right: 120px;
@@ -71,4 +74,16 @@
     position: absolute;
     top: 80%;
     right: 80px;
+}
+
+@media screen and (max-width: 1720px) {
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1420px) {
+    .hero_section .text_wrapper .hero_section_text {
+        font-size: 16px;
+    }
 }

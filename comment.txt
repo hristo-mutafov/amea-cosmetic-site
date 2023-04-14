@@ -3,3 +3,4 @@ Comment:
     Semantic check
     Choose 2 fons only
     Font size on Procedures section
+    Which ones to slide automatically

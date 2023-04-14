@@ -59,13 +59,13 @@ const swiper = new Swiper('.nested', {
     },
 });
 
-delay = 10000;
-next_buttons = Array.from(document.querySelectorAll('.swiper-button-next'));
+// delay = 10000;
+// next_buttons = Array.from(document.querySelectorAll('.swiper-button-next'));
 
-setInterval(() => {
-    for (const button of next_buttons) {
-        button.click()
-    }
-}, delay);
+// setInterval(() => {
+//     for (const button of next_buttons) {
+//         button.click()
+//     }
+// }, delay);
 
 
