@@ -11,6 +11,7 @@
 .for_me_section .circle {
     margin: 100px 150px;
     width: 50%;
+    /* height: 80vh; */
     height: 800px;
     background-color: #b4347f;
     border-radius: 100%;
@@ -63,9 +64,4 @@
     background-color: black;
     top: 34%;
     right: 38%;
-}
-
-.for_me_section #clider_btn {
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.75);
 }

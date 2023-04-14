@@ -1,17 +1,29 @@
-const swiper = new Swiper('.swiper', {
+const swiper1 = new Swiper('.outer', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
 
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '#next',
+        prevEl: '#prev',
     },
 });
 
-delay = 5000;
-next_buttons = Array.from(document.querySelectorAll('#next_img'));
+const swiper = new Swiper('.nested', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '#next_nested',
+        prevEl: '#prev_nested',
+    },
+});
+
+delay = 10000;
+next_buttons = Array.from(document.querySelectorAll('#next'));
 
 setInterval(() => {
     for (const button of next_buttons) {
