@@ -29,12 +29,21 @@
 }
 
 .ul_wrapper {
+    /* display: none; */
     list-style: none;
     display: flex;
     flex-direction: row;
 }
 
+.ul_wrapper.active {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    height: 50vh;
+}
+
 .nav_link {
+    /* display: none; */
     text-decoration: none;
     color: #fff;
     margin-left: 16px;
@@ -59,6 +68,7 @@
 
 .logo_wrapper .sub_text_wrapper {
     position: relative;
+    margin-left: 150px;
 }
 
 .logo_wrapper .line {
@@ -82,13 +92,102 @@
     right: -5px;
 }
 
+
 .logo_wrapper .sub_text {
     z-index: 2;
     color: #fff;
     position: relative;
-    margin-left: 150px;
     font-size: 14px;
     margin-bottom: 10px;
+}
+
+.navbar__toggle {
+    cursor: pointer;
+}
+
+.navbar__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+  }
+
+  .navbar__toggle .bar {
+    display: block;
+  }
+
+  /* Burger Animation */
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+@media screen and (max-width: 1115px) {
+    .logo_wrapper {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .logo_wrapper .sub_text_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        margin-left: 0px;
+        width: 280px;
+    }
+
+    .logo_wrapper .sub_text {
+        z-index: 2;
+        width:55%;
+        color: #fff;
+        position: relative;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .logo_wrapper .line {
+        border: 1px solid #fff;
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+        top: 10px;
+        right: 0;
+    }
+    
+    
+    .logo_wrapper .hide_line {
+        z-index: 1;
+        width: 124px;
+        height: 40px;
+        position: absolute;
+        background-color: #b4347f;
+        top: 0;
+        right: 78px;
+    }
+
+    .logo_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo_img {
+        font-size: 20px;
+    }
+    
 }
 
 
