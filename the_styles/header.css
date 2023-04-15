@@ -29,24 +29,19 @@
 }
 
 .ul_wrapper {
-    /* display: none; */
     list-style: none;
     display: flex;
     flex-direction: row;
 }
 
-.ul_wrapper.active {
-    display: flex;
-    flex-direction: column;
-    background: black;
-    height: 50vh;
+.header .wrapper .ul_wrapper #nav_item {
+    margin-left: 20px;
 }
 
 .nav_link {
-    /* display: none; */
     text-decoration: none;
     color: #fff;
-    margin-left: 16px;
+    /* margin-left: 16px; */
 }
 
 .nav_link:hover {
@@ -103,6 +98,7 @@
 
 .navbar__toggle {
     cursor: pointer;
+    display: none;
 }
 
 .navbar__toggle .bar {
@@ -111,25 +107,54 @@
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
     background: #fff;
-  }
+}
 
-  .navbar__toggle .bar {
+.navbar__toggle .bar {
+display: block;
+}
+
+/* Burger Animation and Config */
+
+#mobile-menu.is-active .bar:nth-child(2) {
+opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1) {
+transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3) {
+transform: translateY(-8px) rotate(-45deg);
+}
+
+.header .wrapper.active {
+    display: flex;
+    flex-direction: column;
+    background: #b4347f;
+}
+
+.header .wrapper .ul_wrapper.active {
+    width: 100%;
+    flex-direction: column;
     display: block;
-  }
+    text-align: center;
+}
 
-  /* Burger Animation */
+.header .wrapper .ul_wrapper.active #nav_item {
+    padding: 20px;
+}
 
-  #mobile-menu.is-active .bar:nth-child(2) {
-    opacity: 0;
-  }
+.header .wrapper .ul_wrapper.active .nav_link {
+    font-size: 18px;
+    padding: 0;
+    border: none;
+}
 
-  #mobile-menu.is-active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
+.header .wrapper .ul_wrapper.active #nav_item:hover {
+    background-color: #b94d8a;
+}
 
-  #mobile-menu.is-active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
+
 
 
 @media screen and (max-width: 1115px) {
@@ -188,6 +213,26 @@
         font-size: 20px;
     }
     
+}
+
+
+@media screen and (max-width: 960px) {
+    .ul_wrapper {
+        display: none; 
+    }
+
+    .navbar__toggle {
+        display: block;
+    }
+
+    .mobile_nav {
+        display: flex;
+    
+        width: 100%;
+        justify-content: space-between;
+    
+        align-items: center;
+    }
 }
 
 

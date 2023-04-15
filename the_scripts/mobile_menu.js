@@ -1,7 +1,9 @@
 const mobileMenu = document.getElementById('mobile-menu');
-const nav = document.getElementById('nav_wrapper');
+const navWrapper = document.getElementById('nav_wrapper');
+const nav = document.getElementById('navigation')
 
 mobileMenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('is-active')
     nav.classList.toggle('active')
+    navWrapper.classList.toggle('active')
 })

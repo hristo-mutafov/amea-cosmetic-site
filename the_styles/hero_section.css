@@ -68,6 +68,10 @@
     .hero_section .text_wrapper .hero_section_text {
         font-size: 18px;
     }
+
+    .hero_section .text_wrapper {
+        width: 30%;
+    }
 }
 
 /* 1420x 850 */
