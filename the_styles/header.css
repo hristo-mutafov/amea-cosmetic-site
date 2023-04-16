@@ -41,12 +41,11 @@
 .nav_link {
     text-decoration: none;
     color: #fff;
-    /* margin-left: 16px; */
 }
 
 .nav_link:hover {
     border-top: 2px solid black;
-    padding-top: 30px;
+    padding-top: 25%;
     color: #000;
 }
 
@@ -235,4 +234,32 @@ transform: translateY(-8px) rotate(-45deg);
     }
 }
 
+
+@media screen and (max-width: 630px) {
+    .logo_wrapper .sub_text_wrapper {
+        width: 200px;
+    }
+
+    .logo_wrapper .sub_text {
+        font-size: 10px;
+    }
+      
+    
+    .logo_wrapper .hide_line {
+        width: 50%;
+        right: 50px;
+    }
+
+    .logo_wrapper {
+        margin: 0;
+    }
+
+    .logo_img {
+        font-size: 18px;
+    }
+
+    .navbar__toggle {
+        margin-left: 20px;
+    }
+}
 
