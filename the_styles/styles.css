@@ -3,14 +3,20 @@
 @import url(hero_section.css);
 @import url(for_me_section.css);
 @import url(procedures_section.css);
+@import url(opinions.css);
 @import url(trainings.css);
+@import url(footer.css);
 /* @import url(responsive.css); */
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
-    background-color: #d0d1d1;
+  background-color: #d0d1d1;
 }
 
 #slider_btn {
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.75);
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.75);
 }
