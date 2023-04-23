@@ -1,528 +1,850 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Fonts------------- -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Styles ---------------------- -->
-    <link rel="stylesheet" href="the_styles/reset.css" />
-    <link rel="stylesheet" href="the_styles/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <title>Nataliya Nenchova</title>
-  </head>
-  <body>
-    <!------ Header Section -------->
-    <header class="header">
-      <div id="nav_wrapper" class="wrapper">
-        <div class="mobile_nav">
-          <div class="logo_wrapper">
-            <h1 class="logo_img">Nataliya Nenchova</h1>
-            <div class="sub_text_wrapper">
-              <p class="sub_text">Permanent Make Up Expert & Trainer</p>
-              <div class="hide_line"></div>
-              <div class="line"></div>
-            </div>
-          </div>
-
-          <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span> <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </div>
-
-        <ul id="navigation" class="ul_wrapper">
-          <li id="nav_item">
-            <a id="home_btn" class="nav_link" href="">Начало</a>
-          </li>
-          <li id="nav_item">
-            <a id="for_me_btn" class="nav_link" href="">Зa мен</a>
-          </li>
-          <li id="nav_item">
-            <a id="procedures_btn" class="nav_link" href="">Процедури</a>
-          </li>
-          <li id="nav_item">
-            <a id="courses_btn" class="nav_link" href="">Курсове</a>
-          </li>
-          <li id="nav_item">
-            <a id="constacts_btn" class="nav_link" href="">Контакти</a>
-          </li>
-        </ul>
-      </div>
-    </header>
-
-    <main class="main">
-      <section id="hero_section" class="hero_section">
-        <div class="background_square"></div>
-        <div class="image_wrapper">
-          <img
-            class="hero_section_img"
-            src="images/hero_section/hero-section-img.jpg"
-            alt="studio picture"
-          />
-        </div>
-        <div class="text_wrapper">
-          <p class="hero_section_text">
-            Аз съм Наталия Ненчова! От 7 години се занимавам с перманентен грим
-            и миглопластика! Три са водещите неща в практиката ми! Безопасност!
-            Бързо заздравяване! Качествена работа! Имам привилегията да бъда
-            тренер към Amiea академия България! Немски бранд и единствената
-            компания за перманентен грим в света, сертифицирана по медицински
-            стандарти. Аз не съм художник! Не съм и татуист! Аз съм експерт,
-            който когато вижда цел, не вижда препятствия!
-          </p>
-        </div>
-      </section>
-
-      <section id="for_me_section">
-        <div class="wrapper">
-          <div class="circle"></div>
-          <div class="swiper for_me_swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img class="img" src="images/for_me/1.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img class="img" src="images/for_me/2.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img class="img" src="images/for_me/3.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img class="img" src="images/for_me/4.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img class="img" src="images/for_me/5.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img class="img" src="images/for_me/6.jpg" alt="" />
-              </div>
-            </div>
-            <div id="for_me_swiper_prev" class="swiper-button-prev">
-              <i id="slider_btn" class="fas fa-chevron-left"></i>
-            </div>
-            <div id="for_me_swiper_next" class="swiper-button-next">
-              <i id="slider_btn" class="fas fa-chevron-right"></i>
-            </div>
-          </div>
-        </div>
-
-        <p class="for_me_section_text">
-          Вашето самочувствие е в моите ръце! А това е мястото, където аз ще се
-          погрижа!
-        </p>
-      </section>
-
-      <section id="procedures" class="procedures">
-        <div class="background">
-          <img class="img" src="images/procedures/7.jpg" alt="" />
-        </div>
-        <div class="swiper procedures_swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="grid_wrapper">
-                <div class="background_square">
-                  <div class="swiper nested">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="image_cover">
-                          <img
-                            class="img"
-                            src="images/procedures/1.jpg"
-                            alt=""
-                          />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Fonts------------- -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Styles ---------------------- -->
+        <link rel="stylesheet" href="the_styles/reset.css" />
+        <link rel="stylesheet" href="the_styles/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+        <title>Nataliya Nenchova</title>
+    </head>
+    <body>
+        <!------ Header Section -------->
+        <header class="header">
+            <div id="nav_wrapper" class="wrapper">
+                <div class="mobile_nav">
+                    <div class="logo_wrapper">
+                        <h1 class="logo_img">Nataliya Nenchova</h1>
+                        <div class="sub_text_wrapper">
+                            <p class="sub_text">
+                                Permanent Make Up Expert & Trainer
+                            </p>
+                            <div class="hide_line"></div>
+                            <div class="line"></div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="image_cover">
-                          <img
-                            class="img"
-                            src="images/procedures/2.jpg"
-                            alt=""
-                          />
-                        </div>
-                      </div>
                     </div>
 
-                    <div id="prev_nested" class="swiper-button-prev">
-                      <i id="slider_btn" class="fas fa-chevron-left"></i>
+                    <div class="navbar__toggle" id="mobile-menu">
+                        <span class="bar"></span> <span class="bar"></span>
+                        <span class="bar"></span>
                     </div>
-                    <div id="next_nested" class="swiper-button-next">
-                      <i id="slider_btn" class="fas fa-chevron-right"></i>
-                    </div>
-                  </div>
+                </div>
+
+                <ul id="navigation" class="ul_wrapper">
+                    <li id="nav_item">
+                        <a id="home_btn" class="nav_link" href="">Начало</a>
+                    </li>
+                    <li id="nav_item">
+                        <a id="for_me_btn" class="nav_link" href="">Зa мен</a>
+                    </li>
+                    <li id="nav_item">
+                        <a id="procedures_btn" class="nav_link" href=""
+                            >Процедури</a
+                        >
+                    </li>
+                    <li id="nav_item">
+                        <a id="courses_btn" class="nav_link" href="">Курсове</a>
+                    </li>
+                    <li id="nav_item">
+                        <a id="constacts_btn" class="nav_link" href=""
+                            >Контакти</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="main">
+            <section id="hero_section" class="hero_section">
+                <div class="background_square"></div>
+                <div class="image_wrapper">
+                    <img
+                        class="hero_section_img"
+                        src="images/hero_section/hero-section-img.jpg"
+                        alt="studio picture"
+                    />
                 </div>
                 <div class="text_wrapper">
-                  <!-- Implement the SPAN with correct font -->
-                  <p class="text heading_text">
-                    Микропигментация на устни
-                    <span>Glossy Lips</span>
-                  </p>
-                  <p class="text">Моята страст!</p>
-                  <p class="text">
-                    Микропигментация на устни
-                    <span>Glossy Lips!</span>
-                  </p>
-                  <p class="text main_text">
-                    Техника с която перманентно оцветяваме устните до желаната
-                    от вас интензивност! От деликатни нюд цветове, до по-плътни,
-                    оформяйки контура и коригирайки ако има нужда формата и
-                    несъвършенствата. Изключително подходящ метод за дами с
-                    хиалурон в устните. Поради спецификата на работата и
-                    процедурата е необходима предварителна консултация, която е
-                    напълно безплатна и аз с удоволствие ще отделя необходимото
-                    време.
-                  </p>
-                  <p class="text prices_text">Цена на процедурата:</p>
-                  <!-- Implement the SPAN -->
-                  <p class="text price_desc">
-                    <span>300</span> лв.с включен ретуш, който задължително
-                    правим след месец.
-                  </p>
+                    <p class="hero_section_text">
+                        Аз съм Наталия Ненчова! От 7 години се занимавам с
+                        перманентен грим и миглопластика! Три са водещите неща в
+                        практиката ми! Безопасност! Бързо заздравяване!
+                        Качествена работа! Имам привилегията да бъда тренер към
+                        Amiea академия България! Немски бранд и единствената
+                        компания за перманентен грим в света, сертифицирана по
+                        медицински стандарти. Аз не съм художник! Не съм и
+                        татуист! Аз съм експерт, който когато вижда цел, не
+                        вижда препятствия!
+                    </p>
                 </div>
-              </div>
-            </div>
+            </section>
 
-            <div class="swiper-slide">
-              <div class="grid_wrapper">
-                <div class="background_square">
-                  <div class="swiper nested">
+            <section id="for_me_section">
+                <div class="wrapper">
+                    <div class="circle"></div>
+                    <div class="swiper for_me_swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img
+                                    class="img"
+                                    src="images/for_me/1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    class="img"
+                                    src="images/for_me/2.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    class="img"
+                                    src="images/for_me/3.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    class="img"
+                                    src="images/for_me/4.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    class="img"
+                                    src="images/for_me/5.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    class="img"
+                                    src="images/for_me/6.jpg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div id="for_me_swiper_prev" class="swiper-button-prev">
+                            <i id="slider_btn" class="fas fa-chevron-left"></i>
+                        </div>
+                        <div id="for_me_swiper_next" class="swiper-button-next">
+                            <i id="slider_btn" class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="for_me_section_text">
+                    Вашето самочувствие е в моите ръце! А това е мястото, където
+                    аз ще се погрижа!
+                </p>
+            </section>
+
+            <section id="procedures" class="procedures">
+                <div class="global_wrapper">
+                    <div class="background">
+                        <img class="img" src="images/procedures/7.jpg" alt="" />
+                    </div>
+                    <div class="swiper procedures_swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="grid_wrapper">
+                                    <div class="background_square">
+                                        <div class="swiper nested">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="image_cover">
+                                                        <img
+                                                            class="img"
+                                                            src="images/procedures/1.jpg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="image_cover">
+                                                        <img
+                                                            class="img"
+                                                            src="images/procedures/2.jpg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                id="prev_nested"
+                                                class="swiper-button-prev"
+                                            >
+                                                <i
+                                                    id="slider_btn"
+                                                    class="fas fa-chevron-left"
+                                                ></i>
+                                            </div>
+                                            <div
+                                                id="next_nested"
+                                                class="swiper-button-next"
+                                            >
+                                                <i
+                                                    id="slider_btn"
+                                                    class="fas fa-chevron-right"
+                                                ></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text_wrapper">
+                                        <!-- Implement the SPAN with correct font -->
+                                        <p class="text heading_text">
+                                            Микропигментация на устни
+                                            <span>Glossy Lips</span>
+                                        </p>
+                                        <p class="text">Моята страст!</p>
+                                        <p class="text">
+                                            Микропигментация на устни
+                                            <span>Glossy Lips!</span>
+                                        </p>
+                                        <p class="text main_text">
+                                            Техника с която перманентно
+                                            оцветяваме устните до желаната от
+                                            вас интензивност! От деликатни нюд
+                                            цветове, до по-плътни, оформяйки
+                                            контура и коригирайки ако има нужда
+                                            формата и несъвършенствата.
+                                            Изключително подходящ метод за дами
+                                            с хиалурон в устните. Поради
+                                            спецификата на работата и
+                                            процедурата е необходима
+                                            предварителна консултация, която е
+                                            напълно безплатна и аз с удоволствие
+                                            ще отделя необходимото време.
+                                        </p>
+                                        <p class="text prices_text">
+                                            Цена на процедурата:
+                                        </p>
+                                        <!-- Implement the SPAN -->
+                                        <p class="text price_desc">
+                                            <span>300</span> лв.с включен ретуш,
+                                            който задължително правим след
+                                            месец.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="grid_wrapper">
+                                    <div class="background_square">
+                                        <div class="swiper nested">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="image_cover">
+                                                        <img
+                                                            class="img"
+                                                            src="images/procedures/2.jpg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="image_cover">
+                                                        <img
+                                                            class="img"
+                                                            src="images/procedures/2.jpg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                id="prev_nested"
+                                                class="swiper-button-prev"
+                                            >
+                                                <i
+                                                    id="slider_btn"
+                                                    class="fas fa-chevron-left"
+                                                ></i>
+                                            </div>
+                                            <div
+                                                id="next_nested"
+                                                class="swiper-button-next"
+                                            >
+                                                <i
+                                                    id="slider_btn"
+                                                    class="fas fa-chevron-right"
+                                                ></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text_wrapper">
+                                        <!-- Implement the SPAN with correct font -->
+                                        <p class="text heading_text">
+                                            Микропигментация на вежди
+                                        </p>
+                                        <p class="text">
+                                            Микропигментация на вежди!
+                                        </p>
+                                        <p class="text">
+                                            Моята крайна цел! Естествено красиви
+                                            вежди!
+                                        </p>
+                                        <p class="text main_text">
+                                            Процедура, с която много нежно
+                                            подчертаваме и попълваме липсващите
+                                            косъмчета! Извършва се в два етапа.
+                                            Първа процедура и задължителен
+                                            ретуш, който правим след
+                                            <span>40</span> дни. Важно!
+                                            Окончателно завършени веждите ще
+                                            бъдат след ретуша! Безболезнен метод
+                                            и с много лек възстановителен
+                                            период.
+                                        </p>
+                                        <p class="text prices_text">
+                                            Цена на процедурата:
+                                        </p>
+                                        <!-- Implement the SPAN -->
+                                        <p class="text price_desc">
+                                            <span>500</span> с включен ретуш,
+                                            който правим след
+                                            <span>40</span> дни.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="grid_wrapper">
+                                    <div class="background_square">
+                                        <div class="swiper nested">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="image_cover">
+                                                        <img
+                                                            class="img"
+                                                            src="images/procedures/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="image_cover">
+                                                        <img
+                                                            class="img"
+                                                            src="images/procedures/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                id="prev_nested"
+                                                class="swiper-button-prev"
+                                            >
+                                                <i
+                                                    id="slider_btn"
+                                                    class="fas fa-chevron-left"
+                                                ></i>
+                                            </div>
+                                            <div
+                                                id="next_nested"
+                                                class="swiper-button-next"
+                                            >
+                                                <i
+                                                    id="slider_btn"
+                                                    class="fas fa-chevron-right"
+                                                ></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text_wrapper">
+                                        <!-- Implement the SPAN with correct font -->
+                                        <p class="text heading_text">
+                                            Перманентна очна линия
+                                        </p>
+                                        <p class="text">
+                                            Перманентна очна линия!
+                                        </p>
+                                        <p class="text">
+                                            Класическа, с опушен ефект или само
+                                            между миглите !
+                                        </p>
+                                        <p class="text main_text">
+                                            Техниката преценяваме при
+                                            консултацията в зависимост от
+                                            физиологията на окото. Имайки
+                                            впредвид зоната, може да се получи
+                                            оток и зачервяване на клепача който
+                                            отшумява до три дни. Трайността във
+                                            времето е от
+                                            <span>1</span> до
+                                            <span>5</span> години.
+                                        </p>
+                                        <p class="text prices_text">
+                                            Цена на процедурата:
+                                        </p>
+                                        <!-- Implement the SPAN -->
+                                        <p class="text price_desc">
+                                            <span>500</span> с включен ретуш,
+                                            който правим след
+                                            <span>40</span> дни.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="grid_wrapper">
+                                    <div class="background_square">
+                                        <div class="swiper nested">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="image_cover">
+                                                        <img
+                                                            class="img"
+                                                            src="images/procedures/5.jpg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="image_cover">
+                                                        <img
+                                                            class="img"
+                                                            src="images/procedures/5.jpg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                id="prev_nested"
+                                                class="swiper-button-prev"
+                                            >
+                                                <i
+                                                    id="slider_btn"
+                                                    class="fas fa-chevron-left"
+                                                ></i>
+                                            </div>
+                                            <div
+                                                id="next_nested"
+                                                class="swiper-button-next"
+                                            >
+                                                <i
+                                                    id="slider_btn"
+                                                    class="fas fa-chevron-right"
+                                                ></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text_wrapper">
+                                        <!-- Implement the SPAN with correct font -->
+                                        <p class="text heading_text">
+                                            Микроблейдинг
+                                        </p>
+                                        <p class="text">
+                                            Микроблейдинг! Ръчен метод, с който
+                                            посредством много финни микро игли
+                                            създаваме изкуствени косъмчета на
+                                            веждата. Предпочитана техника за
+                                            максимално естествен резултат!
+                                        </p>
+                                        <p class="text main_text">
+                                            Важно! Този метод не е подходящ за
+                                            дами със смесен тип или мазна кожа.
+                                        </p>
+                                        <p class="text prices_text">
+                                            Цена на процедурата:
+                                        </p>
+                                        <!-- Implement the SPAN -->
+                                        <p class="text price_desc">
+                                            <span>250</span> с включен ретуш,
+                                            който правим след
+                                            <span>40</span> дни.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="grid_wrapper">
+                                    <div class="background_square">
+                                        <div class="swiper nested">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="image_cover">
+                                                        <img
+                                                            class="img"
+                                                            src="images/procedures/6.jpg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="image_cover">
+                                                        <img
+                                                            class="img"
+                                                            src="images/procedures/6.jpg"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                id="prev_nested"
+                                                class="swiper-button-prev"
+                                            >
+                                                <i
+                                                    id="slider_btn"
+                                                    class="fas fa-chevron-left"
+                                                ></i>
+                                            </div>
+                                            <div
+                                                id="next_nested"
+                                                class="swiper-button-next"
+                                            >
+                                                <i
+                                                    id="slider_btn"
+                                                    class="fas fa-chevron-right"
+                                                ></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text_wrapper">
+                                        <!-- Implement the SPAN with correct font -->
+                                        <p class="text heading_text">
+                                            Камуфлаж
+                                        </p>
+                                        <p class="text">Ново!Ново!Ново!</p>
+                                        <p class="text">КАМУФЛАЖ</p>
+                                        <p class="text main_text">
+                                            Този нов и иновативен метод дава
+                                            възможност да оцветим перманентно
+                                            участъци от кожата на тялото и
+                                            лицето. Успешно се повлияват белези
+                                            от травми, следоперативни белези
+                                            след поставяне на силиконови
+                                            импланти на гърдите,
+                                            абдоминопластика, стрии и витилиго.
+                                            Необходими са от
+                                            <span>2</span> до
+                                            <span>4</span> процедури за добър
+                                            краен резултат.
+                                        </p>
+                                        <p class="text prices_text">
+                                            Цена на процедурата:
+                                        </p>
+                                        <!-- Implement the SPAN -->
+                                        <p class="text price_desc">НЯМА</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            id="procedures_swiper_prev"
+                            class="swiper-button-prev"
+                        >
+                            <i id="slider_btn" class="fas fa-chevron-left"></i>
+                        </div>
+                        <div
+                            id="procedures_swiper_next"
+                            class="swiper-button-next"
+                        >
+                            <i id="slider_btn" class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="opinions">
+                <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="image_cover">
-                          <img
-                            class="img"
-                            src="images/procedures/2.jpg"
-                            alt=""
-                          />
+                        <div class="swiper-slide">
+                            <div class="square">
+                                <div class="image_wrapper">
+                                    <img src="images/comments/6.jpg" alt="" />
+                                </div>
+                                <div class="text_wrapper">
+                                    <p class="text">
+                                        Възползва се от процедурата
+                                        Микропигментация на вежди.
+                                    </p>
+                                    <br />
+                                    <p class="text">
+                                        " Страхотен професионалист, благодаря от
+                                        ♥️! "
+                                    </p>
+                                </div>
+                                <div class="name_wrapper">
+                                    <p>Десислава</p>
+                                    <p>Шопова</p>
+                                </div>
+
+                                <div class="arrow-right"></div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="image_cover">
-                          <img
-                            class="img"
-                            src="images/procedures/2.jpg"
-                            alt=""
-                          />
+                        <div class="swiper-slide">
+                            <div class="square">
+                                <div class="image_wrapper">
+                                    <img src="images/comments/5.jpg" alt="" />
+                                </div>
+                                <div class="text_wrapper">
+                                    <p class="text">
+                                        Много скъпа клиентка, която ми се довери
+                                        да бъде моя първа студентка.
+                                    </p>
+                                    <br />
+                                    <p class="text">
+                                        " Благодаря, Наталия за спокойствието,
+                                        куража и вярата, родена си да обучаваш и
+                                        да показваш тънкостите! "
+                                    </p>
+                                </div>
+                                <div class="name_wrapper">
+                                    <p>Недялка</p>
+                                    <p>Димитрова</p>
+                                </div>
+
+                                <div class="arrow-right"></div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
+                        <div class="swiper-slide">
+                            <div class="square">
+                                <div class="image_wrapper">
+                                    <img src="images/comments/1.jpg" alt="" />
+                                </div>
+                                <div class="text_wrapper">
+                                    <p class="text">
+                                        Патрисия Иванова Завършила базов курс
+                                        Миглопластика и вече успешно работи като
+                                        миглостилист в гр.Пловдив.
+                                    </p>
+                                    <br />
+                                    <p class="text">
+                                        " За мен е чест да познавам Наталия и да
+                                        бъде мой ментор! Изключително голям
+                                        професионалист,предразполагаща, любезна,
+                                        отзивчива, коректна. Тя предлага
+                                        индивидуално обучение на курсиста като
+                                        следи работата отблизо. Ако имате
+                                        проблем- тя Ви обяснява спокойно какво
+                                        грешите и наистина може да се научите.
+                                        Обучението беше много ползотворно за
+                                        мен! Силно я препоръчвам, ако имате
+                                        желание то да се занимавате с нов
+                                        занаят- Миглопластиката. Избрах нея за
+                                        своето обучение и се радвам
+                                        изключително, че го направих! Много й
+                                        благодаря за всеотдайността и прекрасния
+                                        начин на работа❤️❤️❤️ "
+                                    </p>
+                                </div>
+                                <div class="name_wrapper">
+                                    <p>Патрисия</p>
+                                    <p>Иванова</p>
+                                </div>
 
-                    <div id="prev_nested" class="swiper-button-prev">
-                      <i id="slider_btn" class="fas fa-chevron-left"></i>
-                    </div>
-                    <div id="next_nested" class="swiper-button-next">
-                      <i id="slider_btn" class="fas fa-chevron-right"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="text_wrapper">
-                  <!-- Implement the SPAN with correct font -->
-                  <p class="text heading_text">Микропигментация на вежди</p>
-                  <p class="text">Микропигментация на вежди!</p>
-                  <p class="text">
-                    Моята крайна цел! Естествено красиви вежди!
-                  </p>
-                  <p class="text main_text">
-                    Процедура, с която много нежно подчертаваме и попълваме
-                    липсващите косъмчета! Извършва се в два етапа. Първа
-                    процедура и задължителен ретуш, който правим след
-                    <span>40</span> дни. Важно! Окончателно завършени веждите ще
-                    бъдат след ретуша! Безболезнен метод и с много лек
-                    възстановителен период.
-                  </p>
-                  <p class="text prices_text">Цена на процедурата:</p>
-                  <!-- Implement the SPAN -->
-                  <p class="text price_desc">
-                    <span>500</span> с включен ретуш, който правим след
-                    <span>40</span> дни.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="grid_wrapper">
-                <div class="background_square">
-                  <div class="swiper nested">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="image_cover">
-                          <img
-                            class="img"
-                            src="images/procedures/3.jpg"
-                            alt=""
-                          />
+                                <div class="arrow-right"></div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="image_cover">
-                          <img
-                            class="img"
-                            src="images/procedures/3.jpg"
-                            alt=""
-                          />
+
+                        <div class="swiper-slide">
+                            <div class="square">
+                                <div class="image_wrapper">
+                                    <img src="images/comments/3.jpg" alt="" />
+                                </div>
+                                <div class="text_wrapper">
+                                    <p class="text"></p>
+                                    <br />
+                                    <p class="text">
+                                        " Когато става въпрос за красотата ни,
+                                        за нас дамите е много важно на кого ще
+                                        се доверим. Наталка е страхотен
+                                        професионалист, които ще ви предложи
+                                        едно приятно изживяване и ще ви накара
+                                        да се почувствате специални. Преди
+                                        повече от 7 години аз я избрах, аз и се
+                                        доверих и нито за миг не съм изпитала
+                                        колебание относно избора си. Успява да
+                                        накара всеки клиент да се почувства
+                                        единствен и уникален, винаги дава
+                                        експертни съвети и подхожда индивидуално
+                                        към всеки! Горещо препоръчвам!!!!❤️🍀 "
+                                    </p>
+                                </div>
+                                <div class="name_wrapper">
+                                    <p>Настя</p>
+                                    <p>Йотина</p>
+                                </div>
+
+                                <div class="arrow-right"></div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
+                        <div class="swiper-slide">
+                            <div class="square">
+                                <div class="image_wrapper">
+                                    <img src="images/comments/2.jpg" alt="" />
+                                </div>
 
-                    <div id="prev_nested" class="swiper-button-prev">
-                      <i id="slider_btn" class="fas fa-chevron-left"></i>
-                    </div>
-                    <div id="next_nested" class="swiper-button-next">
-                      <i id="slider_btn" class="fas fa-chevron-right"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="text_wrapper">
-                  <!-- Implement the SPAN with correct font -->
-                  <p class="text heading_text">Перманентна очна линия</p>
-                  <p class="text">Перманентна очна линия!</p>
-                  <p class="text">
-                    Класическа, с опушен ефект или само между миглите !
-                  </p>
-                  <p class="text main_text">
-                    Техниката преценяваме при консултацията в зависимост от
-                    физиологията на окото. Имайки впредвид зоната, може да се
-                    получи оток и зачервяване на клепача който отшумява до три
-                    дни. Трайността във времето е от
-                    <span>1</span> до <span>5</span> години.
-                  </p>
-                  <p class="text prices_text">Цена на процедурата:</p>
-                  <!-- Implement the SPAN -->
-                  <p class="text price_desc">
-                    <span>500</span> с включен ретуш, който правим след
-                    <span>40</span> дни.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="grid_wrapper">
-                <div class="background_square">
-                  <div class="swiper nested">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="image_cover">
-                          <img
-                            class="img"
-                            src="images/procedures/5.jpg"
-                            alt=""
-                          />
+                                <div class="text_wrapper">
+                                    <p class="text"></p>
+                                    <br />
+                                    <p class="text">
+                                        " Страхотен професионалист!!!
+                                        Най-доброто решение, което съм правила е
+                                        да изкарам курс за миглопластика при
+                                        нея. Благодарна съм ѝ за огромната
+                                        подкрепа и мотивация, която получих.
+                                        Любезна, отзивчива, всеотдайна и винаги
+                                        готова да помогне - така бих описала
+                                        прекрасната Наталка!❤️❤️❤️ "
+                                    </p>
+                                </div>
+
+                                <div class="name_wrapper">
+                                    <p>Катерина</p>
+                                    <p>Арабаджиева</p>
+                                </div>
+
+                                <div class="arrow-right"></div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="image_cover">
-                          <img
-                            class="img"
-                            src="images/procedures/5.jpg"
-                            alt=""
-                          />
+                        <div class="swiper-slide">
+                            <div class="square">
+                                <div class="image_wrapper">
+                                    <img src="images/comments/4.jpg" alt="" />
+                                </div>
+
+                                <div class="text_wrapper">
+                                    <p class="text"></p>
+                                    <br />
+                                    <p class="text">
+                                        " Прекрасен професионалист, талант, със
+                                        страхотни видими резултати! Благодаря
+                                        ти! Продължавай да твориш и да ни правиш
+                                        толкова красиви!🙏💫😘😘 "
+                                    </p>
+                                </div>
+
+                                <div class="name_wrapper">
+                                    <p>Мария</p>
+                                    <p>Йорданова</p>
+                                </div>
+
+                                <div class="arrow-right"></div>
+                            </div>
                         </div>
-                      </div>
                     </div>
+                    <div class="swiper-pagination"></div>
+                    <div id="comments_prev" class="swiper-button-prev"></div>
+                    <div id="comments_next" class="swiper-pagination"></div>
+                </div>
+            </section>
 
-                    <div id="prev_nested" class="swiper-button-prev">
-                      <i id="slider_btn" class="fas fa-chevron-left"></i>
+            <section id="trainings" class="trainings">
+                <div class="wrapper">
+                    <div class="text-wrapper">
+                        <p class="heading">Обучения по перманентен грим</p>
+                        <p class="desc">
+                            Ако имате желание за нова професия и искате да се
+                            развиете като добър специалист в тази сфера, можете
+                            да разгледате програмата и да се свържете с мен за
+                            подробна информация. Обученията могат да се проведат
+                            и индивидуално в удобно за вас време в академията,
+                            която създадох. Ще се радвам ако ми се доверите!
+                        </p>
                     </div>
-                    <div id="next_nested" class="swiper-button-next">
-                      <i id="slider_btn" class="fas fa-chevron-right"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="text_wrapper">
-                  <!-- Implement the SPAN with correct font -->
-                  <p class="text heading_text">Микроблейдинг</p>
-                  <p class="text">
-                    Микроблейдинг! Ръчен метод, с който посредством много финни
-                    микро игли създаваме изкуствени косъмчета на веждата.
-                    Предпочитана техника за максимално естествен резултат!
-                  </p>
-                  <p class="text main_text">
-                    Важно! Този метод не е подходящ за дами със смесен тип или
-                    мазна кожа.
-                  </p>
-                  <p class="text prices_text">Цена на процедурата:</p>
-                  <!-- Implement the SPAN -->
-                  <p class="text price_desc">
-                    <span>250</span> с включен ретуш, който правим след
-                    <span>40</span> дни.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="grid_wrapper">
-                <div class="background_square">
-                  <div class="swiper nested">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="image_cover">
-                          <img
-                            class="img"
-                            src="images/procedures/6.jpg"
-                            alt=""
-                          />
+                    <div class="swiper trainings_wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/trainings/1.jpg" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/trainings/1.jpg" alt="" />
+                            </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="image_cover">
-                          <img
-                            class="img"
-                            src="images/procedures/6.jpg"
-                            alt=""
-                          />
+
+                        <div
+                            id="trainings_wrapper_prev"
+                            class="swiper-button-prev"
+                        >
+                            <i id="slider_btn" class="fas fa-chevron-left"></i>
                         </div>
-                      </div>
+                        <div
+                            id="trainings_wrapper_next"
+                            class="swiper-button-next"
+                        >
+                            <i id="slider_btn" class="fas fa-chevron-right"></i>
+                        </div>
                     </div>
+                    <div class="text-wrapper">
+                        <p class="heading">Обучение по Миглопластика</p>
+                        <p class="desc">
+                            Перфектната класика! Базов курс за начинаещи, който
+                            ще ви даде стабилна основа да стартирате като
+                            специалист в тази област. Десет дневно индивидуално
+                            обучение, което обхваща следните техники: Косъм по
+                            косъм 2D обем Хибридна техника 3D обем Цветна
+                            миглопластика Богата теория и много практика!
+                            Получавате сертификат акретитиран с LASH INC. Цена
+                            на обучението-1000лв.
+                        </p>
+                    </div>
+                    <div class="swiper training_wrapper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/trainings/2.jpg" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/trainings/2.jpg" alt="" />
+                            </div>
+                        </div>
 
-                    <div id="prev_nested" class="swiper-button-prev">
-                      <i id="slider_btn" class="fas fa-chevron-left"></i>
+                        <div
+                            id="training_wrapper2_prev"
+                            class="swiper-button-prev"
+                        >
+                            <i id="slider_btn" class="fas fa-chevron-left"></i>
+                        </div>
+                        <div
+                            id="training_wrapper2_next"
+                            class="swiper-button-next"
+                        >
+                            <i id="slider_btn" class="fas fa-chevron-right"></i>
+                        </div>
                     </div>
-                    <div id="next_nested" class="swiper-button-next">
-                      <i id="slider_btn" class="fas fa-chevron-right"></i>
-                    </div>
-                  </div>
                 </div>
-                <div class="text_wrapper">
-                  <!-- Implement the SPAN with correct font -->
-                  <p class="text heading_text">Камуфлаж</p>
-                  <p class="text">Ново!Ново!Ново!</p>
-                  <p class="text">КАМУФЛАЖ</p>
-                  <p class="text main_text">
-                    Този нов и иновативен метод дава възможност да оцветим
-                    перманентно участъци от кожата на тялото и лицето. Успешно
-                    се повлияват белези от травми, следоперативни белези след
-                    поставяне на силиконови импланти на гърдите,
-                    абдоминопластика, стрии и витилиго. Необходими са от
-                    <span>2</span> до <span>4</span> процедури за добър краен
-                    резултат.
-                  </p>
-                  <p class="text prices_text">Цена на процедурата:</p>
-                  <!-- Implement the SPAN -->
-                  <p class="text price_desc">НЯМА</p>
-                </div>
-              </div>
-            </div>
-          </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
 
-          <div id="procedures_swiper_prev" class="swiper-button-prev">
-            <i id="slider_btn" class="fas fa-chevron-left"></i>
-          </div>
-          <div id="procedures_swiper_next" class="swiper-button-next">
-            <i id="slider_btn" class="fas fa-chevron-right"></i>
-          </div>
-        </div>
-      </section>
-
-      <section class="opinions vol1">
-        <div class="square">
-          <div class="image_wrapper">
-            <img src="images/comments/1.jpg" alt="" />
-          </div>
-          <p class="text">
-            Възползва се от процедурата Микропигментация на вежди. ​ " Страхотен
-            професионалист ,благодаря от ♥️! "
-          </p>
-          <div class="arrow-right"></div>
-        </div>
-        <div class="square">
-            <div class="image_wrapper">
-              <img src="images/comments/2.jpg" alt="" />
-            </div>
-            <p class="text">
-              Възползва се от процедурата Микропигментация на вежди. ​ " Страхотен
-              професионалист ,благодаря от ♥️! "
-            </p>
-            <div class="arrow-right"></div>
-          </div>
-      </section>
-
-      <section id="trainings" class="trainings">
-        <div class="wrapper">
-          <div class="text-wrapper">
-            <p class="heading">Обучения по перманентен грим</p>
-            <p class="desc">
-              Ако имате желание за нова професия и искате да се развиете като
-              добър специалист в тази сфера, можете да разгледате програмата и
-              да се свържете с мен за подробна информация. Обученията могат да
-              се проведат и индивидуално в удобно за вас време в академията,
-              която създадох. Ще се радвам ако ми се доверите!
-            </p>
-          </div>
-          <div class="swiper trainings_wrapper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="images/trainings/1.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/trainings/1.jpg" alt="" />
-              </div>
-            </div>
-
-            <div id="trainings_wrapper_prev" class="swiper-button-prev">
-              <i id="slider_btn" class="fas fa-chevron-left"></i>
-            </div>
-            <div id="trainings_wrapper_next" class="swiper-button-next">
-              <i id="slider_btn" class="fas fa-chevron-right"></i>
-            </div>
-          </div>
-          <div class="text-wrapper">
-            <p class="heading">Обучение по Миглопластика</p>
-            <p class="desc">
-              Перфектната класика! Базов курс за начинаещи, който ще ви даде
-              стабилна основа да стартирате като специалист в тази област. Десет
-              дневно индивидуално обучение, което обхваща следните техники:
-              Косъм по косъм 2D обем Хибридна техника 3D обем Цветна
-              миглопластика Богата теория и много практика! Получавате
-              сертификат акретитиран с LASH INC. Цена на обучението-1000лв.
-            </p>
-          </div>
-          <div class="swiper training_wrapper2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="images/trainings/2.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/trainings/2.jpg" alt="" />
-              </div>
-            </div>
-
-            <div id="training_wrapper2_prev" class="swiper-button-prev">
-              <i id="slider_btn" class="fas fa-chevron-left"></i>
-            </div>
-            <div id="training_wrapper2_next" class="swiper-button-next">
-              <i id="slider_btn" class="fas fa-chevron-right"></i>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="the_scripts/for_me_page_slider_config.js"></script>
-    <script src="the_scripts/background_clicking.js"></script>
-    <script src="the_scripts/mobile_menu.js"></script>
-    <script src="the_scripts/test.js"></script>
-  </body>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="the_scripts/for_me_page_slider_config.js"></script>
+        <script src="the_scripts/mobile_menu.js"></script>
+        <script src="the_scripts/navigationFunc.js"></script>
+    </body>
 </html>

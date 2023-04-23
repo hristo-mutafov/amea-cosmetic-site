@@ -1,9 +1,14 @@
 
 
 .procedures {
-    position: relative;
+    /* position: relative; */
     max-width: 1920px;
     width: 100%;
+    padding-top: 79px;
+}
+
+.procedures .global_wrapper {
+    position: relative;
 }
 
 .procedures .background {
