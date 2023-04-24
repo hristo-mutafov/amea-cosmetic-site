@@ -13,8 +13,8 @@ html {
 
 body {
   background-color: #d0d1d1;
+  overflow-x: hidden;
 }
-
 #slider_btn {
   font-size: 30px;
   color: rgba(0, 0, 0, 0.75);
