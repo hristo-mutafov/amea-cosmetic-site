@@ -60,6 +60,15 @@
     font-size: 20px;
 }
 
+.hero_section .decoration {
+    position: absolute;
+    width: 200px;
+    height:200px;
+    bottom: 80px;
+    left: 6%;
+    z-index: 0;
+}
+
 @media screen and (max-width: 1720px) {
     .hero_section .text_wrapper .hero_section_text {
         font-size: 18px;
@@ -165,6 +174,10 @@
 
     .hero_section .text_wrapper .hero_section_text {
         font-size: 20px;
+    }
+
+    .hero_section .decoration {
+        display: none;
     }
 
 }
