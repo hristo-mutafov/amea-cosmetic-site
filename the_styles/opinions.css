@@ -1,12 +1,15 @@
 .opinions {
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
     max-height: 400px;
     height: 50vh;
     margin-top: 79px;
+    overflow: hidden;
 }
 
 .opinions .swiper {
     height: 100%;
+   width: 1920px;
 }
 
 .opinions .square {
@@ -18,6 +21,7 @@
     height:300px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    
 }
 
 .opinions .square .image_wrapper {
@@ -66,9 +70,13 @@
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 670px) {
+    .opinions .swiper-slide {
+        margin-right: 0px;
+    }
+
     .opinions {
-        height: 30vh;
+        height: 35vh;
     }
 
     .opinions .square {
@@ -99,9 +107,9 @@
     }
 }
 
-@media screen and (max-width: 448px) {
-    .opinions {
-        height: 25vh;
+@media screen and (max-width: 496px) {
+    .opinions .swiper-slide {
+        flex-shrink: 0.1;
     }
 
     .opinions .square {
@@ -121,6 +129,36 @@
 
     .opinions .square .name_wrapper {
         font-size: 16px;
+    }
+
+    .opinions .arrow-right {
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+        border-left: 50px solid #b4347f;
+
+        bottom: -48px;
+    }
+}
+
+@media screen and (max-width: 336px) {
+
+    .opinions .square {
+        padding: 20px 0px;
+        width: 200px;
+        height:180px;
+    }
+
+    .opinions .square .image_wrapper {
+        width: 60px;
+        height: 66px;
+    }
+
+    .opinions .square .text_wrapper {
+        font-size: 10px;
+    }
+
+    .opinions .square .name_wrapper {
+        font-size: 12px;
     }
 
     .opinions .arrow-right {

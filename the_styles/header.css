@@ -139,10 +139,12 @@ transform: translateY(-8px) rotate(-45deg);
     flex-direction: column;
     display: block;
     text-align: center;
+    padding: 0;
 }
 
 .header .wrapper .ul_wrapper.active #nav_item {
     padding: 20px;
+    margin: 0;
 }
 
 .header .wrapper .ul_wrapper.active .nav_link {

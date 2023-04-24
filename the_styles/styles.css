@@ -6,6 +6,7 @@
 @import url(opinions.css);
 @import url(trainings.css);
 @import url(footer.css);
+@import url(brochure.css);
 
 html {
   scroll-behavior: smooth !important;
@@ -13,7 +14,9 @@ html {
 
 body {
   background-color: #d0d1d1;
-  overflow-x: hidden;
+  /* overflow-x: hidden !important; */
+  width: 100%;
+  /* overflow: hidden !important; */
 }
 #slider_btn {
   font-size: 30px;
