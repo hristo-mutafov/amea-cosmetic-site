@@ -52,14 +52,10 @@ const swiper5 = new Swiper('.opinions_swiper', {
     slidesPerView: 3,
     freeMode: true,
     loop: true,
-    // pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    // },
-    // navigation: {
-    //     nextEl: '#comments_next',
-    //     prevEl: '#comments_prev',
-    // },
+    navigation: {
+        nextEl: '#comments_next',
+        prevEl: '#comments_prev',
+    },
 });
 
 const swiper6 = new Swiper('.brochure_swiper', {

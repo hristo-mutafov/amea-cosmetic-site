@@ -1,54 +1,63 @@
 // get buttons
-const homeBtn = document.getElementById("home_btn");
-const forMeBtn = document.getElementById("for_me_btn");
-const proceduresBtn = document.getElementById("procedures_btn");
-const coursesBtn = document.getElementById("courses_btn");
-const contactsBtn = document.getElementById("constacts_btn");
+const homeBtn = document.getElementById('home_btn');
+const logoBtn = document.getElementById('logo_btn');
+const forMeBtn = document.getElementById('for_me_btn');
+const proceduresBtn = document.getElementById('procedures_btn');
+const coursesBtn = document.getElementById('courses_btn');
+const contactsBtn = document.getElementById('constacts_btn');
 
-const closeMobile = document.getElementById("mobile-menu");
+const closeMobile = document.getElementById('mobile-menu');
 
 // Get all sections
-const heroSection = document.getElementById("hero_section");
-const forMeSection = document.getElementById("for_me_section");
-const proseduresSection = document.getElementById("procedures");
+const heroSection = document.getElementById('hero_section');
+const forMeSection = document.getElementById('for_me_section');
+const proseduresSection = document.getElementById('procedures');
 const trainingsSection = document.getElementById('trainings');
 
-homeBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (screen.width <= 960) {
-    closeMobile.click()
-  }
-  window.scrollTo(0, 0)
+homeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (screen.width <= 960) {
+        closeMobile.click();
+    }
+    window.scrollTo(0, 0);
 });
 
-forMeBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (screen.width <= 960) {
-    closeMobile.click()
-  }
-  window.scrollTo(0, heroSection.offsetHeight)
+logoBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (screen.width <= 960) {
+        closeMobile.click();
+    }
+    window.scrollTo(0, 0);
+});
+
+forMeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (screen.width <= 960) {
+        closeMobile.click();
+    }
+    window.scrollTo(0, heroSection.offsetHeight);
 });
 
 proceduresBtn.addEventListener('click', (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (screen.width <= 960) {
-        closeMobile.click()
+        closeMobile.click();
     }
-    proseduresSection.scrollIntoView()
-})
+    proseduresSection.scrollIntoView();
+});
 
 coursesBtn.addEventListener('click', (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (screen.width <= 960) {
-        closeMobile.click()
+        closeMobile.click();
     }
-    trainingsSection.scrollIntoView()
-})
+    trainingsSection.scrollIntoView();
+});
 
 contactsBtn.addEventListener('click', (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (screen.width <= 960) {
-        closeMobile.click()
+        closeMobile.click();
     }
-    window.scrollTo(0, document.body.scrollHeight)
-})
+    window.scrollTo(0, document.body.scrollHeight);
+});
