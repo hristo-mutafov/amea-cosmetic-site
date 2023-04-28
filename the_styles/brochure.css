@@ -52,12 +52,44 @@
     }
 
     .brochure .circle {
-        width: 280px;
-        height: 340px;
+        width: 320px;
+        height: 380px;
     }
     .brochure .swiper {
-        height: 328px;
+        height: 400px;
+        width: 260px;
+    
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .brochure {
+        height: 40vh;
+    }
+
+    .brochure .circle {
+        width: 260px;
+        height: 320px;
+    }
+    .brochure .swiper {
+        height: 320px;
         width: 200px;
+    
+    }
+}
+
+@media screen and (max-width: 236px) {
+    .brochure {
+        height: 40vh;
+    }
+
+    .brochure .circle {
+        width: 160px;
+        height: 220px;
+    }
+    .brochure .swiper {
+        height: 220px;
+        width: 130px;
     
     }
 }

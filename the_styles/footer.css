@@ -3,7 +3,6 @@
     margin: 0 auto;
     max-width: 1920px;
     background-color: #b4347f;
-    margin-top: 100px;
 
     color: #f5f5f7;
     display: grid;
@@ -13,6 +12,12 @@
     text-align: center;
     line-height: 1.5;
     font-size: 20px;
+}
+
+.footer .socials_wrapper .field {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
 }
 
 .footer .socials_wrapper a {
@@ -28,12 +33,12 @@
     width: 28px;
 }
 
-.footer .socials_wrapper .facebook {
-    margin-top: 20px;
+.footer .socials_wrapper .label {
+    margin-bottom: 20px;
 }
 
-.footer .emial_wrapper .email {
-    margin-top: 20px;
+.footer .emial_wrapper .label {
+    margin-bottom: 20px;
 }
 
 .underlined {
