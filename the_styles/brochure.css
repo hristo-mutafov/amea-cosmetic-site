@@ -6,7 +6,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin: 100px 0px;
+    margin: 30px 0px;
 }
 
 .brochure .circle {
@@ -52,16 +52,46 @@
     }
 
     .brochure .circle {
-        width: 320px;
-        height: 380px;
+        width: 100%;
+        height: 100%;
     }
+
     .brochure .swiper {
-        height: 400px;
-        width: 260px;
+        height:  500px;
+        width: 90%;
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 345px) {
+
+    .brochure .swiper {
+        height:  400px;
+    }
+}
+
+@media screen and (max-width: 278px) {
+    .brochure .circle {
+        width: 100%;
+        height: 80%;
+    }
+
+    .brochure .swiper {
+        height:  300px;
+    }
+}
+
+@media screen and (max-width: 216px) {
+
+    .brochure {
+        height: 30vh;
+    }
+
+    .brochure .swiper {
+        height:  200px;
+    }
+}
+
+/* @media screen and (max-width: 370px) {
     .brochure {
         height: 40vh;
     }
@@ -123,4 +153,4 @@
         width: 120px;
     
     }
-}
+} */
