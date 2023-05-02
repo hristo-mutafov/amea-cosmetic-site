@@ -58,38 +58,69 @@
     .brochure .swiper {
         height: 400px;
         width: 260px;
-    
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 370px) {
     .brochure {
         height: 40vh;
     }
 
     .brochure .circle {
-        width: 260px;
-        height: 320px;
+        width: 300px;
+        height: 340px;
     }
     .brochure .swiper {
-        height: 320px;
-        width: 200px;
+        height: 340px;
+        width: 240px;
     
     }
 }
 
-@media screen and (max-width: 236px) {
+@media screen and (max-width: 296px) {
     .brochure {
         height: 40vh;
     }
 
     .brochure .circle {
-        width: 160px;
+        width: 220px;
         height: 220px;
     }
     .brochure .swiper {
-        height: 220px;
-        width: 130px;
+        height: 280px;
+        width: 180px;
+    
+    }
+}
+
+@media screen and (max-width: 220px) {
+    .brochure {
+        height: 20vh;
+    }
+
+    .brochure .circle {
+        width: 180px;
+        height: 200px;
+    }
+    .brochure .swiper {
+        height: 240px;
+        width: 140px;
+    
+    }
+}
+
+@media screen and (max-width: 176px) {
+    .brochure {
+        height: 20vh;
+    }
+
+    .brochure .circle {
+        width: 180px;
+        height: 200px;
+    }
+    .brochure .swiper {
+        height: 200px;
+        width: 120px;
     
     }
 }
