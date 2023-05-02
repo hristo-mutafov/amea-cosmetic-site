@@ -6,7 +6,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin: 30px 0px;
+    margin: 60px 0px;
 }
 
 .brochure .circle {
@@ -82,75 +82,8 @@
 
 @media screen and (max-width: 216px) {
 
-    .brochure {
-        height: 30vh;
-    }
-
     .brochure .swiper {
         height:  200px;
     }
 }
 
-/* @media screen and (max-width: 370px) {
-    .brochure {
-        height: 40vh;
-    }
-
-    .brochure .circle {
-        width: 300px;
-        height: 340px;
-    }
-    .brochure .swiper {
-        height: 340px;
-        width: 240px;
-    
-    }
-}
-
-@media screen and (max-width: 296px) {
-    .brochure {
-        height: 40vh;
-    }
-
-    .brochure .circle {
-        width: 220px;
-        height: 220px;
-    }
-    .brochure .swiper {
-        height: 280px;
-        width: 180px;
-    
-    }
-}
-
-@media screen and (max-width: 220px) {
-    .brochure {
-        height: 20vh;
-    }
-
-    .brochure .circle {
-        width: 180px;
-        height: 200px;
-    }
-    .brochure .swiper {
-        height: 240px;
-        width: 140px;
-    
-    }
-}
-
-@media screen and (max-width: 176px) {
-    .brochure {
-        height: 20vh;
-    }
-
-    .brochure .circle {
-        width: 180px;
-        height: 200px;
-    }
-    .brochure .swiper {
-        height: 200px;
-        width: 120px;
-    
-    }
-} */
