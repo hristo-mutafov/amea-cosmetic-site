@@ -30,6 +30,11 @@
     width: 70%
 }
 
+.trainings .wrapper .text-wrapper .brochure_swiper {
+    width:200px;
+    height:300px;
+}
+
 
 .trainings .wrapper .swiper {
     width: 100%;
