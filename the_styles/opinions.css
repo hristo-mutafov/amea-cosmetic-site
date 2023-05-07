@@ -2,7 +2,7 @@
     max-width: 1920px;
     width: 100%;
     max-height: 400px;
-    height: 50vh;
+    height: 60vh;
     margin-top: 79px;
     overflow: hidden;
     position: relative;
@@ -10,7 +10,8 @@
 
 .opinions .swiper {
     height: 100%;
-   width: 1920px;
+    width: 1920px;
+    display: flex;
 }
 
 .opinions .square {
@@ -86,7 +87,7 @@
     }
 
     .opinions {
-        height: 35vh;
+        height: 42vh;
     }
 
     .opinions .square {

@@ -2,11 +2,12 @@
     max-width: 1920px;
     width: 100%;
     max-height: 800px;
-    height: 60vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: 60% 40%;
     gap: 30px;
-    margin: 100px 50px;
+    padding: 100px 50px;
+    padding-bottom: 0px;
     position: relative;
 }
 
@@ -16,7 +17,6 @@
 }
 
 #for_me_section .circle {
-    /* margin-top: 100px; */
     margin-left: 30px;
     width: 84%;
     height: 100%;
@@ -101,7 +101,10 @@
         grid-template-columns: 100%;
         grid-template-rows: repeat(2, 1fr);
         margin: 0px 50px;
-    }
+        margin-top: 50px;
+        padding: 0px;
+        max-height: 800px;
+    }   
 
     #for_me_section .wrapper {
         margin-top: 50px;
@@ -131,6 +134,10 @@
 @media screen and (max-width:580px) {
     #for_me_section .for_me_section_text {
         font-size: 1.2rem;
+    }
+
+    #for_me_section .swiper {
+        width: 80%;
     }
 }
 
