@@ -6,7 +6,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin: 60px 0px;
+    margin: 100px 0px;
 }
 
 .brochure .circle {
@@ -52,38 +52,75 @@
     }
 
     .brochure .circle {
-        width: 100%;
-        height: 100%;
+        width: 320px;
+        height: 380px;
     }
-
     .brochure .swiper {
-        height:  500px;
-        width: 90%;
+        height: 400px;
+        width: 260px;
     }
 }
 
-@media screen and (max-width: 345px) {
-
-    .brochure .swiper {
-        height:  400px;
+@media screen and (max-width: 370px) {
+    .brochure {
+        height: 40vh;
     }
-}
 
-@media screen and (max-width: 278px) {
     .brochure .circle {
-        width: 100%;
-        height: 80%;
+        width: 300px;
+        height: 340px;
     }
-
     .brochure .swiper {
-        height:  300px;
+        height: 340px;
+        width: 240px;
+    
     }
 }
 
-@media screen and (max-width: 216px) {
+@media screen and (max-width: 296px) {
+    .brochure {
+        height: 40vh;
+    }
 
+    .brochure .circle {
+        width: 220px;
+        height: 220px;
+    }
     .brochure .swiper {
-        height:  200px;
+        height: 280px;
+        width: 180px;
+    
     }
 }
 
+@media screen and (max-width: 220px) {
+    .brochure {
+        height: 20vh;
+    }
+
+    .brochure .circle {
+        width: 180px;
+        height: 200px;
+    }
+    .brochure .swiper {
+        height: 240px;
+        width: 140px;
+    
+    }
+}
+
+@media screen and (max-width: 176px) {
+    .brochure {
+        height: 20vh;
+    }
+
+    .brochure .circle {
+        width: 180px;
+        height: 200px;
+    }
+    .brochure .swiper {
+        height: 200px;
+        width: 120px;
+    
+    }
+}

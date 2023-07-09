@@ -1,76 +1,17 @@
-#prices {
-    padding: 80px 0px 
-}
-
-table {
-    border-collapse: collapse;
-    max-width: 1920px;
-    width: 100%;
+#prices.prices {
+    padding: 79px 0px;
 }
 
 .table th {
     font-size: 20px;
-    background-color: #b4347f;
-    color: #f5f5f7;
-    border-bottom: 1px solid #ddd;
-}
-
-.table tr:hover {
-    background-color: #bfbfbf;
-}
-
-.table th, .table td {
-    padding: 8px;
 }
 
 .table .bold {
     font-weight: 600;
-}
-
-.table .background {
-    background-color: #b94d8a;
+    background-color: #b4347f;
     color: #f5f5f7;
 }
 
 .table .distance {
     padding-left: 20px;
-}
-
-.table .price {
-    text-align: center;
-}
-
-@media screen and (max-width: 590px) {
-    .table th {
-        font-size: 16px;
-    }
-    .table td {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 476px) {
-    .table th {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 435px) {
-    .table th {
-        font-size: 12px;
-    }
-
-    .table td {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 278px) {
-    .table th {
-        font-size: 10px;
-    }
-
-    .table td {
-        font-size: 10px;
-    }
 }

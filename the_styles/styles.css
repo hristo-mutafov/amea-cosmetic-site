@@ -6,8 +6,9 @@
 @import url(opinions.css);
 @import url(trainings.css);
 @import url(footer.css);
-/* @import url(brochure.css); */
+@import url(brochure.css);
 @import url(prices.css);
+@import url(discount.css);
 
 html {
   scroll-behavior: smooth !important;

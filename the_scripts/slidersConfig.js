@@ -18,26 +18,6 @@ const swiper2 = new Swiper('.procedures_swiper', {
     },
 });
 
-const swiper3 = new Swiper('.trainings_wrapper', {
-    direction: 'horizontal',
-    loop: true,
-
-    navigation: {
-        nextEl: '#trainings_wrapper_next',
-        prevEl: '#trainings_wrapper_prev',
-    },
-});
-
-const swiper4 = new Swiper('.training_wrapper2', {
-    direction: 'horizontal',
-    loop: true,
-
-    navigation: {
-        nextEl: '#training_wrapper2_next',
-        prevEl: '#training_wrapper2_prev',
-    },
-});
-
 const swiper = new Swiper('.nested', {
     direction: 'horizontal',
     loop: true,
