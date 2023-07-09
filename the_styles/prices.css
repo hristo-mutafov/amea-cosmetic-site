@@ -15,3 +15,39 @@
 .table .distance {
     padding-left: 20px;
 }
+
+@media screen and (max-width: 450px) {
+    #prices.prices {
+        font-size: 12px;
+    }
+
+    .table .bold {
+        padding-left: 30px;
+    }
+
+    .table .distance {
+        padding-left: 40px;
+    }
+
+    .table th {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    #prices.prices {
+        font-size: 10px;
+    }
+
+    .table .bold {
+        padding-left: 40px;
+    }
+
+    .table .distance {
+        padding-left: 50px;
+    }
+
+    .table th {
+        font-size: 14px;
+    }
+}
