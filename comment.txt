@@ -1,8 +1,0 @@
-Comment:
-    Sub logo text
-    Semantic check
-    Choose 2 fons only
-    Font size on Procedures section
-    Which ones to slide automatically
-    clear test files and some of the comments
-    
