@@ -1,3 +1,7 @@
+/**
+ * This file is responsible for burger icon click functionality.
+ */
+
 const mobileMenu = document.getElementById('mobile-menu');
 const navWrapper = document.getElementById('nav_wrapper');
 const nav = document.getElementById('navigation')

@@ -1,73 +1,80 @@
+/**
+ * This file is reponsible for page scrolling on both pages.
+ */
+
+
 // get buttons
 const homeBtn = document.getElementById('home_btn');
 const logoBtn = document.getElementById('logo_btn');
 const forMeBtn = document.getElementById('for_me_btn');
 const proceduresBtn = document.getElementById('procedures_btn');
 const coursesBtn = document.getElementById('courses_btn');
-const pricesBtn = document.getElementById('prices_btn')
+const pricesBtn = document.getElementById('prices_btn');
 const contactsBtn = document.getElementById('constacts_btn');
-
 const closeMobile = document.getElementById('mobile-menu');
+
+const allButtons = [
+    homeBtn,
+    logoBtn,
+    forMeBtn,
+    proceduresBtn,
+    coursesBtn,
+    pricesBtn,
+    contactsBtn,
+];
 
 // Get all sections
 const heroSection = document.getElementById('hero_section');
 const forMeSection = document.getElementById('for_me_section');
 const proseduresSection = document.getElementById('procedures');
 const trainingsSection = document.getElementById('trainings');
-const pricesSection = document.getElementById('prices')
+const pricesSection = document.getElementById('prices');
 
-homeBtn.addEventListener('click', (e) => {
+const buttonToSectionMapper = {
+    home_btn: () => window.scrollTo(0, 0),
+    logo_btn: () => window.scrollTo(0, 0),
+    for_me_btn: () => window.scrollTo(0, heroSection.offsetHeight),
+    procedures_btn: () => proseduresSection.scrollIntoView(),
+    courses_btn: () => trainingsSection.scrollIntoView(),
+    prices_btn: () => pricesSection.scrollIntoView(),
+    constacts_btn: () => window.scrollTo(0, document.body.scrollHeight),
+};
+
+const sectionToButtonMapper = {
+    hero_section: 'home_btn',
+    for_me_section: 'for_me_btn',
+    procedures: 'procedures_btn',
+    trainings: 'courses_btn',
+    prices: 'prices_btn'
+}
+
+function scroller(e) {
     e.preventDefault();
     if (screen.width <= 960) {
         closeMobile.click();
     }
-    window.scrollTo(0, 0);
-});
 
-logoBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (screen.width <= 960) {
-        closeMobile.click();
+    if (window.location.pathname === '/blog' || window.location.pathname === '/blog/') {
+        window.location.href = '/#' + e.currentTarget.id
     }
-    window.scrollTo(0, 0);
-});
 
-forMeBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (screen.width <= 960) {
-        closeMobile.click();
-    }
-    window.scrollTo(0, heroSection.offsetHeight);
-});
+    buttonToSectionMapper[e.currentTarget.id]();
+}
 
-proceduresBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (screen.width <= 960) {
-        closeMobile.click();
-    }
-    proseduresSection.scrollIntoView();
-});
+// starting point
 
-coursesBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (screen.width <= 960) {
-        closeMobile.click();
-    }
-    trainingsSection.scrollIntoView();
-});
+window.addEventListener('load', () => {
+    let hash = window.location.hash;
 
-pricesBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (screen.width <= 960) {
-        closeMobile.click();
-    }
-    pricesSection.scrollIntoView();
-});
 
-contactsBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (screen.width <= 960) {
-        closeMobile.click();
+    if (hash) {
+        hash = hash.substring(1)
+        buttonToSectionMapper[hash]();
+        const newURL = window.location.href.replace(window.location.hash, '');
+        history.replaceState('', document.title, newURL);
     }
-    window.scrollTo(0, document.body.scrollHeight);
+})
+
+allButtons.forEach((button) => {
+    button.addEventListener('click', scroller);
 });

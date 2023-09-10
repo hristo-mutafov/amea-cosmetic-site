@@ -1,3 +1,8 @@
+/**
+ * This file is responsible for the slider configurations.
+ * 
+ */
+
 const swiper1 = new Swiper('.for_me_swiper', {
     direction: 'horizontal',
     loop: true,
