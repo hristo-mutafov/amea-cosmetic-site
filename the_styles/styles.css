@@ -9,6 +9,7 @@
 @import url(brochure.css);
 @import url(prices.css);
 @import url(discount.css);
+@import url(blog.css);
 
 html {
   scroll-behavior: smooth !important;
