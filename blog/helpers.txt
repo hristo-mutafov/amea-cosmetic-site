@@ -1,0 +1,3 @@
+https://www.textfixer.com/tools/remove-line-breaks.php  => Remove line breaks.
+
+https://jsonformatter.org/json-escape   => Escape double quotes.

@@ -40,14 +40,6 @@
                 <div class="mobile_nav">
                     <div id="logo_btn" class="logo_wrapper">
                         <img src="../images/nataliya-logo.png" alt="" />
-                        <!-- <h1 class="logo_img">
-                <a id="logo_btn" href="">Nataliya Nenchova</a>
-              </h1> -->
-                        <!-- <div class="sub_text_wrapper">
-                <p class="sub_text">Permanent Make Up Expert & Trainer</p>
-                <div class="hide_line"></div>
-                <div class="line"></div>
-              </div> -->
                     </div>
 
                     <div class="navbar__toggle" id="mobile-menu">
@@ -90,19 +82,21 @@
             </nav>
         </header>
 
+
         <main class="main">
             <section class="blog" id="blog">
                 <aside id="aside" class="aside">
                     <h2 class="heading">Blog</h2>
                     <ul role="list">
                         <li>
-                            <p style="color: #c3c3c3" href="">
-                                <i class="fas fa-caret-right"></i> Master Class
+                            <p onClick="navigateToArticle(event)"
+                             id="master-class-plovdiv-9-9-23">
+                                Master Class
                                 Камуфлаж в Пловдив 09.09.2023
                             </p>
                         </li>
                         <li>
-                            <p href="">
+                            <p onClick="navigateToArticle(event)" id="master-class-sofia-9-9-23">
                                 Master Class
                                 Камуфлаж в Пловдив 09.09.2023
                             </p>
@@ -127,88 +121,12 @@
                     <header class="blog-header">
                         <p class="date">09.09.2023</p>
                         <nav class="nav-arrows">
-                            <i id="arrow" class="far fa-caret-square-left"></i>
-                            <i id="arrow" class="far fa-caret-square-right"></i>
+                            <i onClick="navigateToArticle(event, true)" id="arrow" class="far fa-caret-square-left"></i>
+                            <i onClick="navigateToArticle(event, true)" id="arrow" class="far fa-caret-square-right"></i>
                         </nav>
                     </header>
                     <main class="blog-main">
-                        <h2 class="heading">
-                            Master Class Camouflage в Пловдив
-                        </h2>
-                        <div class="image-collection">
-                            <img src="../images/blog/1.jpg" alt="">
-                            <img src="../images/blog/2.jpg" alt="">
-                            <!-- <img src="../images/blog/3.jpg" alt=""> -->
-                        </div>
-                        <p class="text">
-                            На 19.08.2023 г. първите обучени дами в Master Class
-                            Camouflage – Никол от Студио за красота Дъгите на
-                            Никол (ул. „Волга” №64, гр. Пловдив) и Мария от
-                            Beauty Garden (ЖК „Марица Гардънс”, №13, гр.
-                            Пловдив), завършиха своето обучение успешно.
-                        </p>
-                        <p class="text">
-                            Благодаря за доверието и на двете дами и държа да
-                            отбележа, че се справиха повече от чудесно! Вярвам в
-                            тях и им пожелавам успех в решаването на проблеми,
-                            свързани с визуалното заличаване на несъвършенствата
-                            по кожата!
-                        </p>
-                        <p class="text">
-                            Интересът към обученията по медицински камуфлаж
-                            продължава да расте, защото осигурява на козметиците
-                            и PM специалистите нови нишови познания, които да
-                            предложат на своите клиенти.
-                        </p>
-                        <p class="text">
-                            Ако и вие искате да станете част от
-                            професионалистите, предлагащи медицински камуфлаж,
-                            имате възможност да го направите. Съвсем скоро ще
-                            научите датите за Master Class Camouflage през
-                            септември…
-                        </p>
-                        <p class="text">
-                            Остават броени часове до Master Class Camouflage в
-                            София (26.08.2023 г.) Очаквайте снимки скоро…
-                        </p>
-
-
-                        <p class="text">
-                            На 19.08.2023 г. първите обучени дами в Master Class
-                            Camouflage – Никол от Студио за красота Дъгите на
-                            Никол (ул. „Волга” №64, гр. Пловдив) и Мария от
-                            Beauty Garden (ЖК „Марица Гардънс”, №13, гр.
-                            Пловдив), завършиха своето обучение успешно.
-                        </p>
-                        <p class="text">
-                            Благодаря за доверието и на двете дами и държа да
-                            отбележа, че се справиха повече от чудесно! Вярвам в
-                            тях и им пожелавам успех в решаването на проблеми,
-                            свързани с визуалното заличаване на несъвършенствата
-                            по кожата!
-                        </p>
-                        <p class="text">
-                            Интересът към обученията по медицински камуфлаж
-                            продължава да расте, защото осигурява на козметиците
-                            и PM специалистите нови нишови познания, които да
-                            предложат на своите клиенти.
-                        </p>
-                        <p class="text">
-                            Ако и вие искате да станете част от
-                            професионалистите, предлагащи медицински камуфлаж,
-                            имате възможност да го направите. Съвсем скоро ще
-                            научите датите за Master Class Camouflage през
-                            септември…
-                        </p>
-                        <p class="text">
-                            Остават броени часове до Master Class Camouflage в
-                            София (26.08.2023 г.) Очаквайте снимки скоро…
-                        </p>
-                        <div class="image-collection">
-                            <img src="../images/blog/4.jpg" alt="">
-                            <img src="../images/blog/5.jpg" alt="">
-                            <!-- <img src="../images/blog/6.jpg" alt=""> -->
-                        </div>
+                        <div class="loader"></div>
                     </main>
                 </article>
             </section>
@@ -263,5 +181,6 @@
         <script src="../the_scripts/mobileMenu.js"></script>
         <script src="../the_scripts/navigationFunc.js"></script>
         <script src="../the_scripts/blog/toggleNavbar.js"></script>
+        <script src="../the_scripts/blog/articleNavigation.js"></script>
     </body>
 </html>

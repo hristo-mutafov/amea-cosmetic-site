@@ -1,3 +1,5 @@
+
+
 #blog.blog {
     max-width: 1920px;
     display: grid;
@@ -43,8 +45,8 @@
 }
 
 #blog.blog .aside .sidebar-icon {
-    width:30px;
-    height:30px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -77,8 +79,6 @@
     color: #1d1d1f;
 }
 
-
-
 #blog.blog .main-text .blog-header {
     display: flex;
     justify-content: space-between;
@@ -98,6 +98,10 @@
     margin-left: 10px;
 }
 
+#blog.blog .main-text .blog-main {
+    width: 100%;
+}
+
 #blog.blog .main-text .blog-main .heading {
     margin-bottom: 20px;
 }
@@ -110,25 +114,61 @@
 
 #blog.blog .main-text .blog-main .image-collection {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin-bottom: 16px;
-    
 }
 
 #blog.blog .main-text .blog-main .image-collection img {
     width: auto;
     max-height: 100%;
     max-height: 400px;
+    border-radius: 4px;
 }
+
+/* Spinner */
+
+#blog.blog .loader {
+    margin: 0 auto;
+
+    width: 48px;
+    height: 48px;
+    border: 5px solid #f5f5f7;
+    border-bottom-color: #b4347f;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: spin 1s linear infinite;
+}
+    
+
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 
 @media screen and (max-width: 960px) {
     #blog.blog .main-text .blog-main .text {
         font-size: 16px;
-    } 
+    }
 
     #blog.blog .aside {
-       padding: 26px 0px;
+        padding: 26px 0px;
     }
 }
 
@@ -144,19 +184,15 @@
     #blog.blog .aside li {
         padding-left: 0px;
     }
-
 }
 
 @media screen and (max-width: 600px) {
     #blog.blog .aside .heading {
         margin-top: 20px;
-        
     }
-
 }
 
 @media screen and (max-width: 480px) {
-
     #blog.blog {
         margin: 10px;
         margin-right: -10px;
@@ -171,10 +207,7 @@
         width: 40px;
         height: 40px;
     }
-
 }
-
-
 
 @media screen and (max-width: 420px) {
     #blog.blog .main-text .blog-main .heading {
@@ -183,17 +216,15 @@
 
     #blog.blog .main-text .blog-main .text {
         font-size: 14px;
-    } 
+    }
 
     #blog.blog .aside p {
         font-size: 11px;
     }
-    
 }
 
 @media screen and (max-width: 320px) {
     #blog.blog .main-text .blog-main .image-collection {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
-
