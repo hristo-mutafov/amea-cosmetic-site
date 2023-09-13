@@ -17,7 +17,7 @@ const [backArrow, forwardArrow] = Array.from(
  */
 function setArrowTitle(arrow, title) {
     arrow.title = title.endpoint;
-    arrow.style.color = '#1d1d1f'
+    arrow.style.color = '#1d1d1f';
 }
 
 /**
@@ -37,8 +37,11 @@ function disableArrow(arrow) {
  */
 function navigateToArticle(e, arrow) {
     let articleURL;
-    if (arrow && e.currentTarget.getAttribute('title')) {
-        articleURL = e.currentTarget.getAttribute('title')
+    if (arrow) {
+        articleURL = e.currentTarget.getAttribute('title');
+        if (!articleURL) {
+            return;
+        }
     } else {
         articleURL = e.currentTarget.getAttribute('id');
     }
@@ -73,21 +76,26 @@ function loadArticle() {
             let foundObject;
             if (articleName) {
                 foundObject = res.find((obj) => obj.endpoint === articleName);
-
-                /**
-                 * We get the index to get the next and prev articles
-                 * and to set them to the next/prev buttons.
-                 */
-                const index = res.indexOf(foundObject);
-
-                res[index - 1] ? setArrowTitle(backArrow, res[index - 1]) : disableArrow(backArrow);
-                res[index + 1] ? setArrowTitle(forwardArrow, res[index + 1]) : disableArrow(forwardArrow);
-                
             } else {
                 foundObject = res.at(-1);
                 articleName = foundObject.endpoint;
                 highlightButton(articleName);
             }
+
+            /**
+             * We get the index to get the next and prev articles
+             * and to set them to the next/prev buttons.
+             */
+            const index = res.indexOf(foundObject);
+
+            res[index - 1]
+                ? setArrowTitle(backArrow, res[index - 1])
+                : disableArrow(backArrow);
+            res[index + 1]
+                ? setArrowTitle(forwardArrow, res[index + 1])
+                : disableArrow(forwardArrow);
+
+            // Filling the containers.
             mainContainer.innerHTML = foundObject.content;
             dateContainer.textContent = foundObject.date;
         })
