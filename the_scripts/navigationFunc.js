@@ -1,5 +1,5 @@
 /**
- * This file is reponsible for page scrolling on both pages.
+ * This file is responsible for page scrolling on both pages.
  */
 
 
