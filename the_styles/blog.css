@@ -136,7 +136,7 @@
 
 /* Spinner */
 
-#blog.blog .loader {
+.loader {
     margin: 0 auto;
 
     width: 48px;
