@@ -24,13 +24,18 @@
             />
             <title>Nataliya's Blog</title>
             <!-- Google tag (gtag.js) -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-TW8PR0J3V5"></script>
+            <script
+                async
+                src="https://www.googletagmanager.com/gtag/js?id=G-TW8PR0J3V5"
+            ></script>
             <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-        
-            gtag('config', 'G-TW8PR0J3V5');
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+
+                gtag('config', 'G-TW8PR0J3V5');
             </script>
         </head>
     </head>
@@ -56,9 +61,7 @@
                         <a id="for_me_btn" class="nav_link" href="">Зa мен</a>
                     </li>
                     <li id="nav_item">
-                        <a id="" class="nav_link" href="/blog"
-                            >Блог</a
-                        >
+                        <a id="" class="nav_link" href="/blog">Блог</a>
                     </li>
                     <li id="nav_item">
                         <a id="procedures_btn" class="nav_link" href=""
@@ -82,28 +85,41 @@
             </nav>
         </header>
 
-
         <main class="main">
             <section class="blog" id="blog">
                 <aside id="aside" class="aside">
                     <h2 class="heading">Blog</h2>
                     <ul role="list">
                         <li>
-                            <p onClick="navigateToArticle(event)" id="master-class-camouflage-sofia-26-8-23">
+                            <p
+                                onClick="navigateToArticle(event)"
+                                id="master-class-camouflage-sofia-26-8-23"
+                            >
                                 Master Class Camouflage София 26.08.23
                             </p>
                         </li>
                         <li>
-                            <p onClick="navigateToArticle(event)"
-                             id="master-class-plovdiv-9-9-23">
-                                Master Class
-                                Камуфлаж в Пловдив 09.09.23
+                            <p
+                                onClick="navigateToArticle(event)"
+                                id="master-class-plovdiv-9-9-23"
+                            >
+                                Master Class Камуфлаж в Пловдив 09.09.23
                             </p>
                         </li>
                         <li>
-                            <p onClick="navigateToArticle(event)"
-                             id="the two faces of camouflage">
-                            Двете лица на камуфлажа
+                            <p
+                                onClick="navigateToArticle(event)"
+                                id="the-two-faces-of-camouflage"
+                            >
+                                Двете лица на камуфлажа
+                            </p>
+                        </li>
+                        <li>
+                            <p
+                                onClick="navigateToArticle(event)"
+                                id="camouflage-lesson"
+                            >
+                                Урок По Камуфлаж
                             </p>
                         </li>
                     </ul>
@@ -126,13 +142,22 @@
                     <header class="blog-header">
                         <p class="date"></p>
                         <nav class="nav-arrows">
-                            <i onClick="navigateToArticle(event, true)" id="arrow" class="far fa-caret-square-left"></i>
-                            <i onClick="navigateToArticle(event, true)" id="arrow" class="far fa-caret-square-right"></i>
+                            <i
+                                onClick="navigateToArticle(event, true)"
+                                id="arrow"
+                                class="far fa-caret-square-left"
+                            ></i>
+                            <i
+                                onClick="navigateToArticle(event, true)"
+                                id="arrow"
+                                class="far fa-caret-square-right"
+                            ></i>
                         </nav>
                     </header>
                     <main class="blog-main">
                         <div class="loader"></div>
                     </main>
+
                 </article>
             </section>
         </main>
