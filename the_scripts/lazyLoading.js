@@ -1,13 +1,20 @@
+/**
+ * This file adds loader to every image that has loading: lazy,
+ * for better UX.
+ */
+
 document.addEventListener("DOMContentLoaded", function() {
     var lazyloadImages;    
   
     if ("IntersectionObserver" in window) {
-      lazyloadImages = document.querySelectorAll("#loading");
+      lazyloadImages = document.querySelectorAll('img[loading="lazy"]');
+    //   lazyloadImages = document.querySelectorAll("#loading");
       var imageObserver = new IntersectionObserver(function(entries, observer) {
         entries.forEach(function(entry) {
           if (entry.isIntersecting) {
             var image = entry.target;
-            image.id = '';
+            image.removeAttribute('loading');
+            // image.id = '';
             // image.classList.remove("lazy");
             imageObserver.unobserve(image);
           }
@@ -19,7 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     } else {  
       var lazyloadThrottleTimeout;
-      lazyloadImages = document.querySelectorAll("#loading");
+      lazyloadImages = document.querySelectorAll('img[loading="lazy"]');
+    //   lazyloadImages = document.querySelectorAll("#loading");
       
       function lazyload () {
         if(lazyloadThrottleTimeout) {
@@ -31,7 +39,8 @@ document.addEventListener("DOMContentLoaded", function() {
           lazyloadImages.forEach(function(img) {
               if(img.offsetTop < (window.innerHeight + scrollTop)) {
                 img.src = img.dataset.src;
-                img.id = ''
+                image.removeAttribute('loading');
+                // img.id = ''
                 // img.classList.remove('lazy');
               }
           });
