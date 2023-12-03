@@ -15,7 +15,7 @@
 
 .opinions .square {
     position: relative;
-    background-color: #b4347f;
+    background-color: rgb(var(--main-color));
     border-radius: 30px;
     padding: 20px;
     width: 500px;
@@ -44,14 +44,14 @@
     overflow: auto;
     align-self: center; 
     justify-self: center;
-    color: #f5f5f7;
+    color: rgb(var(--main-color2));
     font-size: 18px;
 }
 
 .opinions .square .name_wrapper {
     justify-self: center;
     align-self: self-end;
-    color: #f5f5f7;
+    color: rgb(var(--main-color2));
     font-size: 22px;
     text-align: center;
 }
@@ -61,7 +61,7 @@
     height: 0; 
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
-    border-left: 60px solid #b4347f;
+    border-left: 60px solid rgb(var(--main-color));
     transform: rotate(5deg);
 
     position: absolute;
@@ -111,7 +111,7 @@
     .opinions .arrow-right {
         border-top: 50px solid transparent;
         border-bottom: 50px solid transparent;
-        border-left: 50px solid #b4347f;
+        border-left: 50px solid rgb(var(--main-color));
 
         bottom: -48px;
     }
@@ -144,7 +144,7 @@
     .opinions .arrow-right {
         border-top: 50px solid transparent;
         border-bottom: 50px solid transparent;
-        border-left: 50px solid #b4347f;
+        border-left: 50px solid rgb(var(--main-color));
 
         bottom: -48px;
     }
@@ -178,7 +178,7 @@
     .opinions .arrow-right {
         border-top: 50px solid transparent;
         border-bottom: 50px solid transparent;
-        border-left: 50px solid #b4347f;
+        border-left: 50px solid rgb(var(--main-color));
 
         bottom: -48px;
     }

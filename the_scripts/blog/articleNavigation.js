@@ -121,7 +121,7 @@ function loadArticle() {
 function highlightButton(articleName) {
     buttons.forEach((button) => {
         if (button.id === articleName) {
-            button.style.color = '#c3c3c3';
+            button.style.color = '#1d1d1f';
             button.innerHTML =
                 '<i class="fas fa-caret-right"></i>' + button.textContent;
         } else {

@@ -11,12 +11,18 @@
 @import url(discount.css);
 @import url(blog.css);
 
+:root {
+    --main-color: 185, 185, 185;
+    --main-color2: 245, 245, 247; /* White Color */
+    --black-color: 29, 29, 31;
+}
+
 html {
     scroll-behavior: smooth !important;
 }
 
 body {
-    background-color: #d0d1d1;
+    background-color: rgb(var(--main-color2));
     width: 100%;
 }
 #slider_btn {
@@ -34,8 +40,8 @@ img[loading='lazy'] {
 
     width: 48px !important;
     height: 48px !important;
-    border: 5px solid #f5f5f7 !important;
-    border-bottom-color: #b4347f !important;
+    border: 5px solid rgb(var(--main-color2)) !important;
+    border-bottom-color: rgb(var(--main-color)) !important;
     border-radius: 50% !important;
     box-sizing: border-box !important;
     animation: spin 1s linear infinite !important;

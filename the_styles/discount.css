@@ -17,7 +17,7 @@
     aspect-ratio: 2/3;
     max-width: 300px;
     max-height: 450px;
-    border: 3px solid #b4347f;
+    border: 3px solid rgb(var(--main-color));
     margin: -5px;
     border-radius: 50%;
 
@@ -41,7 +41,7 @@
 #discount.discount .circle .plus-sign {
     position: absolute;
     top: calc(-3vw + -3vh);
-    color: #b4347f;
+    color: rgb(var(--main-color));
     font-size: calc(2vw + 2vh);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -57,8 +57,8 @@
     text-align: center;
     font-size: calc(2vw + 2vh);
     margin-bottom: 100px;
-    background-color: #b4347f;
-    color: #f5f5f7;
+    background-color: rgb(var(--main-color));
+    color: rgb(var(--main-color2));
 
     display: flex;
     justify-content: space-evenly;
@@ -99,6 +99,6 @@
     }
 
     #discount.discount .circle {
-        border: 2px solid #b4347f;;
+        border: 2px solid rgb(var(--main-color));;
     }
 }
