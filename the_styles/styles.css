@@ -12,16 +12,20 @@
 @import url(blog.css);
 
 :root {
-    --main-color: 185, 185, 185;
+    /* --main-color: 185, 185, 185; Grey-one */
+    --main-color: 246, 225, 238;
     --main-color2: 245, 245, 247; /* White Color */
     --black-color: 29, 29, 31;
+    /* --text-color-for-background: 159, 49, 113; */
+    /* --text-color-for-background: 204, 90, 156;  Purple */
+    --text-color-for-background: 0, 0, 0; /* Black */
 }
-
 html {
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important; 
 }
 
 body {
+    /* background-color: black */
     background-color: rgb(var(--main-color2));
     width: 100%;
 }

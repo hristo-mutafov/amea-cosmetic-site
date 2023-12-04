@@ -42,6 +42,7 @@
 
 
 #for_me_section .for_me_section_text {
+    color: rgb(var(--text-color-for-background));
     font-size: 2.3rem;
     align-self: center;
     justify-self: start;
@@ -50,6 +51,7 @@
     padding-bottom: 30px;
     border-bottom: 4px solid rgb(var(--black-color));
     border-left: 4px solid rgb(var(--black-color));
+    border-color: rgb(var(--main-color));
 }
 
 #for_me_section .decoration {

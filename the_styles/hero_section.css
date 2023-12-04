@@ -48,6 +48,7 @@
     padding-bottom: 40px;
     border-bottom: 4px solid rgb(var(--main-color2));
     border-right: 4px solid rgb(var(--main-color2));
+    border-color: rgb(var(--main-color));
 }
 
 .hero_section .text_wrapper .hero_section_text {
@@ -55,7 +56,7 @@
     opacity: 0.95;
     padding: 20px;
     
-    color: rgb(var(--main-color2));
+    color: rgb(var(--text-color-for-background));
     font-family: 'Marck Script', cursive;
     text-align: center;
     font-size: 20px;

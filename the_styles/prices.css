@@ -9,7 +9,7 @@
 .table .bold {
     font-weight: 600;
     background-color: rgb(var(--main-color));
-    color: rgb(var(--main-color2));
+    color: rgb(var(--text-color-for-background));
 }
 
 .table .distance {

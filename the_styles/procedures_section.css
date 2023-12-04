@@ -39,7 +39,7 @@
     position: relative;
     width: 85%;
     height: 100%;
-    background-color: rgba(var(--main-color), 0.55);
+    /* background-color: rgba(var(--main-color), 0.85); */
     justify-self: center;
 }
 
@@ -67,12 +67,11 @@
     position: relative;
     width: 85%;
     height: 80%;
-    background-color: rgba(var(--main-color), 0.95);
+    background-color: rgba(var(--main-color2), 0.95);
     padding: 20px;
-    color: rgb(var(--main-color2));
+    color: rgb(var(--text-color-for-background));
     font-size: 18px;
     overflow: auto;
-    font-weight: bold;
 }
 
 /* Paragraph styles */

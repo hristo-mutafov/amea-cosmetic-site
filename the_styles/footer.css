@@ -4,7 +4,7 @@
     max-width: 1920px;
     background-color: rgb(var(--main-color));
 
-    color: rgb(var(--main-color2));
+    color: rgb(var(--text-color-for-background));
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -22,7 +22,7 @@
 
 .footer .socials_wrapper a {
     text-decoration: none;
-    color: rgb(var(--main-color2));
+    color: rgb(var(--text-color-for-background));
 }
 
 .footer .socials_wrapper i {
@@ -42,7 +42,7 @@
 }
 
 .underlined {
-    border-bottom: 1px solid rgb(var(--main-color2));
+    border-bottom: 1px solid rgb(var(--text-color-for-background));
     padding-bottom: 3px;
     margin-bottom: 20px;
 }

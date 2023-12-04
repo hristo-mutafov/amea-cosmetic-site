@@ -44,14 +44,14 @@
     overflow: auto;
     align-self: center; 
     justify-self: center;
-    color: rgb(var(--main-color2));
+    color: rgb(var(--text-color-for-background));
     font-size: 18px;
 }
 
 .opinions .square .name_wrapper {
     justify-self: center;
     align-self: self-end;
-    color: rgb(var(--main-color2));
+    color: rgb(var(--text-color-for-background));
     font-size: 22px;
     text-align: center;
 }
