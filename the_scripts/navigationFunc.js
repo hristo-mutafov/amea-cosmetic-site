@@ -7,7 +7,7 @@
 const homeBtn = document.getElementById('home_btn');
 const logoBtn = document.getElementById('logo_btn');
 const forMeBtn = document.getElementById('for_me_btn');
-const proceduresBtn = document.getElementById('procedures_btn');
+// const proceduresBtn = document.getElementById('procedures_btn');
 const coursesBtn = document.getElementById('courses_btn');
 const pricesBtn = document.getElementById('prices_btn');
 const contactsBtn = document.getElementById('constacts_btn');
@@ -17,7 +17,7 @@ const allButtons = [
     homeBtn,
     logoBtn,
     forMeBtn,
-    proceduresBtn,
+    // proceduresBtn,
     coursesBtn,
     pricesBtn,
     contactsBtn,
@@ -34,7 +34,7 @@ const buttonToSectionMapper = {
     home_btn: () => window.scrollTo(0, 0),
     logo_btn: () => window.scrollTo(0, 0),
     for_me_btn: () => window.scrollTo(0, heroSection.offsetHeight),
-    procedures_btn: () => proseduresSection.scrollIntoView(),
+    // procedures_btn: () => proseduresSection.scrollIntoView(),
     courses_btn: () => trainingsSection.scrollIntoView(),
     prices_btn: () => pricesSection.scrollIntoView(),
     constacts_btn: () => window.scrollTo(0, document.body.scrollHeight),
@@ -43,7 +43,7 @@ const buttonToSectionMapper = {
 const sectionToButtonMapper = {
     hero_section: 'home_btn',
     for_me_section: 'for_me_btn',
-    procedures: 'procedures_btn',
+    // procedures: 'procedures_btn',
     trainings: 'courses_btn',
     prices: 'prices_btn'
 }
