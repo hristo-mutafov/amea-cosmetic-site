@@ -1,5 +1,5 @@
 /**
- * This file is responsible for page scrolling on both pages.
+ * This file is responsible for nav page scrolling.
  */
 
 
@@ -54,7 +54,7 @@ function scroller(e) {
         closeMobile.click();
     }
 
-    if (window.location.pathname === '/blog' || window.location.pathname === '/blog/') {
+    if (window.location.pathname !== '/') {
         window.location.href = '/#' + e.currentTarget.id
     }
 
