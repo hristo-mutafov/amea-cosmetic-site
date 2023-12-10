@@ -29,6 +29,30 @@ body {
     font-weight: 800;
 }
 
+.procedures-button {
+    margin: auto;
+    margin-top: 6px;
+    display: block;
+    border-radius: 20px;
+    appearance: none;
+    background-color: transparent;
+    color: rgb(var(--black-color));
+    border: 1px solid rgb(var(--black-color));
+    padding: 6px 26px;
+    outline: none;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.procedures-button:hover {
+    color: #3B3A40;
+    border-color: #3B3A40;
+    transition: background-color 0.2s linear;
+}
+
 img[loading='lazy'] {
     position: relative !important;
     top: 40% !important;
