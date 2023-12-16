@@ -27,8 +27,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
 }
 
 .hero-section .heading {
@@ -38,7 +38,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 1;
     font-size: 100px;
     text-align: center;
 }
@@ -58,10 +58,10 @@
 
 .cards {
     margin: auto;
-    margin: 100px 80px;
+    margin: 100px 65px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 30px;
 }
 
 .cards .card {
@@ -70,6 +70,13 @@
     justify-content: center;
     align-items: center;
     gap: 14px;
+}
+
+.cards .card:nth-last-child(1):nth-child(odd) {
+    /* Selects the last child, if there is odd count od children */
+    grid-column: span 2;
+    width: 60%;
+    margin: auto;
 }
 
 .cards .card .image-container {
@@ -180,6 +187,50 @@
     display: inline;
     font-size: 24px;
     font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.specific-procedure-main .container .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 5px;
+}
+
+.swiper {
+    width: 98%;
+    height: 400px;
+}
+
+.swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide {
+    width: 80%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide:nth-child(1n) {
+    width: 30%;
+}
+
+.swiper-slide:nth-child(2n) {
+    width: 20%;
+}
+
+.swiper-slide:nth-child(3n) {
+    width: 30%;
 }
 
 @media screen and (max-width: 1330px) {
@@ -204,6 +255,18 @@
     .cards .card .image-container {
         height: 240px;
     }
+
+    .swiper-slide:nth-child(1n) {
+        width: 60%;
+    }
+
+    .swiper-slide:nth-child(2n) {
+        width: 40%;
+    }
+
+    .swiper-slide:nth-child(3n) {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -217,6 +280,12 @@
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
         gap: 50px;
+    }
+
+    .cards .card:nth-last-child(odd):last-child {
+        grid-column: span 1;
+        width: auto;
+        margin: auto;
     }
 
     .underline::after {
@@ -258,10 +327,31 @@
         gap: 30px;
     }
 
-    .specific-procedure-main .image-container .image {
+    .specific-procedure-main .container .image {
         width: 70%;
-        margin: 0px;
+        margin: 0px !important; /* Needed, because of the weaker selector. */
         max-width: 100%;
+    }
+
+    .specific-procedure-main .container .list {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .specific-procedure-main .image-container {
+        overflow: visible;
+    }
+
+    .swiper-slide:nth-child(1n) {
+        width: 100%;
+    }
+
+    .swiper-slide:nth-child(2n) {
+        width: 100%;
+    }
+
+    .swiper-slide:nth-child(3n) {
+        width: 100%;
     }
 }
 
