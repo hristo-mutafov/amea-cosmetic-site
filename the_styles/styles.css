@@ -6,45 +6,8 @@
 @import url(opinions.css);
 @import url(trainings.css);
 @import url(footer.css);
-@import url(brochure.css);
 @import url(prices.css);
 @import url(discount.css);
-@import url(blog.css);
 
-:root {
-    --main-color: 238, 238, 238;  /* Gray Color */
-    --main-color2: 245, 245, 247; /* White Color */
-    --black-color: 29, 29, 31;    /* Black */
-    --text-color-for-background: 29, 29, 31; /* Black */
-}
-html {
-    scroll-behavior: smooth !important; 
-    background-color: rgb(0, 0, 0);
-}
 
-body {
-    /* background-color: black */
-    background-color: rgb(var(--main-color2));
-    width: 100%;
-}
-#slider_btn {
-    font-size: 30px;
-    color: rgba(29, 29, 31, 0.75);
-}
-
-.bold_price {
-    font-weight: 800;
-}
-
-img[loading='lazy'] {
-    position: relative !important;
-    top: 40% !important;
-
-    width: 48px !important;
-    height: 48px !important;
-    border: 5px solid rgb(var(--main-color2)) !important;
-    border-bottom-color: rgb(var(--main-color)) !important;
-    border-radius: 50% !important;
-    box-sizing: border-box !important;
-    animation: spin 1s linear infinite !important;
-}
+@import url(main.css);

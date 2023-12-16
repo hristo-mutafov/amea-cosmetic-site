@@ -1,3 +1,7 @@
+/**
+ * This file is responsible for toggling the sidebar in blog page.
+ */
+
 const icon = document.querySelector('#blog.blog #togglebar-icon');
 const iconShort = document.querySelector('#blog.blog #togglebar-icon-short');
 const aside = document.querySelector('#blog.blog #aside');

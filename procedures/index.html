@@ -8,27 +8,27 @@
         <link rel="icon" type="image/png" href="../images/favicon-32x32.png" />
 
         <!-- Styles ---------------------- -->
-        <link rel="stylesheet" href="../../the_styles/reset.css" />
-        <link rel="stylesheet" href="./the_styles/styles.css" />
+        <link rel="stylesheet" href="../the_styles/reset.css" />
+        <link rel="stylesheet" href="the_styles/styles.css" />
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
         />
-        <title>Nataliya's Blog</title>
+        <title>Nataliya's Procedures</title>
         <!-- Google tag (gtag.js) -->
         <!-- <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-TW8PR0J3V5"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
+                async
+                src="https://www.googletagmanager.com/gtag/js?id=G-TW8PR0J3V5"
+            ></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
 
-            gtag('config', 'G-TW8PR0J3V5');
-        </script> -->
+                gtag('config', 'G-TW8PR0J3V5');
+            </script> -->
     </head>
     <body>
         <header class="header">
@@ -80,78 +80,43 @@
         </header>
 
         <main class="main">
-            <section class="blog" id="blog">
-                <aside id="aside" class="aside">
-                    <h2 class="heading">Blog</h2>
-                    <ul role="list">
-                        <li>
-                            <p
-                                onClick="navigateToArticle(event)"
-                                id="master-class-camouflage-sofia-26-8-23"
-                            >
-                                Master Class Camouflage София 26.08.23
-                            </p>
-                        </li>
-                        <li>
-                            <p
-                                onClick="navigateToArticle(event)"
-                                id="master-class-plovdiv-9-9-23"
-                            >
-                                Master Class Камуфлаж в Пловдив 09.09.23
-                            </p>
-                        </li>
-                        <li>
-                            <p
-                                onClick="navigateToArticle(event)"
-                                id="the-two-faces-of-camouflage"
-                            >
-                                Двете лица на камуфлажа
-                            </p>
-                        </li>
-                        <li>
-                            <p
-                                onClick="navigateToArticle(event)"
-                                id="camouflage-lesson"
-                            >
-                                Урок По Камуфлаж
-                            </p>
-                        </li>
-                    </ul>
+            <section class="hero-section">
+                <h1 class="heading underline">ПРОЦЕДУРИ</h1>
+                <div class="image-container">
                     <img
-                        id="togglebar-icon"
-                        class="sidebar-icon"
-                        src="../images/sidebar.png"
+                        class="image"
+                        src="../images/procedures/nataliya-procedures-hero-image.jpg"
                         alt=""
                     />
-                </aside>
-                <aside id="aside-short" class="aside-short">
-                    <img
-                        id="togglebar-icon-short"
-                        class="sidebar-icon"
-                        src="../images/sidebar.png"
-                        alt=""
-                    />
-                </aside>
-                <article class="main-text">
-                    <header class="blog-header">
-                        <p class="date"></p>
-                        <nav class="nav-arrows">
-                            <i
-                                onClick="navigateToArticle(event, true)"
-                                id="arrow"
-                                class="far fa-caret-square-left"
-                            ></i>
-                            <i
-                                onClick="navigateToArticle(event, true)"
-                                id="arrow"
-                                class="far fa-caret-square-right"
-                            ></i>
-                        </nav>
-                    </header>
-                    <main class="blog-main">
-                        <div class="loader"></div>
-                    </main>
-                </article>
+                </div>
+            </section>
+            <section class="cards">
+                <div class="card">
+                    <div class="image-container">
+                        <img
+                            class="image"
+                            src="../images/procedures/camouflage/nataliya-camouflage-13.jpg"
+                            alt="Наталия Ненчова Камуфлаж Процедура"
+                        />
+                    </div>
+                    <div class="text-container">
+                        <h2 class="heading">КАМУФЛАЖ</h2>
+                        <p class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Autem id error deleniti explicabo nam!
+                            Reprehenderit quisquam voluptatibus architecto
+                            dolorem sunt perspiciatis eaque itaque magni
+                            officiis, aliquam libero laudantium quasi eveniet,
+                            deleniti necessitatibus, sit facilis perferendis
+                            iste odio hic nisi dicta.
+                        </p>
+                        <a
+                            class="procedures-button"
+                            href="/procedures/camouflage/"
+                            >ВИЖ ПОВЕЧЕ</a
+                        >
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -203,7 +168,5 @@
         </footer>
         <script src="../the_scripts/mobileMenu.js"></script>
         <script src="../the_scripts/navigationFunc.js"></script>
-        <script src="../the_scripts/blog/toggleNavbar.js"></script>
-        <script src="../the_scripts/blog/articleNavigation.js"></script>
     </body>
 </html>
