@@ -8,9 +8,9 @@
 }
 
 #blog.blog .aside {
-    background-color: #b4347f;
+    background-color: rgb(var(--main-color));
     padding: 26px;
-    color: #f5f5f7;
+    color: rgb(var(--text-color-for-background));
     border-radius: 12px;
     position: relative;
 }
@@ -18,7 +18,7 @@
 #blog.blog .aside .heading {
     font-size: 22px;
     text-align: center;
-    border-bottom: 1px solid #f5f5f7;
+    border-bottom: 1px solid rgb(var(--text-color-for-background));
     margin-bottom: 20px;
 }
 
@@ -34,12 +34,13 @@
 }
 
 #blog.blog .aside p {
+    color: rgb(var(--text-color-for-background));
     cursor: pointer;
     font-size: 15px;
 }
 
 #blog.blog .aside p:hover {
-    color: #c3c3c3;
+    color: rgba(var(--text-color-for-background), 0.75);
 }
 
 #blog.blog .aside .sidebar-icon {
@@ -48,14 +49,14 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    color: #f5f5f7;
+    color: rgb(var(--text-color-for-background));
     cursor: pointer;
 }
 
 #blog.blog .aside-short {
     display: none;
     /* position: relative; */
-    background-color: #b4347f;
+    background-color: rgb(var(--main-color));
     width: 50px;
     height: 50px;
     padding: 10px;
@@ -70,11 +71,11 @@
 }
 
 #blog.blog .main-text {
-    background-color: #f5f5f7;
+    background-color: rgb(var(--main-color2));
     padding: 20px 40px;
     border-radius: 6px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    color: #1d1d1f;
+    color: rgb(var(--black-color));
 }
 
 #blog.blog .main-text .blog-header {
@@ -141,8 +142,8 @@
 
     width: 48px;
     height: 48px;
-    border: 5px solid #f5f5f7;
-    border-bottom-color: #b4347f;
+    border: 5px solid rgb(var(--main-color2));
+    border-bottom-color: rgb(var(--main-color));
     border-radius: 50%;
     box-sizing: border-box;
     animation: spin 1s linear infinite;

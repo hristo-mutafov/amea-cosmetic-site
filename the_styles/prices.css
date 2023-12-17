@@ -8,8 +8,8 @@
 
 .table .bold {
     font-weight: 600;
-    background-color: #b4347f;
-    color: #f5f5f7;
+    background-color: rgb(var(--main-color));
+    color: rgb(var(--text-color-for-background));
 }
 
 .table .distance {

@@ -121,11 +121,14 @@ function loadArticle() {
 function highlightButton(articleName) {
     buttons.forEach((button) => {
         if (button.id === articleName) {
-            button.style.color = '#c3c3c3';
+            /**
+             * If we want the selected one to be in different color.
+             */
+            button.style.color = '#1d1d1f';
             button.innerHTML =
                 '<i class="fas fa-caret-right"></i>' + button.textContent;
         } else {
-            button.style.color = '#f5f5f7';
+            button.style.color = '#1d1d1f';
             const icon = button.querySelector('i');
             if (icon) {
                 button.removeChild(icon);

@@ -10,7 +10,7 @@
 }
 
 .brochure .circle {
-    background-color: #b4347f;
+    background-color: rgb(var(--main-color));
     width: 660px;
     height: 655px;
     border-radius: 100%;
