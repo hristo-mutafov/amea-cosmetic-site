@@ -58,15 +58,12 @@ img[loading='lazy'] {
 
     width: 48px !important;
     height: 48px !important;
-    border: 5px solid rgb(var(--main-color2)) !important;
+    border: 5px solid rgb(var(--black-color)) !important;
     border-bottom-color: rgb(var(--main-color)) !important;
     border-radius: 50% !important;
     box-sizing: border-box !important;
     animation: spin 1s linear infinite;
-    /* visibility: hidden; */
-    background-color: rgba(255, 255, 255, 0.6);
-    opacity:0.1;
-    color: red;
+    object-position: 13rem !important;
 }
 
 
