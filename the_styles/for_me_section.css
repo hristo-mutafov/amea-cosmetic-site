@@ -33,6 +33,11 @@
     left: 30%;
 }
 
+#for_me_section .swiper .swiper-wrapper .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
 #for_me_section .swiper-wrapper .img {
     width: 100%;
     height: 100%;

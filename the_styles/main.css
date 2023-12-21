@@ -75,3 +75,11 @@ img[loading='lazy'] {
         transform: rotate(360deg);
     }
 }
+
+@media screen and (max-width: 350px) {
+    img[loading='lazy'] {
+        width: 38px !important;
+        height: 38px !important;
+
+    }
+}

@@ -10,7 +10,7 @@
 
 .opinions .swiper {
     height: 100%;
-   width: 1920px;
+    width: 1920px;
 }
 
 .opinions .square {
@@ -19,17 +19,26 @@
     border-radius: 30px;
     padding: 20px;
     width: 500px;
-    height:300px;
+    height: 300px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
 }
 
 .opinions .square .image_wrapper {
-    width: 160px;
-    height: 180px;
     align-self: start;
     justify-self: center;
+
+    display: grid;
+    grid-template-rows: 70% 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.opinions .square .image_wrapper .wrapper {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
 }
 
 .opinions .square .image_wrapper img {
@@ -42,7 +51,7 @@
 .opinions .square .text_wrapper {
     height: 100%;
     overflow: auto;
-    align-self: center; 
+    align-self: center;
     justify-self: center;
     color: rgb(var(--text-color-for-background));
     font-size: 18px;
@@ -57,8 +66,8 @@
 }
 
 .opinions .arrow-right {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
     border-left: 60px solid rgb(var(--main-color));
@@ -79,7 +88,6 @@
     cursor: pointer;
 }
 
-
 @media screen and (max-width: 670px) {
     .opinions .swiper-slide {
         margin-right: 0px;
@@ -92,12 +100,16 @@
     .opinions .square {
         padding: 20px;
         width: 400px;
-        height:200px;
+        height: 200px;
     }
 
     .opinions .square .image_wrapper {
-        width: 100px;
-        height: 110px;
+        height: 150px;
+    }
+
+    .opinions .square .image_wrapper .wrapper {
+        width: 90px;
+        height: 90px;
     }
 
     .opinions .square .text_wrapper {
@@ -125,12 +137,11 @@
     .opinions .square {
         padding: 20px;
         width: 300px;
-        height:180px;
+        height: 180px;
     }
 
     .opinions .square .image_wrapper {
-        width: 80px;
-        height: 88px;
+        height: 140px;
     }
 
     .opinions .square .text_wrapper {
@@ -151,7 +162,6 @@
 }
 
 @media screen and (max-width: 336px) {
-
     .opinions .swiper-slide {
         flex: none;
     }
@@ -159,12 +169,16 @@
     .opinions .square {
         padding: 20px 0px;
         width: 200px;
-        height:180px;
+        height: 180px;
     }
 
     .opinions .square .image_wrapper {
-        width: 60px;
-        height: 66px;
+        height: 120px;
+    }
+
+    .opinions .square .image_wrapper .wrapper {
+        width: 70px;
+        height: 70px;
     }
 
     .opinions .square .text_wrapper {
@@ -183,5 +197,3 @@
         bottom: -48px;
     }
 }
-
-
