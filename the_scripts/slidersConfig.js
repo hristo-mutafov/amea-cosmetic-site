@@ -34,34 +34,13 @@ const swiper = new Swiper('.nested', {
 });
 
 const swiper5 = new Swiper('.opinions_swiper', {
-    slidesPerView: 8,
+    slidesPerView: 3,
     freeMode: true,
     loop: true,
     navigation: {
         nextEl: '#comments_next',
         prevEl: '#comments_prev',
-    },
-
-    breakpoints: {
-        460: {
-            slidesPerView: 3,
-            freeMode: true,
-            loop: true,
-            navigation: {
-                nextEl: '#comments_next',
-                prevEl: '#comments_prev',
-            },
-        },
-        336: {
-            slidesPerView: 5,
-            freeMode: true,
-            loop: true,
-            navigation: {
-                nextEl: '#comments_next',
-                prevEl: '#comments_prev',
-            },
-        },
-    },
+    }
 });
 
 const swiper6 = new Swiper('.brochure_swiper', {
