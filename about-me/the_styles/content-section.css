@@ -37,6 +37,30 @@
     font-style: italic;
 }
 
+
+
+.swiper {
+    width: 98%;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.swiper .swiper-slide {
+    background: rgb(var(--main-color));
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0px !important; /* Because of the loaders */
+}
+
+
 @media screen and (max-width: 1000px) {
     .content-section .heading {
         font-size: 20px;
@@ -44,6 +68,12 @@
 
     .content-section .text {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .swiper .swiper-slide {
+        width: 100%;
     }
 }
 
