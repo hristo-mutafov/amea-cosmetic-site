@@ -51,6 +51,7 @@
     border-left: 4px solid rgb(var(--black-color));
     border-color: rgb(var(--main-color));
     text-align: center;
+    font-weight: 400;
 }
 
 #for_me_section .for_me_section_text .smaller {
