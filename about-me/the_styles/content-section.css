@@ -7,21 +7,11 @@
 .content-section .heading {
     text-align: center;
     font-size: 24px;
-    position: relative;
     margin-bottom: 30px;
 }
 
 .content-section .heading::after {
-    content: '';
-    display: block;
     width: 10%;
-    margin: -5px auto;
-    height: 2px;
-    background-color: rgb(var(--black-color));
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 .content-section .text {
