@@ -1,0 +1,234 @@
+#for_me_section {
+    max-width: 1920px;
+    width: 100%;
+    max-height: 800px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 50px 50px;
+    position: relative;
+}
+
+#for_me_section .wrapper {
+    position: relative;
+    height: 100%;
+}
+
+#for_me_section .circle {
+    margin-left: 30px;
+    width: 90%;
+    height: 100%;
+    background-color: rgb(var(--main-color));
+    border-radius: 100%;
+    border: 2px solid rgb(var(--main-color2));
+}
+
+#for_me_section .wrapper .image-wrapper {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    height: 100%;
+    width: auto;
+}
+
+#for_me_section .wrapper .image-wrapper .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+#for_me_section .for_me_section_text {
+    color: rgb(var(--text-color-for-background));
+    font-size: 46px;
+    align-self: center;
+    margin: auto;
+    width: 80%;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    border-bottom: 4px solid rgb(var(--black-color));
+    border-left: 4px solid rgb(var(--black-color));
+    border-color: rgb(var(--main-color));
+    text-align: center;
+    font-weight: 400;
+}
+
+#for_me_section .for_me_section_text::after {
+    display: none;
+}
+
+#for_me_section .for_me_section_text .smaller {
+    font-size: 40px;
+}
+
+#for_me_section .decoration {
+    height: 40%;
+    width: 20%;
+    position: absolute;
+    top: 42%;
+    left: 20%;
+}
+
+@media screen and (max-width: 1724px) {
+    #for_me_section .for_me_section_text {
+        font-size: 36px;
+    }
+
+    #for_me_section .for_me_section_text .smaller {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    #for_me_section .for_me_section_text {
+        font-size: 32px;
+    }
+    #for_me_section .for_me_section_text .smaller {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #for_me_section {
+        height: 400px;
+        margin: 50px 20px;
+    }
+
+    #for_me_section .for_me_section_text {
+        font-size: 24px;
+    }
+
+    #for_me_section .for_me_section_text .smaller {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #for_me_section {
+        height: 300px;
+    }
+
+    #for_me_section .for_me_section_text {
+        font-size: 20px;
+    }
+
+    #for_me_section .for_me_section_text .smaller {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #for_me_section .for_me_section_text {
+        padding-left: 10px;
+    }
+
+    #for_me_section .for_me_section_text {
+        font-size: 18px;
+    }
+
+    #for_me_section .for_me_section_text .smaller {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 660px) {
+    #for_me_section {
+        max-width: 1920px;
+        width: 100%;
+        height: 90vh;
+        display: block;
+        margin: 0;
+    }
+
+    #for_me_section .circle {
+        display: none;
+    }
+
+    #for_me_section .decoration {
+        display: none;
+    }
+
+    #for_me_section .for_me_section_text {
+        position: absolute;
+        bottom: 30%;
+        left: 50%;
+        border: none;
+        color: rgb(var(--main-color));
+        font-size: 42px;
+        transform: translate(-50%, 0%);
+        padding: 0;
+    }
+
+    #for_me_section .for_me_section_text .smaller {
+        font-size: 30px;
+    }
+
+    #for_me_section .for_me_section_text::after {
+        display: block;
+        height: 2px;
+    }
+
+    #for_me_section .wrapper .image-wrapper {
+        position: static;
+    }
+
+    #for_me_section .wrapper .image-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            to bottom,
+            rgba(var(--black-color), 0.1) 40%,
+            rgba(var(--black-color), 0.35) 50%,
+            rgba(var(--black-color), 0.8) 100%
+        );
+        z-index: 0;
+    }
+
+    #for_me_section .wrapper .image-wrapper .img {
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #for_me_section .for_me_section_text {
+        font-size: 34px;
+    }
+
+    #for_me_section .for_me_section_text .smaller {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #for_me_section .for_me_section_text {
+        font-size: 26px;
+    }
+
+    #for_me_section .for_me_section_text .smaller {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 328px) {
+    #for_me_section .for_me_section_text {
+        font-size: 22px;
+    }
+
+    #for_me_section .for_me_section_text .smaller {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    #for_me_section .for_me_section_text {
+        font-size: 18px;
+    }
+
+    #for_me_section .for_me_section_text .smaller {
+        font-size: 14px;
+    }
+}

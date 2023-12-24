@@ -1,6 +1,15 @@
 @import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
 @import url(../../the_styles/header.css);
-@import url(./about-me.css);
+@import url(./hero-section.css);
+@import url(./content-section.css);
+@import url(./benefits.css);
 @import url(../../the_styles/footer.css);
 
 @import url(../../the_styles/main.css);
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

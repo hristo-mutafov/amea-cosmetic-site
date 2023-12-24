@@ -43,7 +43,7 @@
     text-align: center;
 }
 
-.underline::after {
+/* .underline::after {
     content: '';
     display: block;
     width: 50%;
@@ -54,7 +54,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-}
+} */
 
 .cards {
     margin: auto;
@@ -94,20 +94,11 @@
     text-align: center;
     font-size: 26px;
     font-weight: 500;
-    position: relative;
 }
 
 .cards .card .heading::after {
-    content: '';
-    display: block;
     width: 8%;
-    margin: -2px auto;
     height: 2px;
-    background-color: rgb(var(--black-color));
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 .cards .card .content {
@@ -150,10 +141,6 @@
     text-align: center;
     position: relative;
     font-weight: 500;
-}
-
-.specific-procedure-main .underline::after {
-    background-color: rgb(var(--black-color));
 }
 
 .specific-procedure-main .image-container {
