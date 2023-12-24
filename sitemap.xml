@@ -8,18 +8,28 @@
 
 <url>
   <loc>https://nataliyanenchova.bg/</loc>
-  <lastmod>2023-09-15T08:05:48+00:00</lastmod>
+  <lastmod>2023-12-24T11:28:24+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://nataliyanenchova.bg/blog/</loc>
-  <lastmod>2023-09-15T08:05:47+00:00</lastmod>
+  <loc>https://nataliyanenchova.bg/about-me</loc>
+  <lastmod>2023-12-24T11:28:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://nataliyanenchova.bg/Brochure-amiea-A4-CMYK-Text.pdf</loc>
-  <lastmod>2023-09-15T08:05:47+00:00</lastmod>
+  <loc>https://nataliyanenchova.bg/blog</loc>
+  <lastmod>2023-12-24T11:28:24+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nataliyanenchova.bg/procedures</loc>
+  <lastmod>2023-12-24T11:28:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nataliyanenchova.bg/procedures/camouflage/</loc>
+  <lastmod>2023-12-24T11:28:24+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 

@@ -56,7 +56,7 @@
     margin: 0 auto;
     object-fit: cover;
     border-radius: 6px;
-    box-shadow: 1px 1px 20px 0px #1d1d1f;
+    box-shadow: 1px 1px 20px 0px rgb(var(--black-color));
 }
 
 .procedures .swiper .text_wrapper {
@@ -101,7 +101,6 @@
         position: relative;
         width: 70%;
         height: 300px;
-        background-color: rgba(var(--main-color), 0.55);
         justify-self: center;
     }
 }

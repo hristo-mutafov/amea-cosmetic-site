@@ -87,18 +87,12 @@
     }
 }
 
-@media screen and (max-width: 1015px) {
-    #discount.discount .circle .procents {
-        top: -40px;
-    }
-}
-
 @media screen and (max-width: 300px) {
     #discount.discount .heading {
         margin-bottom: 50px;
     }
 
     #discount.discount .circle {
-        border: 2px solid rgb(var(--main-color));;
+        border-width: 2px;
     }
 }

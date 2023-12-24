@@ -27,7 +27,7 @@
 
 .footer .socials_wrapper i {
     color: rgb(var(--main-color2));
-    background-color: #1d1d1f;
+    background-color: rgb(var(--black-color));
     border-radius: 100%;
     padding: 3px;
     width: 28px;
