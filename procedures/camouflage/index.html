@@ -18,6 +18,14 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
+        <style>
+            /* This is needed because of style issue with the short heading. */
+            @media screen and (max-width: 460px) {
+                .specific-procedure-main .heading {
+                    font-size: 24px !important;
+                }
+            }
+        </style>
 
         <title>Камуфлаж | Camouflage</title>
         <!-- Google tag (gtag.js) -->
@@ -54,7 +62,9 @@
                         <a id="home_btn" class="nav_link" href="">Начало</a>
                     </li>
                     <li id="nav_item">
-                        <a id="for_me_btn" class="nav_link" href="/about-me">Зa мен</a>
+                        <a id="for_me_btn" class="nav_link" href="/about-me"
+                            >Зa мен</a
+                        >
                     </li>
                     <li id="nav_item">
                         <a

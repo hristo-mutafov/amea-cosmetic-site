@@ -91,7 +91,7 @@
 }
 
 .cards .card .content {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 20px;
     text-align: center;
 }
@@ -121,12 +121,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .specific-procedure-main .heading {
     display: inline-block;
-    font-size: 50px;
+    font-size: 42px;
     text-align: center;
     position: relative;
     font-weight: 500;
@@ -225,6 +225,12 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .specific-procedure-main .heading {
+        font-size: 34px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .cards .card .image-container {
         height: 240px;
@@ -278,6 +284,10 @@
     .specific-procedure-main .container .heading {
         font-size: 18px;
     }
+
+    .specific-procedure-main .heading {
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -290,7 +300,7 @@
     }
 
     .specific-procedure-main .main-heading-wrapper {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .specific-procedure-main .image-container {
@@ -326,6 +336,10 @@
 
     .swiper-slide:nth-child(3n) {
         width: 100%;
+    }
+
+    .specific-procedure-main .heading {
+        font-size: 24px;
     }
 }
 
@@ -381,7 +395,7 @@
     }
 
     .specific-procedure-main .heading {
-        font-size: 30px;
+        font-size: 18px;
     }
 
     .specific-procedure-main .image-container .image {
@@ -391,12 +405,14 @@
     }
 }
 
-@media screen and (max-width: 400px) {
-}
 
 @media screen and (max-width: 370px) {
     .cards .card .image-container {
         height: 180px;
+    }
+
+    .specific-procedure-main .heading {
+        font-size: 16px;
     }
 }
 
