@@ -1,0 +1,28 @@
+{
+    "name": "amea-cosmetic-site",
+    "version": "1.0.0",
+    "description": "## Blog Page",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky install"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "husky": "^8.0.0",
+        "lint-staged": "^15.2.0",
+        "prettier": "^3.1.1"
+    },
+    "lint-staged": {
+        "*.{js,json,css,md,html,xml}": [
+            "prettier --write"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    }
+}
