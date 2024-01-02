@@ -7,8 +7,8 @@ const mainContainer = document.querySelector('#blog.blog .blog-main');
 const buttons = document.querySelectorAll('#blog.blog #aside.aside li p');
 const [backArrow, forwardArrow] = Array.from(
     document.querySelectorAll(
-        '#blog.blog .main-text .blog-header .nav-arrows i'
-    )
+        '#blog.blog .main-text .blog-header .nav-arrows i',
+    ),
 );
 
 /**

@@ -2,7 +2,6 @@
  * This file is responsible for nav page scrolling.
  */
 
-
 // get buttons
 const homeBtn = document.getElementById('home_btn');
 const logoBtn = document.getElementById('logo_btn');
@@ -11,13 +10,7 @@ const pricesBtn = document.getElementById('prices_btn');
 const contactsBtn = document.getElementById('constacts_btn');
 const closeMobile = document.getElementById('mobile-menu');
 
-const allButtons = [
-    homeBtn,
-    logoBtn,
-    coursesBtn,
-    pricesBtn,
-    contactsBtn,
-];
+const allButtons = [homeBtn, logoBtn, coursesBtn, pricesBtn, contactsBtn];
 
 // Get all sections
 const heroSection = document.getElementById('hero_section');
@@ -37,8 +30,8 @@ const sectionToButtonMapper = {
     hero_section: 'home_btn',
     for_me_section: 'for_me_btn',
     trainings: 'courses_btn',
-    prices: 'prices_btn'
-}
+    prices: 'prices_btn',
+};
 
 function scroller(e) {
     e.preventDefault();
@@ -47,7 +40,7 @@ function scroller(e) {
     }
 
     if (window.location.pathname !== '/') {
-        window.location.href = '/#' + e.currentTarget.id
+        window.location.href = '/#' + e.currentTarget.id;
     }
 
     buttonToSectionMapper[e.currentTarget.id]();
@@ -58,14 +51,13 @@ function scroller(e) {
 window.addEventListener('load', () => {
     let hash = window.location.hash;
 
-
     if (hash) {
-        hash = hash.substring(1)
+        hash = hash.substring(1);
         buttonToSectionMapper[hash]();
         const newURL = window.location.href.replace(window.location.hash, '');
         history.replaceState('', document.title, newURL);
     }
-})
+});
 
 allButtons.forEach((button) => {
     button.addEventListener('click', scroller);

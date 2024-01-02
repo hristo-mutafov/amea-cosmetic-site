@@ -43,8 +43,8 @@
     top: calc(-3vw + -3vh);
     color: rgb(var(--text-color-for-background));
     font-size: calc(2vw + 2vh);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
 }
 
 #discount.discount .circle .plus-sign {

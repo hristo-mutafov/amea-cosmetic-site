@@ -27,8 +27,6 @@
     font-style: italic;
 }
 
-
-
 .swiper {
     width: 98%;
     height: 300px;
@@ -49,7 +47,6 @@
     object-fit: cover;
     top: 0px !important; /* Because of the loaders */
 }
-
 
 @media screen and (max-width: 1000px) {
     .content-section .heading {

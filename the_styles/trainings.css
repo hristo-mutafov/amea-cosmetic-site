@@ -21,7 +21,6 @@
     top: 0px;
 }
 
-
 .trainings .procedures_swiper .grid_wrapper {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -43,7 +42,7 @@
     width: 80%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .trainings .swiper .background_square .image_cover .img {
@@ -57,7 +56,7 @@
 
 .trainings .swiper .text_wrapper {
     justify-self: center;
-    align-self: center; 
+    align-self: center;
     position: relative;
     width: 85%;
     height: 80%;
@@ -112,28 +111,22 @@
         /* background-color: rgba(var(--main-color2), 0.95); */
         justify-self: center;
     }
-    
 }
 
 @media screen and (max-width: 768px) {
     .trainings .swiper .text_wrapper {
         font-size: 16px;
-
     }
-
 }
 
 @media screen and (max-width: 492px) {
     .trainings .swiper .background_square {
-    width: 100%;
-}
-
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 380px) {
     .trainings .swiper .text_wrapper {
         font-size: 14px;
-
     }
-
 }

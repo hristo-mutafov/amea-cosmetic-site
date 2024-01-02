@@ -68,14 +68,13 @@ body {
     right: 0;
 }
 
- .underline.black::after {
+.underline.black::after {
     background-color: rgb(var(--black-color));
- }
+}
 
- .underline.white::after {
+.underline.white::after {
     background-color: rgb(var(--main-color2));
- }
-
+}
 
 img[loading='lazy'] {
     position: relative !important;
@@ -91,7 +90,6 @@ img[loading='lazy'] {
     object-position: 13rem !important;
 }
 
-
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -105,6 +103,5 @@ img[loading='lazy'] {
     img[loading='lazy'] {
         width: 38px !important;
         height: 38px !important;
-
     }
 }

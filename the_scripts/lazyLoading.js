@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         //   lazyloadImages = document.querySelectorAll("#loading");
         var imageObserver = new IntersectionObserver(function (
             entries,
-            observer
+            observer,
         ) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {

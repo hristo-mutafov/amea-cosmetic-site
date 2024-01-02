@@ -40,7 +40,7 @@ const swiper5 = new Swiper('.opinions_swiper', {
     navigation: {
         nextEl: '#comments_next',
         prevEl: '#comments_prev',
-    }
+    },
 });
 
 const swiper6 = new Swiper('.brochure_swiper', {
