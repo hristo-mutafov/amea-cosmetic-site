@@ -52,11 +52,13 @@
 }
 
 .cards .card {
+    position: relative;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 14px;
+    height: 700px;
 }
 
 .cards .card:nth-last-child(1):nth-child(odd) {
@@ -96,10 +98,18 @@
     text-align: center;
 }
 
+.cards .card .text-container {
+    align-self: self-start;
+}
+
 .cards .card .text-container .procedures-button {
     width: 80%;
-    margin-top: 20px;
     font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: auto;
 }
 
 /* Each Procedure text styling */
@@ -208,6 +218,10 @@
 }
 
 @media screen and (max-width: 1330px) {
+    .cards .card {
+        height: 650px;
+    }
+
     .cards .card .image-container {
         height: 300px;
     }
@@ -232,6 +246,11 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .cards .card {
+        align-items: center;
+        grid-template-rows: 40% 100%;
+    }
+
     .cards .card .image-container {
         height: 240px;
     }
@@ -260,6 +279,20 @@
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
         gap: 50px;
+    }
+
+    .cards .card {
+        align-items: center;
+        grid-template-rows: 50% 100%;
+        height: 100%;
+    }
+
+    .cards .card .text-container .procedures-button {
+        width: 80%;
+        margin-top: 30px;
+        font-size: 20px;
+        position: static;
+        transform: translate(0%, 0%);
     }
 
     .cards .card:nth-last-child(odd):last-child {
@@ -406,6 +439,11 @@
 }
 
 @media screen and (max-width: 370px) {
+    .cards .card {
+        align-items: center;
+        grid-template-rows: 30% 100%;
+    }
+
     .cards .card .image-container {
         height: 180px;
     }
