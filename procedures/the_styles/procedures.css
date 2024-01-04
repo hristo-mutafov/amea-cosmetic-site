@@ -62,10 +62,22 @@
 }
 
 .cards .card:nth-last-child(1):nth-child(odd) {
-    /* Selects the last child, if there is odd count od children */
+    /* Selects the last child, if there is odd count of children */
     grid-column: span 2;
-    width: 60%;
+    width: 50%;
     margin: auto;
+}
+
+.cards
+    .card:nth-last-child(1):nth-child(odd)
+    .text-container
+    .procedures-button {
+    /* Selects the last child, if there is odd count of children and edit the button */
+    width: 80%;
+    margin-top: 30px;
+    font-size: 20px;
+    position: static;
+    transform: translate(0%, 0%);
 }
 
 .cards .card .image-container {
@@ -278,13 +290,13 @@
     .cards {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 0px;
     }
 
     .cards .card {
         align-items: center;
-        grid-template-rows: 50% 100%;
-        height: 100%;
+        grid-template-rows: 52% 100%;
+        height: 700px;
     }
 
     .cards .card .text-container .procedures-button {
@@ -381,6 +393,10 @@
         margin: 100px 20px;
     }
 
+    .cards .card {
+        height: 600px;
+    }
+
     .cards .card .heading::after {
         width: 20%;
     }
@@ -441,11 +457,16 @@
 @media screen and (max-width: 370px) {
     .cards .card {
         align-items: center;
-        grid-template-rows: 30% 100%;
+        grid-template-rows: 40% 100%;
+        height: 550px;
     }
 
     .cards .card .image-container {
         height: 180px;
+    }
+
+    .cards .card .content {
+        font-size: 15px;
     }
 
     .specific-procedure-main .heading {
