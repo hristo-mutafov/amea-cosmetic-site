@@ -118,11 +118,19 @@
     margin-bottom: 16px;
 }
 
+#blog.blog
+    .main-text
+    .blog-main
+    .image-collection
+    img:nth-last-child(1):nth-child(odd) {
+    grid-column: span 2;
+}
+
 #blog.blog .main-text .blog-main .cover-image {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
-    margin: 16px 0;
+    margin: 26px 0;
 }
 
 #blog.blog .main-text .blog-main .image-collection img,
