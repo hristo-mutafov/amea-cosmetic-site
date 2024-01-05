@@ -200,13 +200,19 @@
     height: 400px;
 }
 
+.swiper#nested-in-ul {
+    margin: 20px -80px;
+    max-width: 1920px;
+    width: calc(100vw - 4%);
+}
+
 .swiper .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 40%;
 }
 
 .swiper-slide img {
@@ -215,18 +221,6 @@
     height: 100%;
     object-fit: cover;
     top: 0px !important; /* Because of the loaders */
-}
-
-.swiper-slide:nth-child(1n) {
-    width: 30%;
-}
-
-.swiper-slide:nth-child(2n) {
-    width: 20%;
-}
-
-.swiper-slide:nth-child(3n) {
-    width: 30%;
 }
 
 @media screen and (max-width: 1330px) {
@@ -267,15 +261,7 @@
         height: 240px;
     }
 
-    .swiper-slide:nth-child(1n) {
-        width: 60%;
-    }
-
-    .swiper-slide:nth-child(2n) {
-        width: 40%;
-    }
-
-    .swiper-slide:nth-child(3n) {
+    .swiper .swiper-slide {
         width: 60%;
     }
 }
@@ -371,15 +357,12 @@
         overflow: visible;
     }
 
-    .swiper-slide:nth-child(1n) {
-        width: 100%;
+    .swiper {
+        height: 350px;
+        margin-bottom: 50px;
     }
 
-    .swiper-slide:nth-child(2n) {
-        width: 100%;
-    }
-
-    .swiper-slide:nth-child(3n) {
+    .swiper .swiper-slide {
         width: 100%;
     }
 
@@ -441,6 +424,10 @@
 
     .specific-procedure-main .wrapper {
         margin: 40px 20px;
+    }
+
+    .swiper#nested-in-ul {
+        margin: 20px -55px;
     }
 
     .specific-procedure-main .heading {
