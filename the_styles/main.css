@@ -1,0 +1,107 @@
+/* 
+Global css configuration. 
+*/
+
+:root {
+    /* --main-color: 185, 185, 185; Grey-one */
+    --main-color: 238, 238, 238; /* Gray Color */
+    --main-color2: 245, 245, 247; /* White Color */
+    --black-color: 29, 29, 31; /* Black Color */
+    --text-color-for-background: 0, 0, 0; /* Black Color */
+}
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    background-color: rgb(var(--main-color2));
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+}
+#slider_btn {
+    font-size: 30px;
+    color: rgba(29, 29, 31, 0.75);
+}
+
+.bold_price {
+    font-weight: 800;
+}
+
+.procedures-button {
+    margin: auto;
+    margin-top: 6px;
+    display: block;
+    border-radius: 20px;
+    appearance: none;
+    background-color: transparent;
+    color: rgb(var(--black-color));
+    border: 1px solid rgb(var(--black-color));
+    padding: 6px 26px;
+    outline: none;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.procedures-button:hover {
+    color: #3b3a40;
+    border-color: #3b3a40;
+    transition: background-color 0.2s linear;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::after {
+    content: '';
+    display: block;
+    width: 50%;
+    margin: -5px auto;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.underline.black::after {
+    background-color: rgb(var(--black-color));
+}
+
+.underline.white::after {
+    background-color: rgb(var(--main-color2));
+}
+
+img[loading='lazy'] {
+    position: relative !important;
+    top: 40% !important;
+
+    width: 48px !important;
+    height: 48px !important;
+    border: 5px solid rgb(var(--black-color)) !important;
+    border-bottom-color: rgb(var(--main-color)) !important;
+    border-radius: 50% !important;
+    box-sizing: border-box !important;
+    animation: spin 1s linear infinite;
+    object-position: 13rem !important;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    img[loading='lazy'] {
+        width: 38px !important;
+        height: 38px !important;
+    }
+}

@@ -1,50 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <head>
-            <meta charset="UTF-8" />
-            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-            <meta
-                name="viewport"
-                content="width=device-width, initial-scale=1.0"
-            />
-            <!-- FavIcon -->
-            <link
-                rel="icon"
-                type="image/png"
-                href="../images/favicon-32x32.png"
-            />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- FavIcon -->
+        <link rel="icon" type="image/png" href="../images/favicon-32x32.png" />
 
-            <!-- Styles ---------------------- -->
-            <link rel="stylesheet" href="../the_styles/reset.css" />
-            <link rel="stylesheet" href="../the_styles/styles.css" />
-            <link
-                rel="stylesheet"
-                href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-            />
-            <title>Nataliya's Blog</title>
-            <!-- Google tag (gtag.js) -->
-            <script
-                async
-                src="https://www.googletagmanager.com/gtag/js?id=G-TW8PR0J3V5"
-            ></script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag() {
-                    dataLayer.push(arguments);
-                }
-                gtag('js', new Date());
+        <!-- Styles ---------------------- -->
+        <link rel="stylesheet" href="../../the_styles/reset.css" />
+        <link rel="stylesheet" href="/blog/the_styles/styles.css" />
+        <title>Блога на Наталия | Nataliya's Blog</title>
+        <!-- Google tag (gtag.js) -->
+        <!-- <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-TW8PR0J3V5"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-                gtag('config', 'G-TW8PR0J3V5');
-            </script>
-        </head>
+            gtag('config', 'G-TW8PR0J3V5');
+        </script> -->
     </head>
     <body>
         <header class="header">
             <nav id="nav_wrapper" class="wrapper">
                 <div class="mobile_nav">
                     <div id="logo_btn" class="logo_wrapper">
-                        <img src="../images/nataliya-logo.png" alt="" />
+                        <img
+                            src="../images/nataliya-logo.png"
+                            alt="Лого Наталия Ненчова"
+                        />
                     </div>
 
                     <div class="navbar__toggle" id="mobile-menu">
@@ -58,15 +48,20 @@
                         <a id="home_btn" class="nav_link" href="">Начало</a>
                     </li>
                     <li id="nav_item">
-                        <a id="for_me_btn" class="nav_link" href="">Зa мен</a>
+                        <a id="for_me_btn" class="nav_link" href="/about-me"
+                            >Зa мен</a
+                        >
                     </li>
                     <li id="nav_item">
-                        <a id="" class="nav_link" href="/blog">Блог</a>
-                    </li>
-                    <li id="nav_item">
-                        <a id="procedures_btn" class="nav_link" href=""
+                        <a
+                            id="procedures_btn"
+                            class="nav_link"
+                            href="/procedures"
                             >Процедури</a
                         >
+                    </li>
+                    <li id="nav_item">
+                        <a id="prices_btn" class="nav_link" href="">Цени</a>
                     </li>
                     <li id="nav_item">
                         <a id="courses_btn" class="nav_link" href=""
@@ -74,7 +69,7 @@
                         >
                     </li>
                     <li id="nav_item">
-                        <a id="prices_btn" class="nav_link" href="">Цени</a>
+                        <a id="" class="nav_link" href="/blog">Блог</a>
                     </li>
                     <li id="nav_item">
                         <a id="constacts_btn" class="nav_link" href=""
@@ -119,7 +114,39 @@
                                 onClick="navigateToArticle(event)"
                                 id="camouflage-lesson"
                             >
-                                Урок По Камуфлаж
+                                Урок по Камуфлаж
+                            </p>
+                        </li>
+                        <li>
+                            <p
+                                onClick="navigateToArticle(event)"
+                                id="announcement-for-new-year-2024"
+                            >
+                                Обръщение за новата 2024 година
+                            </p>
+                        </li>
+                        <li>
+                            <p
+                                onClick="navigateToArticle(event)"
+                                id="improvements-for-2024"
+                            >
+                                Новостите за 2024 година
+                            </p>
+                        </li>
+                        <li>
+                            <p
+                                onClick="navigateToArticle(event)"
+                                id="camouflage-trainings-results"
+                            >
+                                Резултати от Обученията по Медицински Камуфлаж
+                            </p>
+                        </li>
+                        <li>
+                            <p
+                                onClick="navigateToArticle(event)"
+                                id="master-class-tony-belfatto-amiea"
+                            >
+                                Master Class Toni Belfatto - Amiea
                             </p>
                         </li>
                     </ul>
@@ -127,7 +154,7 @@
                         id="togglebar-icon"
                         class="sidebar-icon"
                         src="../images/sidebar.png"
-                        alt=""
+                        alt="sidebar icon"
                     />
                 </aside>
                 <aside id="aside-short" class="aside-short">
@@ -135,7 +162,7 @@
                         id="togglebar-icon-short"
                         class="sidebar-icon"
                         src="../images/sidebar.png"
-                        alt=""
+                        alt="sidebar icon"
                     />
                 </aside>
                 <article class="main-text">
@@ -157,7 +184,6 @@
                     <main class="blog-main">
                         <div class="loader"></div>
                     </main>
-
                 </article>
             </section>
         </main>
@@ -189,6 +215,14 @@
                         target="_blank"
                         href="https://www.instagram.com/beauty_studio_nataly"
                         >beauty_studio_nataly</a
+                    >
+                </div>
+                <div class="tiktok field">
+                    <i class="fab fa-tiktok"></i>
+                    <a
+                        target="_blank"
+                        href="https://www.tiktok.com/@nataliya.nenchova"
+                        >nataliya.nenchova</a
                     >
                 </div>
             </div>

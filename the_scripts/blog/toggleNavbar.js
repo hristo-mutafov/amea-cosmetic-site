@@ -1,3 +1,7 @@
+/**
+ * This file is responsible for toggling the sidebar in blog page.
+ */
+
 const icon = document.querySelector('#blog.blog #togglebar-icon');
 const iconShort = document.querySelector('#blog.blog #togglebar-icon-short');
 const aside = document.querySelector('#blog.blog #aside');
@@ -14,7 +18,6 @@ icon.addEventListener('click', () => {
         mainSection.style.padding = '0px 80px';
     }
     mainSection.style.gridTemplateColumns = '100%';
-    // mainSection.style.gridTemplateColumns = '14% 76%';
 });
 
 iconShort.addEventListener('click', () => {
