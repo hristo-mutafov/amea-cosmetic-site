@@ -1,6 +1,6 @@
 /**
  * This file is responsible for the slider configurations.
- * 
+ *
  */
 
 const swiper1 = new Swiper('.for_me_swiper', {
@@ -56,15 +56,3 @@ const swiper6 = new Swiper('.brochure_swiper', {
         prevEl: '#brochure_prev',
     },
 });
-
-
-
-
-// delay = 10000;
-// next_buttons = Array.from(document.querySelectorAll('.swiper-button-next'));
-
-// setInterval(() => {
-//     for (const button of next_buttons) {
-//         button.click()
-//     }
-// }, delay);

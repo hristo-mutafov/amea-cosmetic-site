@@ -1,0 +1,15 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+@import url(../../the_styles/header.css);
+@import url(./hero-section.css);
+@import url(./content-section.css);
+@import url(./benefits.css);
+@import url(../../the_styles/footer.css);
+
+@import url(../../the_styles/main.css);
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
