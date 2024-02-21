@@ -24,6 +24,21 @@
             gtag('js', new Date());
 
             gtag('config', 'G-TW8PR0J3V5');
+            gtag('config', 'AW-16462354472');
+        </script>
+        <script>
+            function gtag_report_conversion(url) {
+                var callback = function () {
+                    if (typeof url != 'undefined') {
+                        window.location = url;
+                    }
+                };
+                gtag('event', 'conversion', {
+                    send_to: 'AW-16462354472/Ft55CPWnvJQZEKiw7qk9',
+                    event_callback: callback,
+                });
+                return false;
+            }
         </script>
     </head>
     <body>
@@ -215,7 +230,14 @@
                 <p><span class="underlined">Контакти</span></p>
                 <p>с.Челопеч</p>
                 <p>ул.Драва 14</p>
-                <p>Тел. <spanb class="bold">0886312832</spanb></p>
+                <p>
+                    Тел.
+                    <span
+                        onclick="return gtag_report_conversion('tel:0886312832')"
+                        class="bold"
+                        >0886312832</span
+                    >
+                </p>
                 <img src="../images/logo.png" alt="amiea" />
             </div>
             <div class="emial_wrapper">
