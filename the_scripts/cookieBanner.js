@@ -24,6 +24,10 @@ if (!localStorage.getItem(LOCAL_STORAGE_KEY)) {
             analytics_storage: 'granted',
         });
         localStorage.setItem(LOCAL_STORAGE_KEY, 'true');
+        localStorage.setItem('ad_storage', 'granted');
+        localStorage.setItem('ad_user_data', 'granted');
+        localStorage.setItem('ad_personalization', 'granted');
+        localStorage.setItem('analytics_storage', 'granted');
     });
 }
 
