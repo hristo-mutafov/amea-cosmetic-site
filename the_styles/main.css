@@ -2,6 +2,8 @@
 Global css configuration. 
 */
 
+@import url(cookieBanner.css);
+
 :root {
     /* --main-color: 185, 185, 185; Grey-one */
     --main-color: 238, 238, 238; /* Gray Color */
