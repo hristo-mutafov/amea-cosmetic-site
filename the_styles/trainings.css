@@ -70,6 +70,7 @@
 /* Paragraph styles */
 
 .trainings .text_wrapper .heading_text {
+    font-size: 20px;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 16px;
