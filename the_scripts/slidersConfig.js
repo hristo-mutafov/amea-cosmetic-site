@@ -34,12 +34,21 @@ const swiper = new Swiper('.nested', {
 });
 
 const swiper5 = new Swiper('.opinions_swiper', {
-    slidesPerView: 3,
-    freeMode: true,
-    loop: true,
+    slidesPerView: 1,
     navigation: {
         nextEl: '#comments_next',
         prevEl: '#comments_prev',
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 1,
+        },
+        850: {
+            slidesPerView: 2,
+        },
+        1300: {
+            slidesPerView: 3,
+        },
     },
 });
 
