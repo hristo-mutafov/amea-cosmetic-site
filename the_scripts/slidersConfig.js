@@ -118,7 +118,7 @@ const swiper5 = new Swiper('.opinions_swiper', {
 
 swiper5.on('touchEnd', function () {
     if (swiper5.isEnd) {
-        window.location.href = '/opinions';
+        window.location.href = '/achievements';
     }
 });
 
