@@ -68,7 +68,11 @@
 
 .hero-section .button-wrapper .primary-button {
     background-color: #d9534f;
+}
+
+.hero-section .button-wrapper .primary-button a {
     color: rgba(var(--main-color2));
+    text-decoration: none;
 }
 
 .hero-section .button-wrapper .primary-button:hover {
@@ -77,7 +81,11 @@
 
 .hero-section .button-wrapper .secondary-button {
     background-color: rgba(var(--main-color2));
+}
+
+.hero-section .button-wrapper .secondary-button a {
     color: rgba(var(--black-color));
+    text-decoration: none;
 }
 
 .hero-section .button-wrapper .secondary-button:hover {
