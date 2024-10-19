@@ -1,0 +1,282 @@
+.feedback-section {
+    padding: 79px 0;
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+}
+
+.feedback-section::before {
+    content: '';
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1920px;
+    width: 100%;
+    background-color: rgb(var(--main-color));
+    z-index: -1;
+    height: var(--bg-height);
+}
+
+.feedback-section .feedback-card {
+    display: flex;
+    width: 50%;
+    height: 400px;
+    box-shadow: 0 4px 6px rgba(var(--black-color), 0.3);
+    border-radius: 16px;
+    position: relative;
+    margin-left: -20%;
+    background-color: rgb(var(--main-color2));
+}
+
+.feedback-section .feedback-card .image-wrapper {
+    position: relative;
+    width: 40%;
+}
+
+.feedback-section .feedback-card .image-wrapper .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    z-index: 1;
+}
+
+.feedback-section .feedback-card .feedback-content {
+    width: 60%;
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+.feedback-section .feedback-card .feedback-content .feedback-text {
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 12%;
+}
+
+.feedback-section .feedback-card .feedback-content .feedback-text p {
+    color: gray;
+    font-size: 18px;
+    font-style: italic;
+    font-family: none;
+    text-align: center;
+}
+
+.feedback-section .feedback-card .feedback-content .feedback-text .icon {
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.feedback-section .feedback-card .feedback-content .feedback-author {
+    background-color: rgb(var(--main-color));
+    border-bottom-right-radius: 16px;
+    padding: 20px;
+}
+
+.feedback-section .feedback-card .feedback-author-mobile {
+    display: none;
+}
+
+.feedback-section .feedback-card .feedback-content .feedback-author .heading {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.feedback-section .feedback-card .feedback-content .feedback-author .text {
+    font-size: 14px;
+}
+
+/* Even cards styles */
+.feedback-section .feedback-card:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-left: 20%;
+}
+
+.feedback-section .feedback-card:nth-child(even) .image-wrapper .image {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.feedback-section
+    .feedback-card:nth-child(even)
+    .feedback-content
+    .feedback-author {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 0px;
+}
+
+.feedback-section
+    .feedback-card:nth-child(even)
+    .feedback-content
+    .feedback-author
+    .heading {
+    text-align: right;
+}
+
+.feedback-section
+    .feedback-card:nth-child(even)
+    .feedback-content
+    .feedback-author
+    .text {
+    text-align: right;
+}
+
+/* --- */
+
+@media screen and (max-width: 1800px) {
+    .feedback-section .feedback-card .feedback-content .feedback-text p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .feedback-section .feedback-card .feedback-content .feedback-text {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 12%;
+    }
+
+    .feedback-section .feedback-card .feedback-content .feedback-author .text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .feedback-section .feedback-card {
+        width: 64%;
+        margin-left: -26%;
+    }
+
+    .feedback-section .feedback-card:nth-child(even) {
+        margin-left: 26%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .feedback-section .feedback-card {
+        width: 80%;
+        margin-left: -0%;
+    }
+
+    .feedback-section .feedback-card:nth-child(even) {
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 712px) {
+    .feedback-section .feedback-card {
+        width: 90%;
+    }
+}
+
+/* Mobile view */
+@media screen and (max-width: 660px) {
+    .feedback-section {
+        gap: 60px;
+    }
+
+    .feedback-section .feedback-card {
+        width: 60%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .feedback-section .feedback-card:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .feedback-section .feedback-card:nth-child(even) .image-wrapper .image {
+        border-radius: 0;
+    }
+
+    .feedback-section .feedback-card .image-wrapper {
+        width: 100%;
+        height: 460px;
+        order: 2;
+    }
+
+    .feedback-section .feedback-card .image-wrapper .image {
+        border-radius: 0;
+        height: 100%;
+    }
+
+    .feedback-section .feedback-card .feedback-content {
+        width: 100%;
+        order: 1;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr;
+    }
+
+    .feedback-section .feedback-card .feedback-content .feedback-text {
+        gap: 12px;
+    }
+
+    .feedback-section .feedback-card .feedback-content .feedback-text p {
+        font-size: 18px;
+    }
+
+    .feedback-section .feedback-card .feedback-content .feedback-text .icon {
+        font-size: 56px;
+    }
+
+    .feedback-section .feedback-card .feedback-content .feedback-author {
+        display: none;
+    }
+
+    .feedback-section .feedback-card .feedback-author-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        order: 3;
+        padding: 18px 14px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+
+    .feedback-section .feedback-card .feedback-author-mobile .heading {
+        font-size: 20px;
+    }
+
+    .feedback-section .feedback-card .feedback-author-mobile .text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .feedback-section .feedback-card {
+        width: 80%;
+    }
+
+    .feedback-section .feedback-card .feedback-author-mobile .text {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .feedback-section .feedback-card {
+        width: 90%;
+    }
+
+    .feedback-section .feedback-card .feedback-content .feedback-text p {
+        font-size: 16px;
+    }
+
+    .feedback-section .feedback-card .feedback-author-mobile .heading {
+        font-size: 18px;
+    }
+
+    .feedback-section .feedback-card .feedback-author-mobile .text {
+        font-size: 12px;
+    }
+}
