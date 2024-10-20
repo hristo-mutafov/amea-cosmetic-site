@@ -4,13 +4,12 @@
 
 // get buttons
 const homeBtn = document.getElementById('home_btn');
-const logoBtn = document.getElementById('logo_btn');
 const coursesBtn = document.getElementById('courses_btn');
 const pricesBtn = document.getElementById('prices_btn');
 const contactsBtn = document.getElementById('constacts_btn');
 const closeMobile = document.getElementById('mobile-menu');
 
-const allButtons = [homeBtn, logoBtn, coursesBtn, pricesBtn, contactsBtn];
+const allButtons = [homeBtn, coursesBtn, pricesBtn, contactsBtn];
 
 // Get all sections
 const heroSection = document.getElementById('hero_section');
@@ -20,7 +19,6 @@ const pricesSection = document.getElementById('prices');
 
 const buttonToSectionMapper = {
     home_btn: () => window.scrollTo(0, 0),
-    logo_btn: () => window.scrollTo(0, 0),
     courses_btn: () => trainingsSection.scrollIntoView(),
     prices_btn: () => pricesSection.scrollIntoView(),
     constacts_btn: () => window.scrollTo(0, document.body.scrollHeight),

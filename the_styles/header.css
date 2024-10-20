@@ -6,7 +6,7 @@
     position: relative;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 10;
 }
 
 .header .wrapper {
@@ -101,6 +101,12 @@
 .header .wrapper .ul_wrapper.active #nav_item {
     padding: 20px;
     margin: 0;
+}
+
+.header .wrapper .ul_wrapper.active #nav_item a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .header .wrapper .ul_wrapper.active .nav_link {
