@@ -15,4 +15,5 @@ mobileMenu.addEventListener('click', (e) => {
 
 logoBtn.addEventListener('click', (e) => {
     e.stopPropagation();
+    window.scrollTo(0, 0);
 });
