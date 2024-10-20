@@ -1,44 +1,47 @@
 .opinions {
     max-width: 1920px;
     width: 100%;
-    max-height: 400px;
-    height: 50vh;
+    height: 400px;
     margin-top: 79px;
-    overflow: hidden;
     position: relative;
 }
 
 .opinions .swiper {
     height: 100%;
-    width: 1920px;
+    width: 100%;
 }
 
 .opinions .square {
-    position: relative;
     background-color: rgb(var(--main-color));
     border-radius: 30px;
-    padding: 20px;
+    padding: 20px 10px;
     width: 500px;
-    height: 300px;
+    height: 320px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 30% 62%;
+    gap: 6%;
+    margin: 0 auto;
+
+    align-items: center;
 }
 
 .opinions .square .image_wrapper {
-    align-self: start;
+    align-self: center;
     justify-self: center;
 
-    display: grid;
-    grid-template-rows: 70% 30%;
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .opinions .square .image_wrapper .wrapper {
-    width: 160px;
-    height: 160px;
-    display: flex;
-    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
 }
 
 .opinions .square .image_wrapper img {
@@ -60,24 +63,26 @@
 
 .opinions .square .name_wrapper {
     justify-self: center;
-    align-self: self-end;
+    align-self: self-center;
     color: rgb(var(--text-color-for-background));
     font-size: 22px;
     text-align: center;
 }
 
-.opinions .arrow-right {
+.opinions .square::after {
+    content: '';
     width: 0;
     height: 0;
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    border-left: 60px solid rgb(var(--main-color));
+    border-top: 90px solid transparent;
+    border-bottom: 90px solid transparent;
+    border-left: 90px solid rgb(var(--main-color));
     transform: rotate(5deg);
 
     position: absolute;
+    bottom: 0;
+    left: 38%;
     z-index: -1;
-    bottom: -55px;
-    left: 50px;
+    transform: translateX(-50%);
 }
 
 #comments_next {
@@ -89,23 +94,54 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 670px) {
-    .opinions .swiper-slide {
-        margin-right: 0px;
-    }
+.opinions .swiper-slide:last-child {
+    width: 340px !important;
+}
 
+.opinions .see-more {
+    background-color: rgb(var(--main-color));
+    border-radius: 30px;
+
+    padding: 20px 10px;
+    width: 200px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+}
+
+.opinions .see-more .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+}
+
+.opinions .see-more #arrow {
+    font-size: 30px;
+    transition: transform 0.3s ease;
+}
+
+.opinions .see-more:hover {
+    cursor: pointer;
+    background-color: rgba(var(--main-color), 0.8);
+}
+
+.opinions .see-more:hover #arrow {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 1670px) {
     .opinions {
-        height: 35vh;
+        height: 260px;
     }
 
     .opinions .square {
         padding: 20px;
         width: 400px;
         height: 200px;
-    }
-
-    .opinions .square .image_wrapper {
-        height: 150px;
     }
 
     .opinions .square .image_wrapper .wrapper {
@@ -121,28 +157,46 @@
         font-size: 18px;
     }
 
-    .opinions .arrow-right {
-        border-top: 50px solid transparent;
-        border-bottom: 50px solid transparent;
-        border-left: 50px solid rgb(var(--main-color));
+    .opinions .square::after {
+        border-top: 70px solid transparent;
+        border-bottom: 70px solid transparent;
+        border-left: 70px solid rgb(var(--main-color));
+    }
 
-        bottom: -48px;
+    .opinions .see-more {
+        width: 133px;
+        height: 200px;
+    }
+
+    .opinions .see-more .text-wrapper {
+        font-size: 16px;
+    }
+
+    .opinions .see-more #arrow {
+        font-size: 22px;
     }
 }
 
-@media screen and (max-width: 496px) {
-    .opinions .swiper-slide {
-        flex-shrink: 0.1;
+@media screen and (max-width: 849px) {
+    .opinions .swiper-slide:last-child {
+        width: 200px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .opinions {
+        height: 240px;
     }
 
     .opinions .square {
-        padding: 20px;
-        width: 300px;
-        height: 180px;
+        padding: 10px;
+        width: 340px;
+        height: 190px;
     }
 
-    .opinions .square .image_wrapper {
-        height: 140px;
+    .opinions .square .image_wrapper .wrapper {
+        width: 70px;
+        height: 70px;
     }
 
     .opinions .square .text_wrapper {
@@ -153,33 +207,88 @@
         font-size: 16px;
     }
 
-    .opinions .arrow-right {
+    .opinions .square::after {
         border-top: 50px solid transparent;
         border-bottom: 50px solid transparent;
         border-left: 50px solid rgb(var(--main-color));
+    }
 
-        bottom: -48px;
+    .opinions .see-more {
+        width: 113px;
+        height: 190px;
+    }
+
+    .opinions .see-more .text-wrapper {
+        font-size: 14px;
+    }
+
+    .opinions .see-more #arrow {
+        font-size: 26px;
     }
 }
 
-@media screen and (max-width: 336px) {
-    .opinions .swiper-slide {
-        flex: none;
+@media screen and (max-width: 412px) {
+    .opinions {
+        height: 200px;
     }
 
     .opinions .square {
-        padding: 20px 0px;
-        width: 240px;
-        height: 180px;
-    }
-
-    .opinions .square .image_wrapper {
-        height: 120px;
+        padding: 10px;
+        width: 260px;
+        height: 160px;
     }
 
     .opinions .square .image_wrapper .wrapper {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .opinions .square .text_wrapper {
+        font-size: 12px;
+    }
+
+    .opinions .square .name_wrapper {
+        font-size: 14px;
+    }
+
+    .opinions .square::after {
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-left: 40px solid rgb(var(--main-color));
+    }
+
+    .opinions .see-more {
+        width: 87px;
+        height: 160px;
+    }
+
+    .opinions .see-more .text-wrapper {
+        font-size: 10px;
+    }
+
+    .opinions .see-more #arrow {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 346px) {
+    .opinions {
+        height: 168px;
+    }
+
+    .opinions .square {
+        padding: 10px;
+        width: 210px;
+        height: 140px;
+    }
+
+    .opinions .square .image_wrapper {
+        gap: 5px;
+    }
+
+    .opinions .square .image_wrapper .wrapper {
+        width: 50px;
+        height: 50px;
     }
 
     .opinions .square .text_wrapper {
@@ -190,11 +299,74 @@
         font-size: 12px;
     }
 
-    .opinions .arrow-right {
-        border-top: 50px solid transparent;
-        border-bottom: 50px solid transparent;
-        border-left: 50px solid rgb(var(--main-color));
+    .opinions .square::after {
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-left: 40px solid rgb(var(--main-color));
+    }
 
-        bottom: -48px;
+    .opinions .see-more {
+        width: 70px;
+        height: 140px;
+    }
+
+    .opinions .see-more .text-wrapper {
+        font-size: 7px;
+    }
+
+    .opinions .see-more #arrow {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 284px) {
+    .opinions {
+        height: 130px;
+    }
+
+    .opinions .square {
+        padding: 10px;
+        width: 160px;
+        height: 100px;
+    }
+
+    .opinions .square .image_wrapper {
+        gap: 5px;
+    }
+
+    .opinions .square .image_wrapper .wrapper {
+        width: 40px;
+        height: 40px;
+    }
+
+    .opinions .square .text_wrapper {
+        font-size: 8px;
+    }
+
+    .opinions .square .name_wrapper {
+        font-size: 10px;
+    }
+
+    .opinions .square::after {
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-left: 30px solid rgb(var(--main-color));
+    }
+
+    .opinions .see-more {
+        width: 53px;
+        height: 100px;
+    }
+
+    .opinions .see-more .text-wrapper {
+        font-size: 5px;
+    }
+
+    .opinions .see-more #arrow {
+        font-size: 10px;
+    }
+
+    .opinions .swiper-slide:last-child {
+        width: 100px !important;
     }
 }

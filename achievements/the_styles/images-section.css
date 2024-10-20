@@ -1,0 +1,110 @@
+.images-section {
+    max-width: 1920px;
+    width: 100%;
+    padding: 79px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background-color: rgb(var(--main-color2));
+}
+
+.images-section .text {
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(var(--black-color));
+}
+
+.images-section .text .heading {
+    font-size: 66px;
+    font-weight: bold;
+}
+
+.images-section .text .sub-heading {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.images-section .swiper {
+    width: 98%;
+    height: 400px;
+}
+
+.images-section .swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .images-section .text .heading {
+        font-size: 56px;
+        font-weight: bold;
+    }
+
+    .images-section .text .sub-heading {
+        font-size: 26px;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .images-section {
+        gap: 50px;
+    }
+
+    .images-section .text .heading {
+        font-size: 46px;
+        font-weight: bold;
+    }
+
+    .images-section .text .sub-heading {
+        font-size: 22px;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .images-section .text .heading {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .images-section .text .sub-heading {
+        font-size: 18px;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .images-section .text .sub-heading {
+        font-size: 16px;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .images-section .text .sub-heading {
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .images-section .swiper {
+        width: 98%;
+        height: 350px;
+    }
+
+    .images-section .swiper .swiper-slide img {
+        object-fit: cover;
+    }
+
+    .images-section .text .sub-heading {
+        font-size: 12px;
+        font-weight: normal;
+    }
+}
