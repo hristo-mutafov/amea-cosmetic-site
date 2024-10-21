@@ -96,8 +96,12 @@ function loadArticle() {
                 : disableArrow(forwardArrow);
 
             // Filling the containers.
-            mainContainer.innerHTML = foundObject.content;
             dateContainer.textContent = foundObject.date;
+            if (window.location.pathname.startsWith('/en')) {
+                mainContainer.innerHTML = foundObject.enContent;
+            } else {
+                mainContainer.innerHTML = foundObject.content;
+            }
         })
         .catch((err) => {
             const spinner = '<div class="loader"></div>';

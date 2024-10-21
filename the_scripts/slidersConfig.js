@@ -118,6 +118,9 @@ const swiper5 = new Swiper('.opinions_swiper', {
 
 swiper5.on('touchEnd', function () {
     if (swiper5.isEnd) {
+        if (window.location.pathname.startsWith('/en')) {
+            return (window.location.href = '/en/achievements');
+        }
         window.location.href = '/achievements';
     }
 });
