@@ -4,7 +4,9 @@
 
 const dateContainer = document.querySelector('#blog.blog .main-text .date');
 const mainContainer = document.querySelector('#blog.blog .blog-main');
-const buttons = document.querySelectorAll('#blog.blog #aside.aside li p');
+const navigationButtons = document.querySelectorAll(
+    '#blog.blog #aside.aside li p',
+);
 const [backArrow, forwardArrow] = Array.from(
     document.querySelectorAll(
         '#blog.blog .main-text .blog-header .nav-arrows i',
@@ -123,7 +125,7 @@ function loadArticle() {
  * It works as expected, when there are not queryparameters.
  */
 function highlightButton(articleName) {
-    buttons.forEach((button) => {
+    navigationButtons.forEach((button) => {
         if (button.id === articleName) {
             /**
              * If we want the selected one to be in different color.
