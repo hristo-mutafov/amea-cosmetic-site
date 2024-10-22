@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- FavIcon -->
         <link rel="icon" type="image/png" href="./images/favicon-32x32.png" />
+        <!-- Language checking -->
+        <script async src="/the_scripts/preferred-language.js"></script>
         <!-- Styles ---------------------- -->
         <link rel="stylesheet" href="the_styles/reset.css" />
         <link rel="stylesheet" href="the_styles/styles.css" />
@@ -1977,7 +1979,9 @@
                 <div class="language-switcher">
                     <label for="language-options">Език:</label>
                     <div id="language-options" class="language-options">
-                        <a href="/en" class="lang-link">EN</a>
+                        <a href="/en" class="lang-link" onclick="something()"
+                            >EN</a
+                        >
                         <a href="javascript:void(0)" class="lang-link active"
                             >BG</a
                         >
