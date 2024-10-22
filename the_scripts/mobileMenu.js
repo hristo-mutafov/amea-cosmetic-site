@@ -33,13 +33,11 @@ const languageLinks = [
     ),
 ];
 
-// Find BG and EN buttons for both header and footer
 const buttons = {
-    bg: languageLinks.find((link) => link.textContent.trim() === 'BG'),
-    en: languageLinks.find((link) => link.textContent.trim() === 'EN'),
+    bg: languageLinks.filter((link) => link.textContent.trim() === 'BG'),
+    en: languageLinks.filter((link) => link.textContent.trim() === 'EN'),
 };
 
-// Functions to switch language
 function switchToEn() {
     localStorage.setItem('en', 'true');
 }
@@ -48,13 +46,10 @@ function switchToBg() {
     localStorage.removeItem('en');
 }
 
-// Add event listeners for both BG and EN buttons
-Object.values(buttons).forEach((button) => {
-    button?.addEventListener('click', () => {
-        if (button.textContent.trim() === 'EN') {
-            switchToEn();
-        } else {
-            switchToBg();
-        }
-    });
+buttons.bg.forEach((button) => {
+    button?.addEventListener('click', switchToBg);
+});
+
+buttons.en.forEach((button) => {
+    button?.addEventListener('click', switchToEn);
 });
