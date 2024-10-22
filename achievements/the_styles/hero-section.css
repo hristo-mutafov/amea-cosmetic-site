@@ -66,6 +66,23 @@
     transition: background-color 0.3s ease;
 }
 
+.hero-section .button-wrapper .primary-button,
+.hero-section .button-wrapper .secondary-button {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    border: none;
+}
+
+.hero-section .button-wrapper .primary-button a,
+.hero-section .button-wrapper .secondary-button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    text-align: center;
+}
+
 .hero-section .button-wrapper .primary-button {
     background-color: #d9534f;
 }
@@ -257,8 +274,8 @@
     .hero-section .button-wrapper {
         flex-direction: column;
         gap: 0px;
-        bottom: calc(60% - 120px);
-        width: 60%;
+        bottom: calc(56% - 120px);
+        width: 56%;
     }
 }
 
@@ -288,10 +305,6 @@
         padding: 4px 14px;
         font-size: 12px;
     }
-
-    .hero-section .button-wrapper {
-        bottom: calc(60% - 100px);
-    }
 }
 
 @media screen and (max-width: 300px) {
@@ -303,10 +316,6 @@
         padding: 4px 14px;
         font-size: 12px;
     }
-
-    .hero-section .button-wrapper {
-        bottom: calc(60% - 100px);
-    }
 }
 
 @media screen and (max-width: 270px) {
@@ -317,10 +326,5 @@
     .hero-section button {
         padding: 4px 14px;
         font-size: 10px;
-    }
-
-    .hero-section .button-wrapper {
-        width: 60%;
-        bottom: calc(60% - 100px);
     }
 }
