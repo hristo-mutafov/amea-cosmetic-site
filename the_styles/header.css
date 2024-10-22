@@ -91,7 +91,8 @@
 .header .wrapper.active {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    justify-content: flex-start;
+    height: 100dvh;
     overflow-y: auto;
 }
 
