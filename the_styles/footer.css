@@ -64,7 +64,7 @@
 
 .footer .additional_wrapper .lang-link.active {
     background-color: rgb(var(--black-color));
-    color: white;
+    color: rgb(var(--main-color));
 }
 
 .underlined {

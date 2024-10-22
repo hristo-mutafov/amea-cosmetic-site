@@ -11,6 +11,7 @@ mobileMenu.addEventListener('click', (e) => {
     mobileMenu.classList.toggle('is-active');
     nav.classList.toggle('active');
     navWrapper.classList.toggle('active');
+    document.body.classList.toggle('no-scroll');
 });
 
 logoBtn.addEventListener('click', (e) => {
