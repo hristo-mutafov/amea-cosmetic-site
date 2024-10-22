@@ -4,41 +4,87 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
   <loc>https://nataliyanenchova.bg/</loc>
-  <lastmod>2023-12-24T11:28:24+00:00</lastmod>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://nataliyanenchova.bg/about-me</loc>
-  <lastmod>2023-12-24T11:28:24+00:00</lastmod>
+  <loc>https://nataliyanenchova.bg/about-me/</loc>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://nataliyanenchova.bg/blog</loc>
-  <lastmod>2023-12-24T11:28:24+00:00</lastmod>
+  <loc>https://nataliyanenchova.bg/procedures/</loc>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://nataliyanenchova.bg/procedures</loc>
-  <lastmod>2023-12-24T11:28:24+00:00</lastmod>
+  <loc>https://nataliyanenchova.bg/achievements/</loc>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nataliyanenchova.bg/blog/</loc>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nataliyanenchova.bg/en/</loc>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://nataliyanenchova.bg/procedures/camouflage/</loc>
-  <lastmod>2023-12-24T11:28:24+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://nataliyanenchova.bg/procedures/stretch-marks-treatments/</loc>
-  <lastmod>2023-12-24T11:28:24+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://nataliyanenchova.bg/procedures/tricopigmentation/</loc>
-  <lastmod>2023-12-24T11:28:24+00:00</lastmod>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nataliyanenchova.bg/en/about-me/</loc>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nataliyanenchova.bg/en/procedures/</loc>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nataliyanenchova.bg/en/achievements/</loc>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nataliyanenchova.bg/en/blog/</loc>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nataliyanenchova.bg/en/procedures/camouflage/</loc>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nataliyanenchova.bg/en/procedures/stretch-marks-treatments/</loc>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://nataliyanenchova.bg/en/procedures/tricopigmentation/</loc>
+  <lastmod>2024-10-22T13:00:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
