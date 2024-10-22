@@ -10,7 +10,8 @@
             type="image/png"
             href="../../images/favicon-32x32.png"
         />
-
+        <!-- Language checking -->
+        <script async src="/the_scripts/preferred-language.js"></script>
         <!-- Styles ---------------------- -->
         <link rel="stylesheet" href="../../the_styles/reset.css" />
         <link rel="stylesheet" href="/procedures/the_styles/styles.css" />
@@ -91,6 +92,20 @@
                         <a id="constacts_btn" class="nav_link" href=""
                             >Контакти</a
                         >
+                    </li>
+                    <li id="nav_item" class="language-switcher">
+                        <div id="language-options" class="language-options">
+                            <a
+                                href="/en/procedures/tricopigmentation"
+                                class="lang-link"
+                                >EN</a
+                            >
+                            <a
+                                href="javascript:void(0)"
+                                class="lang-link active"
+                                >BG</a
+                            >
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -634,7 +649,7 @@
             </div>
         </main>
 
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="socials_wrapper">
                 <p class="label">
                     <span class="underlined">Последвайте ни</span>
@@ -688,11 +703,29 @@
                         >0886312832</span
                     >
                 </p>
-                <img src="../../images/logo.png" alt="amiea" />
+                <img
+                    loading="lazy"
+                    src="/images/logo.png"
+                    alt="amiea logo/амиеа лого"
+                />
             </div>
-            <div class="emial_wrapper">
+            <div class="additional_wrapper">
                 <p class="label"><span class="underlined">Имейл</span></p>
                 <p class="bold email">nenchovanataliya@gmail.com</p>
+                <br />
+                <div class="language-switcher">
+                    <label for="language-options">Език:</label>
+                    <div id="language-options" class="language-options">
+                        <a
+                            href="/en/procedures/tricopigmentation"
+                            class="lang-link"
+                            >EN</a
+                        >
+                        <a href="javascript:void(0)" class="lang-link active"
+                            >BG</a
+                        >
+                    </div>
+                </div>
             </div>
         </footer>
 

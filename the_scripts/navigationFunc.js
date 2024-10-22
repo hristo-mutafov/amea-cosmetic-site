@@ -37,7 +37,12 @@ function scroller(e) {
         closeMobile.click();
     }
 
-    if (window.location.pathname !== '/') {
+    const pathName = window.location.pathname;
+    if (pathName !== '/' && pathName !== '/en/') {
+        if (pathName.startsWith('/en')) {
+            return (window.location.href = '/en/#' + e.currentTarget.id);
+        }
+
         window.location.href = '/#' + e.currentTarget.id;
     }
 
