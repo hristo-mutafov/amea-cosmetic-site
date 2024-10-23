@@ -49,22 +49,48 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    gap: 10px;
 }
 
-.footer .additional_wrapper .lang-link {
-    text-decoration: none;
+.footer .additional_wrapper .lang-button {
+    display: flex;
+    align-items: center;
     padding: 10px 20px;
-    background-color: transparent;
-    color: rgb(var(--black-color));
-    font-weight: bold;
-    font-size: 14px;
-    cursor: pointer;
-    margin: 0 1px;
+    border: 2px solid rgb(var(--black-color));
+    border-radius: 20px;
+    text-decoration: none;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
-.footer .additional_wrapper .lang-link.active {
+.footer .additional_wrapper .lang-button.active {
     background-color: rgb(var(--black-color));
     color: rgb(var(--main-color));
+}
+
+.footer .additional_wrapper .lang-button:hover {
+    background-color: rgb(var(--black-color));
+    color: rgb(var(--main-color));
+}
+
+.footer .additional_wrapper .lang-button .image {
+    width: 24px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.footer .additional_wrapper .lang-button .text {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(var(--black-color));
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.footer .additional_wrapper .lang-button.active .text,
+.footer .additional_wrapper .lang-button:hover .text {
+    color: #fff;
 }
 
 .underlined {
@@ -104,9 +130,18 @@
         margin-top: 10px;
     }
 
-    .footer .additional_wrapper .lang-link {
-        padding: 5px 10px;
-        font-size: 12px;
+    .lang-button {
+        padding: 6px 10px;
+    }
+
+    .lang-button .text {
+        font-size: 14px;
+    }
+
+    .lang-button .image {
+        width: 18px;
+        height: auto;
+        margin-right: 8px;
     }
 }
 
