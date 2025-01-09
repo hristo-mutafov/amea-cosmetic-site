@@ -227,7 +227,11 @@ body.no-scroll {
 
 @media screen and (max-width: 1115px) {
     .logo_wrapper {
-        margin-left: 20px;
+        margin-left: 0px;
+    }
+
+    .header .wrapper {
+        padding: 0 30px;
     }
 }
 
@@ -297,6 +301,10 @@ body.no-scroll {
         justify-content: space-between;
 
         align-items: center;
+    }
+
+    .header .wrapper {
+        padding: 0 50px;
     }
 }
 
