@@ -4,7 +4,7 @@
     position: relative;
     max-width: 1920px;
     width: 100%;
-    margin: 20px auto;
+    margin: 0px auto;
     padding: 10px 50px;
     display: flex;
     gap: 20px;
@@ -32,15 +32,16 @@
 }
 
 .hero-alert .button {
-    color: rgb(var(--main-color2));
+    color: rgb(var(--main-color1));
     width: auto;
     margin: 0;
     border-color: rgb(var(--main-color2));
     font-weight: 600;
+    background-color: rgb(var(--main-color2));
 }
 
 .hero-alert .button:hover {
-    color: rgb(var(--main-color2));
+    color: rgb(var(--main-color1));
     border-color: rgb(var(--main-color2));
 }
 

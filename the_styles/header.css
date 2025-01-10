@@ -28,6 +28,16 @@
 
 .header .wrapper .ul_wrapper #nav_item {
     margin-left: 20px;
+    position: relative;
+}
+
+.header .wrapper .ul_wrapper #nav_item .asterisk {
+    color: #e60000;
+    opacity: 0.75;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-size: 10px;
 }
 
 .header .wrapper .ul_wrapper #nav_item.language-switcher {
@@ -306,6 +316,17 @@ body.no-scroll {
     .header .wrapper {
         padding: 0 50px;
     }
+
+    .header .wrapper .ul_wrapper #nav_item .asterisk {
+        top: 10px;
+        right: 42%;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .header .wrapper .ul_wrapper #nav_item .asterisk {
+        right: 36%;
+    }
 }
 
 @media screen and (max-width: 630px) {
@@ -326,6 +347,12 @@ body.no-scroll {
 
     .header .wrapper {
         padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .header .wrapper .ul_wrapper #nav_item .asterisk {
+        right: 30%;
     }
 }
 
