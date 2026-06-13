@@ -1,160 +1,220 @@
+/* ===== REDESIGNED FOOTER ===== */
 .footer {
     padding: 50px 100px;
     margin: 0 auto;
     max-width: 1920px;
     background-color: rgb(var(--main-color));
-
     color: rgb(var(--text-color-for-background));
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
     text-align: center;
-    line-height: 1.5;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
-.footer .socials_wrapper .field {
+/* --- Brand column --- */
+.footer__brand {
     display: flex;
-    gap: 10px;
-    margin-bottom: 5px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
 }
 
-.footer .socials_wrapper a {
+.footer__logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer__logos img {
+    width: 130px;
+    height: auto;
+}
+
+.footer__studio-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.footer__academy-name {
+    font-size: 15px;
+    opacity: 0.75;
+    margin-top: 0;
+}
+
+/* --- Contact column --- */
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+/* --- Social column --- */
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__social-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* --- Extra column --- */
+.footer__extra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__extra .footer__social-list {
+    align-items: flex-start;
+}
+
+/* --- Shared section title --- */
+.footer__section-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+/* --- Social links (used in both social and extra columns) --- */
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.footer__social-link a {
     text-decoration: none;
     color: rgb(var(--text-color-for-background));
 }
 
-.footer .socials_wrapper i {
-    color: rgb(var(--main-color2));
-    background-color: rgb(var(--black-color));
-    border-radius: 100%;
-    padding: 3px;
+.footer__social-link a:hover {
+    text-decoration: underline;
+}
+
+.footer__social-link i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: rgb(var(--black-color));
+    color: rgb(var(--main-color2));
+    font-size: 13px;
+    flex-shrink: 0;
 }
 
-.footer .socials_wrapper .label {
-    margin-bottom: 20px;
+/* --- Bold helper --- */
+.footer__bold {
+    font-weight: bold;
 }
 
-.footer .additional_wrapper .label {
-    margin-bottom: 20px;
+.footer__phone {
+    color: rgb(var(--text-color-for-background));
+    text-decoration: underline;
 }
 
-.footer .additional_wrapper .language-switcher {
+.footer__phone:hover {
+    opacity: 0.6;
+}
+
+/* --- Language switcher --- */
+.footer__language {
+    margin-top: 24px;
     text-align: center;
 }
 
-.footer .additional_wrapper .language-options {
+.footer__lang-options {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
     gap: 10px;
+    margin-top: 10px;
 }
 
-.footer .additional_wrapper .lang-button {
+.footer__lang-button {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    gap: 8px;
+    padding: 8px 18px;
     border: 2px solid rgb(var(--black-color));
     border-radius: 20px;
     text-decoration: none;
+    color: rgb(var(--black-color));
+    font-weight: bold;
+    font-size: 15px;
     transition:
         background-color 0.3s ease,
         color 0.3s ease;
 }
 
-.footer .additional_wrapper .lang-button.active {
-    background-color: rgb(var(--black-color));
-    color: rgb(var(--main-color));
-}
-
-.footer .additional_wrapper .lang-button:hover {
-    background-color: rgb(var(--black-color));
-    color: rgb(var(--main-color));
-}
-
-.footer .additional_wrapper .lang-button .image {
-    width: 24px;
+.footer__lang-button img {
+    width: 22px;
     height: auto;
-    margin-right: 8px;
 }
 
-.footer .additional_wrapper .lang-button .text {
-    font-size: 16px;
-    font-weight: bold;
-    color: rgb(var(--black-color));
-    margin: 0;
-    transition: color 0.3s ease;
+.footer__lang-button--active,
+.footer__lang-button:hover {
+    background-color: rgb(var(--black-color));
+    color: rgb(var(--main-color2));
 }
 
-.footer .additional_wrapper .lang-button.active .text,
-.footer .additional_wrapper .lang-button:hover .text {
-    color: #fff;
-}
-
+/* ===== SHARED UTILITIES (used outside footer too) ===== */
 .underlined {
     border-bottom: 1px solid rgb(var(--text-color-for-background));
     padding-bottom: 3px;
-    margin-bottom: 20px;
 }
 
-.bold {
-    text-decoration: bold;
-}
-
-.footer .main_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer .main_wrapper img {
-    width: 120px;
-}
-
+/* ===== RESPONSIVE ===== */
 @media screen and (max-width: 1300px) {
     .footer {
         font-size: 16px;
+        padding: 40px 60px;
+        gap: 30px;
     }
-    .footer .socials_wrapper i {
-        padding: 3px;
+
+    .footer__social-link i {
         width: 25px;
-    }
-    .footer .socials_wrapper .facebook {
-        margin-top: 10px;
-    }
-
-    .footer .emial_wrapper .email {
-        margin-top: 10px;
+        height: 25px;
+        font-size: 11px;
     }
 
-    .lang-button {
-        padding: 6px 10px;
-    }
-
-    .lang-button .text {
-        font-size: 14px;
-    }
-
-    .lang-button .image {
-        width: 18px;
-        height: auto;
-        margin-right: 8px;
+    .footer__logos img {
+        width: 75px;
     }
 }
 
 @media screen and (max-width: 960px) {
-    .footer .additional_wrapper .language-switcher {
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px;
+    }
+
+    .footer__language {
         display: none;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .footer {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        padding: 0px;
+        padding: 30px 20px;
+        gap: 30px;
     }
 }
