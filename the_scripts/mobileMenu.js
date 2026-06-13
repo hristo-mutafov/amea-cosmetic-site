@@ -28,9 +28,7 @@ const languageLinks = [
     ...document.querySelectorAll(
         '.header .wrapper .ul_wrapper .language-switcher a',
     ),
-    ...document.querySelectorAll(
-        '.footer .additional_wrapper .language-switcher .language-options a',
-    ),
+    ...document.querySelectorAll('.footer .footer__lang-options a'),
 ];
 
 const buttons = {
